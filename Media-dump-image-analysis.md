@@ -1,5 +1,5 @@
 # Command description
-This operation will analyze a media dump, and if the format is recognized and you choose so, it will search for [[supported partitioning schemes|partitions]] and [[supported filesystems|filesystems]] on the dump, showing information about them.
+This operation will analyze a media dump, and if the format is recognized and you choose so, it will search for [[supported partitioning schemes|Partitioning-schemes-recognized-by-DiscImageChef]] and [[supported filesystems|Filesystems-recognized-by-DiscImageChef]] on the dump, showing information about them.
 
 # Command usage
 DiscImageChef analyze -i \<dump\> -v [true/false] -d [true/false] -p [true/false] -f [true/false] 
