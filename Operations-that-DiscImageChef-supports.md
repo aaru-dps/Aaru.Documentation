@@ -1,21 +1,21 @@
 [[Media dump image analysis|Media-dump-image-analysis]]
 
-[[Checksum benchmarking|commands/benchmark]]
+[[Checksum benchmarking|Checksum-benchmarking]]
 
-[[Media dump checksumming|commands/checksum]]
+[[Media dump checksumming|Media-dump-checksumming]]
 
-[[Media dump comparison|commands/compare]]
+[[Media dump comparison|Media-dump-comparison]]
 
-[[Media dump XML metadata sidecar creation|commands/create-sidecar]]
+[[Media dump XML metadata sidecar creation|Media-dump-XML-metadata-sidecar-creation]]
 
-[[Media metadata and tags decoding|commands/decode]]
+[[Media metadata and tags decoding|Media-metadata-and-tags-decoding]]
 
-[[Physical device information|commands/device-info]]
+[[Physical device information|Physical-device-information]]
 
-[[Entropy calculation|commands/entropy]]
+[[Entropy calculation|Entropy-calculation]]
 
-[[Physical media information|commands/media-info]]
+[[Physical media information|Physical-media-information]]
 
-[[Media dump sector/block hexadecimal dump|commands/printhex]]
+[[Media dump sector/block hexadecimal dump|Media-dump-sector-block-hexadecimal-dump]]
 
-[[Media dump verification|commands/verify]]
+[[Media dump verification|Media-dump-verification]]
