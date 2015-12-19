@@ -1,5 +1,5 @@
 # Command description
-This operation will request and obtain all information about the inserted media in a physical device. For information about supported physical devices check [[the list of supported physical devices|Supported-devices]]
+This operation will request and show all information about the inserted media in a physical device. For information about supported physical devices check [[the list of supported physical devices|Supported-devices]]
 
 # Command usage
 DiscImageChef media-info -i \<device\> -v [true/false] -d [true/false] -w [prefix]
