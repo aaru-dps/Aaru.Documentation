@@ -4,7 +4,7 @@ DiscImageChef is a tool designed to handle different media dump formats (also ca
 
 [[Operations that DiscImageChef supports|Operations-that-DiscImageChef-supports]]
 
-[[Media dump formats supported by DiscImageChef|formats]]
+[[Media dump formats supported by DiscImageChef]]
 
 [[Partitioning schemes recognized by DiscImageChef|partitions]]
 
