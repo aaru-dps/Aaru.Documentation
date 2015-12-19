@@ -4,7 +4,7 @@ If the media dump format includes a hash or checksum, it will calculate and comp
 If the media sectors/blocks format include a hash, checksum or error recovery system, it will calculate and compare them.
 
 # Command usage
-DiscImageChef analyze -i \<dump\> -p [true/false] -f [true/false] -v [true/false] -d [true/false]
+DiscImageChef verify -i \<dump\> -v [true/false] -d [true/false] -w [true/false] -s [true/false]
 
 -i, --input=\<dump\> path to the media dump image  
 -v, --verbose=[true/false] shows verbose output _[default false]_  
