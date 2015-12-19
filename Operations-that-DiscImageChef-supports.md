@@ -1,4 +1,4 @@
-[[Media dump image analysis|commands/analyze]]
+[[Media dump image analysis|Media-dump-image-analysis]]
 
 [[Checksum benchmarking|commands/benchmark]]
 
