@@ -2,7 +2,7 @@ Welcome to the DiscImageChef wiki.
 
 DiscImageChef is a tool designed to handle different media dump formats (also called disc or disk images) and do common operations with them.
 
-[[Operations that DiscImageChef supports|commands]]
+[[Operations that DiscImageChef supports|Operations-that-DiscImageChef-supports]]
 
 [[Media dump formats supported by DiscImageChef|formats]]
 
