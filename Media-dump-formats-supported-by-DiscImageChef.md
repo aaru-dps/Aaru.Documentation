@@ -9,3 +9,5 @@
 * Nero Burning ROM (both image formats)
 * Apple 2IMG (used with Apple // emulators)
 * Virtual PC fixed size, dynamic size and differencing (undo) disk images
+* CDRDAO TOC sheets
+* Dreamcast GDI
