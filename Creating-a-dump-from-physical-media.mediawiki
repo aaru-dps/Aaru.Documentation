@@ -1,0 +1,83 @@
+==Command description==
+This operating will create a dump image from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar and an Alcohol 120% media descriptor for optical media. The dumping operation can be interrupted and continued later, even with a different device.
+
+==Command usage==
+<code>DiscImageChef dump-media -i <device> -v [true/false] -d [true/false] -w [prefix] -r [true/false] -s [true/false]
+ -f [true/false] -p [passes] --persistent [true/false] --separate-subchannel [true/false] -m [true/false]</code>
+
+<code>-i, --input=<dump></code> path to the physical device<br />
+<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
+<code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
+<code>-w, --output-prefix=[prefix]</code> prefix of the name for the dump media files<br />
+<code>-r, --raw=[true/false]</code> dumps sectors with all of their tags, or for optical media, dumps scrambled sectors ''(default false)''<br />
+<code>-s, --stop-on-error=[true/false]</code> stops dumping on first error ''(default false)''<br />
+<code>-f, --force=[true/false]</code> continuing dumping whatever happens ''(default false)''<br />
+<code>-p, --retry-passes=[true/false]</code> how many times to retry reading a sector ''(default false)''<br />
+<code>--persistent=[true/false]</code> try to recover partial or incorrect data ''(default false)''<br />
+<code>--separate-subchannel=[true/false]</code> save subchannel in a separate file. Only applicable to CD, DDCD or GD media ''(default false)''<br />
+<code>-m, --resume=[true/false]</code> create and/or use resume mapfile ''(default true)''<br />
+
+==Example==
+FreeBSD: <code>DiscImageChef dump-media -i /dev/cd0 -f --persistent=true --separate-subchannel -w mydisc</code><br />
+Linux: <code>DiscImageChef dump-media -i /dev/sdb -r -f -p 15 -w myusbfloppy</code><br />
+Windows: <code>DiscImageChef dump-media -i \\.\PhysicalDrive3 -f -p 0 --resume=false mydisk</code><br />
+
+==Operating system support==
+{|
+! OS
+! SCSI Block device
+! SCSI MultiMedia device
+! SCSI Streaming device
+! Parallel ATA
+! Serial ATA
+! USB
+! FireWire
+! PCMCIA
+! SecureDigital / MultiMediaCard
+|-
+| FreeBSD
+| Yes
+| Yes
+| Yes
+| No <ref name="FreeBSD bug">Not supported due to upstream bug</ref>
+| Yes
+| Partial <ref name="usb">USB descriptors are not retrieved</ref>
+| Partial <ref name="firewire">FireWire descriptors are not retrieved</ref>
+| Partial <ref name="pcmcia">PCMCIA CIS is not retrieved</ref>
+| Not yet <ref name="FreeBSD sd">Support will come with FreeBSD 12-RELEASE</ref>
+|-
+| macOS
+| No <ref name="macOS permissions">macOS only allows talking with MultiMedia devices</ref>
+| Not yet <ref name="macOS users">Support for MultiMedia devices in macOS will be added if users require it</ref>
+| No <ref name="macOS permissions"/>
+| No <ref name="macOS permissions"/>
+| No <ref name="macOS permissions"/>
+| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
+| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
+| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
+| No <ref name="macOS permissions"/>
+|-
+| Linux
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+|-
+| Windows
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Partial <ref name="firewire">FireWire descriptors are not retrieved</ref>
+| Partial <ref name="pcmcia">PCMCIA CIS is not retrieved</ref>
+| Untested <ref name="Windows sd">Should work, untested due to not available hardware</ref>
+|}
+
+<references/>
