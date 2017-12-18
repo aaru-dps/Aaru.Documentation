@@ -1,5 +1,5 @@
 ==Command description==
-This operation will create random data in RAM and calculate how fast are we calculating all known [[checksums and hashes|Supported-checksums]]
+This operation will create random data in RAM and calculate how fast are we calculating all known [[Supported-checksums|checksums and hashes]]
 
 ==Command usage==
 <code>DiscImageChef benchmark -v [true/false] -d [true/false] -b [block size] -s [buffer size]</code>
