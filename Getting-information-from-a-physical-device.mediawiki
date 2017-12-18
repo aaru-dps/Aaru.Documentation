@@ -10,7 +10,9 @@ This operation will request and show all information about a physical device. Fo
 <code>-w, --output-prefix=[prefix]</code> writes binary responses from device to that prefix  
 
 ==Example==
-<code>DiscImageChef analyze -i mydisc.cue</code>
+FreeBSD: <code>DiscImageChef device-info -i /dev/cd0</code><br />
+Linux: <code>DiscImageChef device-info -i /dev/sda</code><br />
+Windows: <code>DiscImageChef device-info -i D:</code><br />
 
 ==Operating system support==
 {|
