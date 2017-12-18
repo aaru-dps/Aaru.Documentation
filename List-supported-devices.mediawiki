@@ -1,0 +1,22 @@
+==Command description==
+This operation will show all known attached devices on your system and if they are supported for device dependent operations.
+
+==Command usage==
+<code>DiscImageChef list-devices</code> 
+
+==Operating system support==
+{|
+| FreeBSD
+| Yes
+|-
+| macOS
+| Not yet <ref name="macOS users">Support for MultiMedia devices in macOS will be added if users require it</ref>
+|-
+| Linux
+| Yes
+|-
+| Windows
+| Yes
+|}
+
+<references/>
