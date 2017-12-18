@@ -3,7 +3,7 @@ This operating will create a dump image from real media using a physical device.
 
 ==Command usage==
 <code>DiscImageChef dump-media -i <device> -v [true/false] -d [true/false] -w [prefix] -r [true/false] -s [true/false]
- -f [true/false] -p [passes] --persistent [true/false] --separate-subchannel [true/false] -m [true/false]</code>
+ -f [true/false] -p [passes] --persistent [true/false] --separate-subchannel [true/false] -m [true/false] --lead-in [true/false]</code>
 
 <code>-i, --input=<dump></code> path to the physical device<br />
 <code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
@@ -16,6 +16,7 @@ This operating will create a dump image from real media using a physical device.
 <code>--persistent=[true/false]</code> try to recover partial or incorrect data ''(default false)''<br />
 <code>--separate-subchannel=[true/false]</code> save subchannel in a separate file. Only applicable to CD, DDCD or GD media ''(default false)''<br />
 <code>-m, --resume=[true/false]</code> create and/or use resume mapfile ''(default true)''<br />
+<code>--lead-in=[true/false]</code> try to dump Lead-in. Only applicable to CD, DDCD or GD media ''(default true)''<br />
 
 ==Example==
 FreeBSD: <code>DiscImageChef dump-media -i /dev/cd0 -f --persistent=true --separate-subchannel -w mydisc</code><br />
