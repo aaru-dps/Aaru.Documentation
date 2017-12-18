@@ -1,0 +1,30 @@
+==Command description==
+This operation will analyze and find all filesystems in a media dump and extract the files what are containing in [[Filesystems-recognized-by-DiscImageChef|supported filesystems]]
+
+==Command usage==
+<code>DiscImageChef extract-files -i <dump> -o <output> -v [true/false] -d [true/false] -x [true/false] -e [encoding]</code> 
+
+<code>-i, --input=<dump></code> path to the media dump image<br />
+<code>-o, --output=<output></code> directory where extracted file will be created. Must NOT exist.<br />
+<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
+<code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
+<code>-x, --xattrs=[true/false]</code> extract extended attributes if present ''(default false)''<br />
+<code>-e, --encoding=[encoding]</code> sets which encoding is used by the contents of the media dump ''(default varies by filesystem)''<br />
+
+==Example==
+<code>DiscImageChef extract-files -i mydisc.cue -o contents -x -e iso8859-15</code>
+
+==Operating system support==
+{|
+| FreeBSD
+| Yes
+|-
+| macOS
+| Yes
+|-
+| Linux
+| Yes
+|-
+| Windows
+| Yes
+|}
