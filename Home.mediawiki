@@ -1,0 +1,37 @@
+Welcome to the DiscImageChef wiki.
+
+DiscImageChef is a tool designed to handle different media dump formats (also called disc or disk images) and do common operations with them.
+
+'''What do you want to do?'''
+* [[Media-dump-image-analysis|Analyze a media dump|]]
+* [[Checksum-benchmarking|Check how fast will DiscImageChef create hashes on my computer]]
+* [[Media-dump-checksumming|Get checksums or hashes from a dump]]
+* [[Media-dump-comparison|Compare two media dumps]]
+* [[Stats-configuration|Set which information will DiscImageChef send to you]]
+* [[Media-dump-XML-metadata-sidecar-creation|Create XML sidecar with metadata of a dump]]
+* [[Media-metadata-and-tags-decoding|Decode media tags and print them]]
+* [[Physical-device-information|Get information from a physical device]]
+* [[Physical-device-report|Test physical device capabilities and create an XML report of them]]
+* [[Media-dump|Create a media dump from a physical device]]
+* [[Entropy-calculation|Calculate entropy of a media dump]]
+* [[Extract-files|Extract all files contained in a media dump]]
+* [[Format-list|Get a list of all formats supported]]
+* [[Device-list|Get a list of all supported physical devices]]
+* [[Encoding-list|Get a list of all supported character set encodings]]
+* [[List-files|List all files contained in a media dump]]
+* [[Physical-media-information|Show information about media inserted in a physical device]]
+* [[Media-scan|Check readability of the media inserted in a physical device]]
+* [[Media-dump-sector-block-hexadecimal-dump|Get a hexadecimal print of a media dump sector or block]]
+* [[Stats|See my own usage statistics]]
+* [[Media-dump-verification|Verify integrity of a media dump or its contents]]
+
+'''What is supported by DiscImageChef?'''
+* [[Media dump formats supported by DiscImageChef|Media dump formats]]
+* [[Partitioning schemes recognized by DiscImageChef|Partitioning schemes]]
+* [[Filesystems recognized by DiscImageChef|Filesystems]]
+* [[Physical devices supported by DiscImageChef|Physical devices]]
+* [[Checksum and hash algorithms supported by DiscImageChef|Checksum and hashes]]
+* [[Media-tags|Known media tags|]]
+* [[Sector-Tags|Known sector/block tags]]
+
+'''[[Frequently Asked Questions]]'''
