@@ -1,0 +1,73 @@
+==Command description==
+This operation will test a physical device for its read capabilities. If the media is removable, it will ask you to insert different media on it, as read capabilities vary with different media. The report will be saved in the executing directory, and sent to us. Shared reports can be seen in http://discimagechef.claunia.com
+
+==Command usage==
+<code>DiscImageChef device-report -i <device> -v [true/false] -d [true/false]</code>
+
+<code>-i, --input=<dump></code> path to the physical device<br />
+<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
+<code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
+<code>-w, --output-prefix=[prefix]</code> writes binary responses from device to that prefix  
+
+==Example==
+<code>DiscImageChef analyze -i mydisc.cue</code>
+
+==Operating system support==
+{|
+! OS
+! SCSI Block device
+! SCSI MultiMedia device
+! SCSI Streaming device
+! Parallel ATA
+! Serial ATA
+! USB
+! FireWire
+! PCMCIA
+! SecureDigital / MultiMediaCard
+|-
+| FreeBSD
+| Yes
+| Yes
+| Yes
+| No <ref name="FreeBSD bug">Not supported due to upstream bug</ref>
+| Yes
+| Partial <ref name="usb">USB descriptors are not retrieved</ref>
+| Partial <ref name="firewire">FireWire descriptors are not retrieved</ref>
+| Partial <ref name="pcmcia">PCMCIA CIS is not retrieved</ref>
+| Not yet <ref name="FreeBSD sd">Support will come with FreeBSD 12-RELEASE</ref>
+|-
+| macOS
+| No <ref name="macOS permissions">macOS only allows talking with MultiMedia devices</ref>
+| Not yet <ref name="macOS users">Support for MultiMedia devices in macOS will be added if users require it</ref>
+| No <ref name="macOS permissions"/>
+| No <ref name="macOS permissions"/>
+| No <ref name="macOS permissions"/>
+| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
+| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
+| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
+| No <ref name="macOS permissions"/>
+|-
+| Linux
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+|-
+| Windows
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+| Partial <ref name="firewire">FireWire descriptors are not retrieved</ref>
+| Partial <ref name="pcmcia">PCMCIA CIS is not retrieved</ref>
+| Untested <ref name="Windows sd">Should work, untested due to not available hardware</ref>
+|}
+
+<references/>
