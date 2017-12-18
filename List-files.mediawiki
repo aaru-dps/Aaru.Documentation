@@ -1,0 +1,29 @@
+==Command description==
+This operation will analyze and find all filesystems in a media dump and list all the files that are contained in [[Filesystems-recognized-by-DiscImageChef|supported filesystems]]
+
+==Command usage==
+<code>DiscImageChef ls -i <dump> -v [true/false] -d [true/false] -l [true/false] -e [encoding]</code> 
+
+<code>-i, --input=<dump></code> path to the media dump image<br />
+<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
+<code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
+<code>-l, --long=[true/false]</code> use a long listing format, showing sizes and extended attributes ''(default false)''<br />
+<code>-e, --encoding=[encoding]</code> sets which encoding is used by the contents of the media dump ''(default varies by filesystem)''<br />
+
+==Example==
+<code>DiscImageChef ls -i mydisc.cue -l -e x-mac-icelandic</code>
+
+==Operating system support==
+{|
+| FreeBSD
+| Yes
+|-
+| macOS
+| Yes
+|-
+| Linux
+| Yes
+|-
+| Windows
+| Yes
+|}
