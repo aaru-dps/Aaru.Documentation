@@ -3,7 +3,7 @@ Welcome to the DiscImageChef wiki.
 DiscImageChef is a tool designed to handle different media dump formats (also called disc or disk images) and do common operations with them.
 
 '''What do you want to do?'''
-* [[Media-dump-image-analysis|Analyze a media dump|]]
+* [[Analyzing-a-media-dump|Analyze a media dump|]]
 * [[Checksum-benchmarking|Check how fast will DiscImageChef create hashes on my computer]]
 * [[Media-dump-checksumming|Get checksums or hashes from a dump]]
 * [[Media-dump-comparison|Compare two media dumps]]
