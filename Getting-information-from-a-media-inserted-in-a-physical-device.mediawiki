@@ -1,0 +1,75 @@
+==Command description==
+This operation will request and show all information about the inserted media in a physical device. For information about supported physical devices check [[Supported-devices|the list of supported physical devices]]
+
+==Command usage==
+<code>DiscImageChef media-info -i \<device\> -v [true/false] -d [true/false] -w [prefix]</code>
+
+<code>-i, --input=<device></code> path to the physical device<br />
+<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false'')<br />
+<code>-d, --debug=[true/false]</code> shows debug output ''(default false'')<br />
+<code>-w, --output-prefix=[prefix]</code> writes binary responses from device to that prefix  
+
+==Example==
+FreeBSD: <code>DiscImageChef media-info -i /dev/cd0</code><br />
+Linux: <code>DiscImageChef media-info -i /dev/sdb</code><br />
+Windows: <code>DiscImageChef media-info -i \\.\PhysicalDrive3</code><br />
+
+==Operating system support==
+{|
+! OS
+! SCSI Block device
+! SCSI MultiMedia device
+! SCSI Streaming device
+! Parallel ATA
+! Serial ATA
+! USB
+! FireWire
+! PCMCIA
+! SecureDigital / MultiMediaCard
+|-
+| FreeBSD
+| Yes
+| Yes
+| Yes
+| No <ref name="atamedia">Use device-info command</ref>
+| No <ref name="atamedia"/>
+| Yes
+| Yes
+| Yes
+| No <ref name="atamedia"/>
+|-
+| macOS
+| No <ref name="macOS permissions">macOS only allows talking with MultiMedia devices</ref>
+| Not yet <ref name="macOS users">Support for MultiMedia devices in macOS will be added if users require it</ref>
+| No <ref name="macOS permissions"/>
+| No <ref name="macOS permissions"/>
+| No <ref name="macOS permissions"/>
+| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
+| Partial <ref name="macOS"/>
+| Partial <ref name="macOS"/>
+| No <ref name="macOS permissions"/>
+|-
+| Linux
+| Yes
+| Yes
+| Yes
+| No <ref name="atamedia"/>
+| No <ref name="atamedia"/>
+| Yes
+| Yes
+| Yes
+| No <ref name="atamedia"/>
+|-
+| Windows
+| Yes
+| Yes
+| Yes
+| No <ref name="atamedia"/>
+| No <ref name="atamedia"/>
+| Yes
+| Yes
+| Yes
+| No <ref name="atamedia"/>
+|}
+
+<references/>
