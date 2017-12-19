@@ -15,26 +15,26 @@ The following physical devices are supported:
 | Yes
 |-
 | SCSI MultiMedia device
-| Not yet <ref name="macOS users">Support for MultiMedia devices in macOS will be added if users require it</ref>
 | Yes
+| Not yet <ref name="macOS users">Support for MultiMedia devices in macOS will be added if users require it</ref>
 | Yes
 | Yes
 |-
 | SCSI Streaming device
-| No <ref name="macOS permissions"/>
 | Yes
+| No <ref name="macOS permissions"/>
 | Yes
 | Yes
 |-
 | Parallel ATA
-| No <ref name="macOS permissions"/>
 | No <ref name="FreeBSD bug">Not supported due to upstream bug</ref>
+| No <ref name="macOS permissions"/>
 | Yes
 | Yes
 |-
 | Serial ATA
-| No <ref name="macOS permissions"/>
 | Yes
+| No <ref name="macOS permissions"/>
 | Yes
 | Yes
 |-
