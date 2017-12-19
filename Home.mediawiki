@@ -29,9 +29,9 @@ DiscImageChef is a tool designed to handle different media dump formats (also ca
 * [[Supported filters|Filters]]
 * [[Media dump formats supported by DiscImageChef|Media dump formats]]
 * [[Partitioning schemes recognized by DiscImageChef|Partitioning schemes]]
-* [[Filesystems recognized by DiscImageChef|Filesystems]]
-* [[Physical devices supported by DiscImageChef|Physical devices]]
-* [[Checksum and hash algorithms supported by DiscImageChef|Checksum and hashes]]
+* [[Filesystems-recognized-by-DiscImageChef|Filesystems]]
+* [[Supported devices|Physical devices]]
+* [[Supported-checksums|Checksum and hashes]]
 * [[Media-tags|Known media tags|]]
 * [[Sector-Tags|Known sector/block tags]]
 
