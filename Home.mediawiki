@@ -26,6 +26,7 @@ DiscImageChef is a tool designed to handle different media dump formats (also ca
 * [[Verifying-media-dump-integrity|Verify integrity of a media dump or its contents]]
 
 '''What is supported by DiscImageChef?'''
+* [[Supported filters]]
 * [[Media dump formats supported by DiscImageChef|Media dump formats]]
 * [[Partitioning schemes recognized by DiscImageChef|Partitioning schemes]]
 * [[Filesystems recognized by DiscImageChef|Filesystems]]
