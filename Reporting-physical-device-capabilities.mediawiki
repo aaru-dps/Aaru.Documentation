@@ -9,7 +9,9 @@ This operation will test a physical device for its read capabilities. If the med
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 
 ==Example==
-<code>DiscImageChef analyze -i mydisc.cue</code>
+FreeBSD: <code>DiscImageChef device-report -i /dev/cd0</code><br />
+Linux: <code>DiscImageChef device-report -i /dev/sdb</code><br />
+Windows: <code>DiscImageChef device-report -i \\.\PhysicalDrive3</code><br />
 
 ==Operating system support==
 {|
@@ -42,8 +44,8 @@ This operation will test a physical device for its read capabilities. If the med
 | No <ref name="macOS permissions"/>
 | No <ref name="macOS permissions"/>
 | Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
-| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
-| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
+| Partial <ref name="macOS"/>
+| Partial <ref name="macOS"/>
 | No <ref name="macOS permissions"/>
 |-
 | Linux
