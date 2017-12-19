@@ -16,59 +16,64 @@ Windows: <code>DiscImageChef media-info -i \\.\PhysicalDrive3</code><br />
 
 ==Operating system support==
 {|
-! OS
-! SCSI Block device
-! SCSI MultiMedia device
-! SCSI Streaming device
-! Parallel ATA
-! Serial ATA
-! USB
-! FireWire
-! PCMCIA
-! SecureDigital / MultiMediaCard
+! Device type
+! FreeBSD
+! macOS
+! Linux
+! Windows
 |-
-| FreeBSD
+| SCSI Block device
+| Yes
+| No <ref name="macOS permissions">macOS only allows talking with MultiMedia devices</ref>
 | Yes
 | Yes
+|-
+| SCSI MultiMedia device
 | Yes
+| Not yet <ref name="macOS users">Support for MultiMedia devices in macOS will be added if users require it</ref>
+| Yes
+| Yes
+|-
+| SCSI Streaming device
+| Yes
+| No <ref name="macOS permissions"/>
+| Yes
+| Yes
+|-
+| Parallel ATA
 | No <ref name="atamedia">Use device-info command</ref>
 | No <ref name="atamedia"/>
-| Yes
-| Yes
-| Yes
+| No <ref name="atamedia"/>
 | No <ref name="atamedia"/>
 |-
-| macOS
-| No <ref name="macOS permissions">macOS only allows talking with MultiMedia devices</ref>
-| Not yet <ref name="macOS users">Support for MultiMedia devices in macOS will be added if users require it</ref>
-| No <ref name="macOS permissions"/>
-| No <ref name="macOS permissions"/>
-| No <ref name="macOS permissions"/>
-| Partial <ref name="macOS">Only MultiMedia devices can be supported and descriptors will not be retrieved</ref>
-| Partial <ref name="macOS"/>
-| Partial <ref name="macOS"/>
-| No <ref name="macOS permissions"/>
-|-
-| Linux
-| Yes
-| Yes
-| Yes
+| Serial ATA
 | No <ref name="atamedia"/>
 | No <ref name="atamedia"/>
-| Yes
-| Yes
-| Yes
+| No <ref name="atamedia"/>
 | No <ref name="atamedia"/>
 |-
-| Windows
+| USB
 | Yes
 | Yes
 | Yes
+| Yes
+|-
+| FireWire
+| Yes
+| Yes
+| Yes
+| Yes
+|-
+| PCMCIA
+| Yes
+| Yes
+| Yes
+| Yes
+|-
+| SecureDigital / MultiMediaCard
 | No <ref name="atamedia"/>
 | No <ref name="atamedia"/>
-| Yes
-| Yes
-| Yes
+| No <ref name="atamedia"/>
 | No <ref name="atamedia"/>
 |}
 
