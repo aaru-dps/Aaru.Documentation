@@ -1,1 +1,1 @@
-The Disc Image Chef © 2011-2018 Claunia.com
+The Disc Image Chef © 2011-2018 Natalia Portillo
