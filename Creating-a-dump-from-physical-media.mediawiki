@@ -9,7 +9,6 @@ This operating will create a dump image from real media using a physical device.
 <code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-w, --output-prefix=[prefix]</code> prefix of the name for the dump media files<br />
-<code>-r, --raw=[true/false]</code> dumps sectors with all of their tags, or for optical media, dumps scrambled sectors ''(default false)''<br />
 <code>-s, --stop-on-error=[true/false]</code> stops dumping on first error ''(default false)''<br />
 <code>-f, --force=[true/false]</code> continuing dumping whatever happens ''(default false)''<br />
 <code>-p, --retry-passes=[true/false]</code> how many times to retry reading a sector ''(default false)''<br />
