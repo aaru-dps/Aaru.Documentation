@@ -18,6 +18,8 @@ This operation will calculate the checksums for the media represented by a media
 <code>--sha256=[true/false]</code> calculates the SHA2 hash with 256-bit ''(default false)''<br />
 <code>--sha384=[†rue/false]</code> calculates the SHA2 hash with 384-bit ''(default false)''<br />
 <code>--sha512=[true/false]</code> calculates the SHA2 hash with 512-bit ''(default false)''<br />
+<code>--fletcher16=[true/false]</code> calculates the Fletcher-16 checksum ''(default false)''<br />
+<code>--fletcher32=[true/false]</code> calculates the Fletcher-32 checksum ''(default false)''<br />
 <code>-f, --spamsum=[true/false]</code> calculates the SpamSum fuzzy hash ''(default true)''
 
 ==Example==
