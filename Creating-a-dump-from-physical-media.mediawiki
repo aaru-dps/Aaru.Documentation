@@ -2,20 +2,25 @@
 This operating will create a dump image from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar and an Alcohol 120% media descriptor for optical media. The dumping operation can be interrupted and continued later, even with a different device.
 
 ==Command usage==
-<code>DiscImageChef dump-media -i <device> -v [true/false] -d [true/false] -w [prefix] -r [true/false] -s [true/false]
- -f [true/false] -p [passes] --persistent [true/false] --separate-subchannel [true/false] -m [true/false] --lead-in [true/false]</code>
+<code>DiscImageChef dump-media -d [true/false] -e <encoding> -f [true/false] -i <device path> -k <sectors> --lead-in [true/false] -m [true/false] --no-metadata [true/false] --no-trim [true/false] -O <options> -o <filename> --persistent [true/false] -p <passes> -s [true/false] -t <plugin> -v [true/false] -x <xml sidecar></code>
 
-<code>-i, --input=<dump></code> path to the physical device<br />
-<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
-<code>-w, --output-prefix=[prefix]</code> prefix of the name for the dump media files<br />
-<code>-s, --stop-on-error=[true/false]</code> stops dumping on first error ''(default false)''<br />
+<code>-e, --encoding=<encoding></code> character encoding to use when creating dump sidecar<br />
 <code>-f, --force=[true/false]</code> continuing dumping whatever happens ''(default false)''<br />
-<code>-p, --retry-passes=[true/false]</code> how many times to retry reading a sector ''(default false)''<br />
-<code>--persistent=[true/false]</code> try to recover partial or incorrect data ''(default false)''<br />
-<code>--separate-subchannel=[true/false]</code> save subchannel in a separate file. Only applicable to CD, DDCD or GD media ''(default false)''<br />
-<code>-m, --resume=[true/false]</code> create and/or use resume mapfile ''(default true)''<br />
+<code>-i, --input=<device path></code> path to the physical device<br />
+<code>-k, --skip=<sectors></code> skip this many sectors when an unreadable sector is found ''(default 512)''<br />
 <code>--lead-in=[true/false]</code> try to dump Lead-in. Only applicable to CD, DDCD or GD media ''(default false)''<br />
+<code>-m, --resume=[true/false]</code> create and/or use resume mapfile ''(default true)''<br />
+<code>--no-metadata=[true/false]</code> disables creating CICM XML sidecar ''(default false)''<br />
+<code>--no-trim=[true/false]</code> disables trimming errores from skipped sectors ''(default false)''<br />
+<code>-O, --options=<options></code> comma separated name=value pairs of options to pass to output image plugin<br />
+<code>-o, --output=<filename></code> output image filename<br />
+<code>--persistent=[true/false]</code> try to recover partial or incorrect data ''(default false)''<br />
+<code>-p, --retry-passes=<passes></code> how many times to retry reading a sector ''(default 5)''<br />
+<code>-s, --stop-on-error=[true/false]</code> stops dumping on first error ''(default false)''<br />
+<code>-t, --format=<plugin></code> format for the output image, as plugin name or plugin id. If not present, will try to detect it from output image extension<br/>
+<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
+<code>-x, --cicm-xml=<xml sidecar></code> take metadata from existing CICM XML sidecar<br />
 
 ==Example==
 FreeBSD: <code>DiscImageChef dump-media -i /dev/cd0 -f --persistent=true --separate-subchannel -w mydisc</code><br />
