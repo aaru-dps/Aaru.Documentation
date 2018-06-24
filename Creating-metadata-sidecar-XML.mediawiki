@@ -2,16 +2,14 @@
 This operation will analyze a media dump, and if the format is recognized, create a CICM XML metadata sidecar with all information that can be automatically get about it, as well as all [[Supported-checksums|supported checksum algorithms]].
 
 ==Command usage==
-<code>DiscImageChef create-sidecar -i <dump> -v [true/false] -d [true/false] -t tape [true/false] -b [block size] -e [encoding]</code>
+<code>DiscImageChef create-sidecar -b [block size] -d [true/false] -e [encoding] -i <dump> -t tape [true/false] -v [true/false]</code>
 
-<code>-i, --input=<dump></code> path to the media dump image<br />
-<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
+<code>-b, --block-size=[block size]</code> used only for tapes, indicates fixed block size in bytes. File in dump folder not multiple of this value will be ignored ''(default 512)''<br />
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
-<code>-p, --partitions=[true/false]</code> searches and interprets partitions ''(default true)''<br />
-<code>-f, --filesystems=[true/false]</code> searches and interprets filesystems ''(default true)''<br />
 <code>-e, --encoding=[encoding]</code> sets which encoding is used by the contents of the media dump ''(default varies by filesystem)''<br />
+<code>-i, --input=<dump></code> path to the media dump image<br />
 <code>-t, --tape=[true/false]</code> indicates that dump points to a folder containing alphabetically sorted files extracted from a linear block-based tape with fixed block size (e.g. a SCSI streaming device) ''(default false)''<br />
-<code>-f, --block-size=[block size]</code> used only for tapes, indicates fixed block size in bytes. File in dump folder not multiple of this value will be ignored ''(default 512)''<br />
+<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
 
 ==Examples==
 <code>DiscImageChef create-sidecar -i mydisc.cue</code><br />
