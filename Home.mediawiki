@@ -1,3 +1,7 @@
+[[Home#anchor_name]]
+
+==Anchor name==
+
 Welcome to the DiscImageChef wiki.
 
 DiscImageChef is a tool designed to handle different media dump formats (also called disc or disk images) and do common operations with them.
