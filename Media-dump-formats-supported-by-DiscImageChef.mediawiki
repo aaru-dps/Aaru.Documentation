@@ -6,6 +6,7 @@
 * BlindWrite 5
 * CPCEMU Disk-File and Extended CPC Disk-File
 * D88 Disk Image
+* DataPackRat's d2f/f2d disk image format ("WC DISK IMAGE")
 * DIM Disk Image
 * DiscFerret<ref name="flux">Only supported for sidecar creation. No data is read from its contents</ref>
 * DiscJuggler
