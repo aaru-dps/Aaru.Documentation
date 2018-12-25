@@ -40,3 +40,5 @@ DiscImageChef is a tool designed to handle different media dump formats (also ca
 '''[[Comparison|Comparing DiscImageChef to similar software]]'''
 
 '''[[Frequently Asked Questions]]'''
+
+'''[[Bugs in other dumping software]]'''
