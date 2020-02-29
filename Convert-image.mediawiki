@@ -2,7 +2,7 @@
 This operating will convert a dump from one image format to another.
 
 ==Command usage==
-<code>DiscImageChef convert-image -c <count> --comments=<comments> --creator=<creator> -d [true/false] --drive-manufacturer=<manufacturer> --drive-model=<model> --drive-revision=<revision> --drive-serial=<serial> -f [true/false] -i <source> --media-barcode=<barcode> --media-lastsequence=<number> --media-manufacturer=<manufacturer> --media-model=<model> --media-partnumber=<partnumber> --media-sequence=<sequence> --media-serial=<serial> --media-title=<title> -O <options> -o <target> -p <format> -r <resume file> -v [true/false] -x <xml sidecar></code>
+<code>Aaru convert-image -c <count> --comments=<comments> --creator=<creator> -d [true/false] --drive-manufacturer=<manufacturer> --drive-model=<model> --drive-revision=<revision> --drive-serial=<serial> -f [true/false] -i <source> --media-barcode=<barcode> --media-lastsequence=<number> --media-manufacturer=<manufacturer> --media-model=<model> --media-partnumber=<partnumber> --media-sequence=<sequence> --media-serial=<serial> --media-title=<title> -O <options> -o <target> -p <format> -r <resume file> -v [true/false] -x <xml sidecar></code>
 
 <code>-c, --count=<count></code> how many sectors to convert at once ''(default 64)''<br />
 <code>--comments=<comments></code> image comments<br />
@@ -30,4 +30,4 @@ This operating will convert a dump from one image format to another.
 <code>-x, --cicm-xml=<xml sidecar></code> take metadata from existing CICM XML sidecar<br />
 
 ==Example==
-<code>DiscImageChef convert-image -c 32 --comments="My converted image" --creator="Jane Doe" --drive-manufacturer="LG" --drive-model="CD-RW 1234" --drive-revision="1.0" --drive-serial="AABBCCDDEEFF01" -i dd_dump.iso --media-lastsequence=2 --media-sequence=1 --media-title="Important software" -O "deduplicate=true,nocompress=false" -o dump.dicf -r dd_dump.resume.xml -x dd_dump.cicm.xml</code>
+<code>Aaru convert-image -c 32 --comments="My converted image" --creator="Jane Doe" --drive-manufacturer="LG" --drive-model="CD-RW 1234" --drive-revision="1.0" --drive-serial="AABBCCDDEEFF01" -i dd_dump.iso --media-lastsequence=2 --media-sequence=1 --media-title="Important software" -O "deduplicate=true,nocompress=false" -o dump.dicf -r dd_dump.resume.xml -x dd_dump.cicm.xml</code>

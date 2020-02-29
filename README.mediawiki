@@ -1,13 +1,13 @@
-Welcome to the DiscImageChef wiki.
+Welcome to the Aaru wiki.
 
-DiscImageChef is a tool designed to handle different media dump formats (also called disc or disk images) and do common operations with them.
+Aaru is a tool designed to handle different media dump formats (also called disc or disk images) and do common operations with them.
 
 '''What do you want to do?'''
 * [[Analyzing-a-media-dump|Analyze a media dump|]]
-* [[Checksum-benchmarking|Check how fast will DiscImageChef create hashes on my computer]]
+* [[Checksum-benchmarking|Check how fast will Aaru create hashes on my computer]]
 * [[Getting-hashes-and-checksums-from-a-media-dump|Get checksums or hashes from a dump]]
 * [[Comparing-two-media-dumps|Compare two media dumps]]
-* [[Configure-DiscImageChef-statistics|Set which information will DiscImageChef send to you]]
+* [[Configure-Aaru-statistics|Set which information will Aaru send to you]]
 * [[Convert-image|Convert a media dump from one format to another]]
 * [[Creating-metadata-sidecar-XML|Create XML sidecar with metadata of a dump]]
 * [[Decoding-and-printing-media-tags|Decode media tags and print them]]
@@ -27,17 +27,17 @@ DiscImageChef is a tool designed to handle different media dump formats (also ca
 * [[Show-statistics|See my own usage statistics]]
 * [[Verifying-media-dump-integrity|Verify integrity of a media dump or its contents]]
 
-'''What is supported by DiscImageChef?'''
+'''What is supported by Aaru?'''
 * [[Supported filters|Filters]]
-* [[Media dump formats supported by DiscImageChef|Media dump formats]]
-* [[Partitioning schemes recognized by DiscImageChef|Partitioning schemes]]
-* [[Filesystems-recognized-by-DiscImageChef|Filesystems]]
+* [[Media dump formats supported by Aaru|Media dump formats]]
+* [[Partitioning schemes recognized by Aaru|Partitioning schemes]]
+* [[Filesystems-recognized-by-Aaru|Filesystems]]
 * [[Supported devices|Physical devices]]
 * [[Supported-checksums|Checksum and hashes]]
 * [[Media-tags|Known media tags|]]
 * [[Sector-Tags|Known sector/block tags]]
 
-'''[[Comparison|Comparing DiscImageChef to similar software]]'''
+'''[[Comparison|Comparing Aaru to similar software]]'''
 
 '''[[Frequently Asked Questions]]'''
 

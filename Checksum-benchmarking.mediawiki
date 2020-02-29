@@ -2,7 +2,7 @@
 This operation will create random data in RAM and calculate how fast are we calculating all known [[Supported-checksums|checksums and hashes]]
 
 ==Command usage==
-<code>DiscImageChef benchmark -b [block size] -d [true/false] -s [buffer size] -v [true/false]</code>
+<code>Aaru benchmark -b [block size] -d [true/false] -s [buffer size] -v [true/false]</code>
 
 <code>-b, --block-size=[block size]</code> how big in bytes to do each block ''(default 512)''<br />
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
@@ -10,7 +10,7 @@ This operation will create random data in RAM and calculate how fast are we calc
 <code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
 
 ==Example==
-<code>DiscImageChef benchmark</code>
+<code>Aaru benchmark</code>
 
 ==Operating system support==
 {|

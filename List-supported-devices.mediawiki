@@ -2,7 +2,7 @@
 This operation will show all known attached devices on your system and if they are supported for device dependent operations.
 
 ==Command usage==
-<code>DiscImageChef list-devices</code> 
+<code>Aaru list-devices</code> 
 
 ==Operating system support==
 {|

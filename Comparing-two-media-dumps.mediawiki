@@ -2,7 +2,7 @@
 This operation will compare two media dumps and print all differences between them. Dumps can be in different formats.
 
 ==Command usage==
-<code>DiscImageChef verify -d [true/false] --input1=<dump1> --input2=<dump2> -v [true/false]</code>
+<code>Aaru verify -d [true/false] --input1=<dump1> --input2=<dump2> -v [true/false]</code>
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''
 <code>--input1=<dump1></code> path to the first media dump image<br />
@@ -10,7 +10,7 @@ This operation will compare two media dumps and print all differences between th
 <code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
 
 ==Example==
-<code>DiscImageChef compare --input1=mydisc.cue --input2=anotherdisc.mds</code>
+<code>Aaru compare --input1=mydisc.cue --input2=anotherdisc.mds</code>
 
 ==Operating system support==
 {|

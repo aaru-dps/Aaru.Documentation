@@ -1,4 +1,4 @@
-In this page you can find a comparison between DiscImageChef and other dump image managers or creators.
+In this page you can find a comparison between Aaru and other dump image managers or creators.
 
 You can see a [[Comparison#comparison of optical discs image managers|comparison of optical discs image managers]],
 a [[Comparison#comparison of floppy disk image managers|comparison of floppy disk image managers]], a 
@@ -8,7 +8,7 @@ a [[Comparison#comparison of floppy disk image managers|comparison of floppy dis
 ==Comparison of optical discs image managers==
 {|
 !
-! DiscImageChef
+! Aaru
 ! DiscImageCreator
 ! CDRWin
 ! CloneCD
@@ -35,7 +35,7 @@ a [[Comparison#comparison of floppy disk image managers|comparison of floppy dis
 | Windows
 |-
 | Supported formats
-| [https://github.com/claunia/DiscImageChef/blob/master/README.md#supported-disk-image-formats-read-and-write 12]
+| [https://github.com/aaru-dps/Aaru/blob/master/README.md#supported-disk-image-formats-read-and-write 12]
 | 3<ref name="discimagecreator">CDRWin, CloneCD and raw</ref>
 | 1<ref name="cdrwin">CDRWin</ref>
 | 1<ref name="clonecd">CloneCD</ref>

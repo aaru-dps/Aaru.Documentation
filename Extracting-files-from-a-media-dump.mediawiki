@@ -1,8 +1,8 @@
 ==Command description==
-This operation will analyze and find all filesystems in a media dump and extract the files that are contained in [[Filesystems-recognized-by-DiscImageChef|supported filesystems]]
+This operation will analyze and find all filesystems in a media dump and extract the files that are contained in [[Filesystems-recognized-by-Aaru|supported filesystems]]
 
 ==Command usage==
-<code>DiscImageChef extract-files -d [true/false] -e [encoding] -i <dump> -o <output> -v [true/false] -x [true/false]</code> 
+<code>Aaru extract-files -d [true/false] -e [encoding] -i <dump> -o <output> -v [true/false] -x [true/false]</code> 
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-e, --encoding=[encoding]</code> sets which encoding is used by the contents of the media dump ''(default varies by filesystem)''<br />
@@ -12,7 +12,7 @@ This operation will analyze and find all filesystems in a media dump and extract
 <code>-x, --xattrs=[true/false]</code> extract extended attributes if present ''(default false)''<br />
 
 ==Example==
-<code>DiscImageChef extract-files -i mydisc.cue -o contents -x -e iso8859-15</code>
+<code>Aaru extract-files -i mydisc.cue -o contents -x -e iso8859-15</code>
 
 ==Operating system support==
 {|

@@ -1,8 +1,8 @@
 ==Command description==
-This command will analyze a media dump, and if the format is recognized and you choose so, it will search for [[Partitioning-schemes-recognized-by-DiscImageChef|supported partitioning schemes]] and [[Filesystems-recognized-by-DiscImageChef|supported filesystems]] on the dump, showing information about them.
+This command will analyze a media dump, and if the format is recognized and you choose so, it will search for [[Partitioning-schemes-recognized-by-Aaru|supported partitioning schemes]] and [[Filesystems-recognized-by-Aaru|supported filesystems]] on the dump, showing information about them.
 
 ==Command usage==
-<code>DiscImageChef analyze -d [true/false] -e [encoding] -f [true/false] -i <dump> -p [true/false] -v [true/false]</code>
+<code>Aaru analyze -d [true/false] -e [encoding] -f [true/false] -i <dump> -p [true/false] -v [true/false]</code>
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-e, --encoding=[encoding]</code> sets which encoding is used by the contents of the media dump ''(default varies by filesystem)''<br />
@@ -12,7 +12,7 @@ This command will analyze a media dump, and if the format is recognized and you 
 <code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
 
 ==Example==
-<code>DiscImageChef analyze -i mydisc.cue</code>
+<code>Aaru analyze -i mydisc.cue</code>
 
 ==Operating system support==
 {|

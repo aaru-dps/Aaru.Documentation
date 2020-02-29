@@ -2,7 +2,7 @@
 This operation will request and show all information about the inserted media in a physical device. For information about supported physical devices check [[Supported-devices|the list of supported physical devices]]
 
 ==Command usage==
-<code>DiscImageChef media-info -d [true/false] -i <device> -v [true/false] -w [prefix]</code>
+<code>Aaru media-info -d [true/false] -i <device> -v [true/false] -w [prefix]</code>
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false'')<br />
 <code>-i, --input=<device></code> path to the physical device<br />
@@ -10,9 +10,9 @@ This operation will request and show all information about the inserted media in
 <code>-w, --output-prefix=[prefix]</code> writes binary responses from device to that prefix  
 
 ==Example==
-FreeBSD: <code>DiscImageChef media-info -i /dev/cd0</code><br />
-Linux: <code>DiscImageChef media-info -i /dev/sdb</code><br />
-Windows: <code>DiscImageChef media-info -i \\.\PhysicalDrive3</code><br />
+FreeBSD: <code>Aaru media-info -i /dev/cd0</code><br />
+Linux: <code>Aaru media-info -i /dev/sdb</code><br />
+Windows: <code>Aaru media-info -i \\.\PhysicalDrive3</code><br />
 
 ==Operating system support==
 {|

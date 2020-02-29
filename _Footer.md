@@ -1,1 +1,1 @@
-The Disc Image Chef © 2011-2018 Natalia Portillo
+The Disc Image Chef © 2011-2020 Natalia Portillo

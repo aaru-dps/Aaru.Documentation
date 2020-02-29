@@ -2,7 +2,7 @@
 This operation will calculate the checksums for the media represented by a media dump image.
 
 ==Command usage==
-<code>DiscImageChef verify -a [true/false] -c [true/false] --crc16 [true/false] --crc64 [true/false] -d [true/false] -f [true/false] --fletcher16 [true/false] --fletcher32 [true/false] -i <dump> -m [true/false] --ripemd160 [true/false] -s [true/false] --sha256 [true/false] --sha384 [true/false] --sha512 [true/false] -t [true/false] -v [true/false] -w [true/false]</code>
+<code>Aaru verify -a [true/false] -c [true/false] --crc16 [true/false] --crc64 [true/false] -d [true/false] -f [true/false] --fletcher16 [true/false] --fletcher32 [true/false] -i <dump> -m [true/false] --ripemd160 [true/false] -s [true/false] --sha256 [true/false] --sha384 [true/false] --sha512 [true/false] -t [true/false] -v [true/false] -w [true/false]</code>
 
 <code>-a, --adler32=[true/false]</code> calculates the Adler-32 checksum ''(default true)''<br />
 <code>-c, --crc32=[true/false]</code> calculates the CRC32 checksum ''(default true)''<br />
@@ -24,7 +24,7 @@ This operation will calculate the checksums for the media represented by a media
 <code>-w, --whole-discs=[true/false]</code> calculates the whole media checksum ''(default true)''<br />
 
 ==Example==
-<code>DiscImageChef checksum -i mydisc.cue -a false --sha512=true</code>
+<code>Aaru checksum -i mydisc.cue -a false --sha512=true</code>
 
 ==Operating system support==
 {|

@@ -1,8 +1,8 @@
 ==Command description==
-This operation will list all filters, dump media formats, partinioning schemes and filesystems supported by your version of DiscImageChef.
+This operation will list all filters, dump media formats, partinioning schemes and filesystems supported by your version of Aaru.
 
 ==Command usage==
-<code>DiscImageChef formats</code> 
+<code>Aaru formats</code> 
 
 ==Operating system support==
 {|

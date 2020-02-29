@@ -2,7 +2,7 @@
  Lists all options supported by read-only filesystems and writable media images.
 
 ==Command usage==
-<code>DiscImageChef list-options</code> 
+<code>Aaru list-options</code> 
 
 ==Operating system support==
 {|

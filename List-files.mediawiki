@@ -1,8 +1,8 @@
 ==Command description==
-This operation will analyze and find all filesystems in a media dump and list all the files that are contained in [[Filesystems-recognized-by-DiscImageChef|supported filesystems]]
+This operation will analyze and find all filesystems in a media dump and list all the files that are contained in [[Filesystems-recognized-by-Aaru|supported filesystems]]
 
 ==Command usage==
-<code>DiscImageChef ls -d [true/false] -e [encoding] -i <dump> -l [true/false] -v [true/false]</code> 
+<code>Aaru ls -d [true/false] -e [encoding] -i <dump> -l [true/false] -v [true/false]</code> 
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-e, --encoding=[encoding]</code> sets which encoding is used by the contents of the media dump ''(default varies by filesystem)''<br />
@@ -11,7 +11,7 @@ This operation will analyze and find all filesystems in a media dump and list al
 <code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
 
 ==Example==
-<code>DiscImageChef ls -i mydisc.cue -l -e x-mac-icelandic</code>
+<code>Aaru ls -i mydisc.cue -l -e x-mac-icelandic</code>
 
 ==Operating system support==
 {|

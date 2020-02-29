@@ -2,7 +2,7 @@
 This operation will show the statistics that have been stored locally on your environment.
 
 ==Command usage==
-<code>DiscImageChef stats</code> 
+<code>Aaru stats</code> 
 
 ==Operating system support==
 {|

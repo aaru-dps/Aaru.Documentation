@@ -2,7 +2,7 @@
 This operation will print in console a hexadecimal dump of the chosen sector/block of the indicated media dump image.
 
 ==Command usage==
-<code>DiscImageChef printhex -d [true/false] -i <dump> -l [sectors] -r [true/false] -s <starting sector> -v [true/false] -w [width]</code>
+<code>Aaru printhex -d [true/false] -i <dump> -l [sectors] -r [true/false] -s <starting sector> -v [true/false] -w [width]</code>
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-i, --input=<dump></code> path to the media dump image<br />
@@ -13,7 +13,7 @@ This operation will print in console a hexadecimal dump of the chosen sector/blo
 <code>-w, --width=[width]</code> how width, in characters, should the print be before creating a new line ''(default 32)''
 
 ==Example==
-<code>DiscImageChef printhex -i mydisc.cue -s 15 -l 30 -r -w 64</code>
+<code>Aaru printhex -i mydisc.cue -s 15 -l 30 -r -w 64</code>
 
 ==Operating system support==
 {|

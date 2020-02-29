@@ -2,7 +2,7 @@
 This operation will request and show all information about a physical device. For information about supported physical devices check [[Supported-devices|the list of supported physical devices]]
 
 ==Command usage==
-<code>DiscImageChef device-info -d [true/false] -i <device> -v [true/false] -w [prefix]</code>
+<code>Aaru device-info -d [true/false] -i <device> -v [true/false] -w [prefix]</code>
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-i, --input=<dump></code> path to the physical device<br />
@@ -10,9 +10,9 @@ This operation will request and show all information about a physical device. Fo
 <code>-w, --output-prefix=[prefix]</code> writes binary responses from device to that prefix  
 
 ==Example==
-FreeBSD: <code>DiscImageChef device-info -i /dev/cd0</code><br />
-Linux: <code>DiscImageChef device-info -i /dev/sda</code><br />
-Windows: <code>DiscImageChef device-info -i D:</code><br />
+FreeBSD: <code>Aaru device-info -i /dev/cd0</code><br />
+Linux: <code>Aaru device-info -i /dev/sda</code><br />
+Windows: <code>Aaru device-info -i D:</code><br />
 
 ==Operating system support==
 {|

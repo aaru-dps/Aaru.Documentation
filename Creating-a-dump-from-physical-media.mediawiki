@@ -2,7 +2,7 @@
 This operating will create a dump image from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar and an Alcohol 120% media descriptor for optical media. The dumping operation can be interrupted and continued later, even with a different device.
 
 ==Command usage==
-<code>DiscImageChef dump-media -d [true/false] -e <encoding> -f [true/false] -i <device path> -k <sectors> --lead-in [true/false] -m [true/false] --no-metadata [true/false] --no-trim [true/false] -O <options> -o <filename> --persistent [true/false] -p <passes> -s [true/false] -t <plugin> -v [true/false] -x <xml sidecar></code>
+<code>Aaru dump-media -d [true/false] -e <encoding> -f [true/false] -i <device path> -k <sectors> --lead-in [true/false] -m [true/false] --no-metadata [true/false] --no-trim [true/false] -O <options> -o <filename> --persistent [true/false] -p <passes> -s [true/false] -t <plugin> -v [true/false] -x <xml sidecar></code>
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-e, --encoding=<encoding></code> character encoding to use when creating dump sidecar<br />
@@ -23,9 +23,9 @@ This operating will create a dump image from real media using a physical device.
 <code>-x, --cicm-xml=<xml sidecar></code> take metadata from existing CICM XML sidecar<br />
 
 ==Example==
-FreeBSD: <code>DiscImageChef dump-media -i /dev/cd0 -f --persistent=true --separate-subchannel -w mydisc</code><br />
-Linux: <code>DiscImageChef dump-media -i /dev/sdb -r -f -p 15 -w myusbfloppy</code><br />
-Windows: <code>DiscImageChef dump-media -i \\.\PhysicalDrive3 -f -p 0 --resume=false mydisk</code><br />
+FreeBSD: <code>Aaru dump-media -i /dev/cd0 -f --persistent=true --separate-subchannel -w mydisc</code><br />
+Linux: <code>Aaru dump-media -i /dev/sdb -r -f -p 15 -w myusbfloppy</code><br />
+Windows: <code>Aaru dump-media -i \\.\PhysicalDrive3 -f -p 0 --resume=false mydisk</code><br />
 
 ==Operating system support==
 {|
