@@ -1,5 +1,5 @@
 ==Command description==
-This operation will print in console a hexadecimal dump of the chosen sector/block of the indicated media dump image.
+This operation will print a hexadecimal dump in the console of the chosen sector/block of the indicated media dump image.
 
 ==Command usage==
 <code>Aaru printhex -d [true/false] -i <dump> -l [sectors] -r [true/false] -s <starting sector> -v [true/false] -w [width]</code>

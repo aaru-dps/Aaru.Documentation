@@ -1,5 +1,5 @@
 ==Command description==
-This operating will create a dump image from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar and an Alcohol 120% media descriptor for optical media. The dumping operation can be interrupted and continued later, even with a different device.
+This operation will create a media dump from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar and an Alcohol 120% media descriptor for optical media. The dumping operation can be interrupted and continued later, even with a different device.
 
 ==Command usage==
 <code>Aaru dump-media -d [true/false] -e <encoding> -f [true/false] -i <device path> -k <sectors> --lead-in [true/false] -m [true/false] --no-metadata [true/false] --no-trim [true/false] -O <options> -o <filename> --persistent [true/false] -p <passes> -s [true/false] -t <plugin> -v [true/false] -x <xml sidecar></code>

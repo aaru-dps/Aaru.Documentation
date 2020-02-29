@@ -1,5 +1,5 @@
 ==Command description==
-This operating will convert a dump from one image format to another.
+This operation will convert a dump from one image format to another.
 
 ==Command usage==
 <code>Aaru convert-image -c <count> --comments=<comments> --creator=<creator> -d [true/false] --drive-manufacturer=<manufacturer> --drive-model=<model> --drive-revision=<revision> --drive-serial=<serial> -f [true/false] -i <source> --media-barcode=<barcode> --media-lastsequence=<number> --media-manufacturer=<manufacturer> --media-model=<model> --media-partnumber=<partnumber> --media-sequence=<sequence> --media-serial=<serial> --media-title=<title> -O <options> -o <target> -p <format> -r <resume file> -v [true/false] -x <xml sidecar></code>

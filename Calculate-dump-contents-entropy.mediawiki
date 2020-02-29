@@ -1,5 +1,5 @@
 ==Command description==
-This operation will calculate uniqueness and entropy of the media represented by a media dump image. It's not affected my the image format compression if applicable.
+This operation will calculate uniqueness and entropy of the media represented by a media dump image. It's not affected by the image format compression if applicable.
 
 ==Command usage==
 <code>Aaru entropy -d [true/false] -i <dump> -p [true/false] -t [true/false] -v [true/false] -w [true/false]</code> 
