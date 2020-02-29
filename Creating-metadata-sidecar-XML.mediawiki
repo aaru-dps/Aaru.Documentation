@@ -1,5 +1,5 @@
 ==Command description==
-This operation will analyze a media dump, and if the format is recognized, create a CICM XML metadata sidecar with all information that can be automatically get about it, as well as all [[Supported-checksums|supported checksum algorithms]].
+This operation will analyze a media dump, and if the format is recognized, create a CICM XML metadata sidecar with all information that can be automatically get about it, as well as all [[Supported-checksums.md|supported checksum algorithms]].
 
 ==Command usage==
 <code>Aaru create-sidecar -b [block size] -d [true/false] -e [encoding] -i <dump> -t tape [true/false] -v [true/false]</code>

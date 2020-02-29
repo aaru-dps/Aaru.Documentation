@@ -1,5 +1,5 @@
 ==Command description==
-This command will analyze a media dump, and if the format is recognized and you choose so, it will search for [[Partitioning-schemes-recognized-by-Aaru|supported partitioning schemes]] and [[Filesystems-recognized-by-Aaru|supported filesystems]] on the dump, showing information about them.
+This command will analyze a media dump, and if the format is recognized and you choose so, it will search for [[Partitioning-schemes-recognized-by-Aaru.md|supported partitioning schemes]] and [[Filesystems-recognized-by-Aaru.md|supported filesystems]] on the dump, showing information about them.
 
 ==Command usage==
 <code>Aaru analyze -d [true/false] -e [encoding] -f [true/false] -i <dump> -p [true/false] -v [true/false]</code>
