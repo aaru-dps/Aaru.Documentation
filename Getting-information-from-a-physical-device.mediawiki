@@ -1,5 +1,5 @@
 ==Command description==
-This operation will request and show all information about a physical device. For information about supported physical devices check [[the list of supported physical devices|Supported-devices]]
+This operation will request and show all information about a physical device. For information about supported physical devices check [[Supported-devices|the list of supported physical devices]]
 
 ==Command usage==
 <code>Aaru device-info -d [true/false] -i <device> -v [true/false] -w [prefix]</code>

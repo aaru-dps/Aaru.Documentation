@@ -1,5 +1,5 @@
 ==Command description==
-This operation will analyze and find all filesystems in a media dump and extract the files that are contained in [[supported filesystems|Filesystems-recognized-by-Aaru]]
+This operation will analyze and find all filesystems in a media dump and extract the files that are contained in [[Filesystems-recognized-by-Aaru|supported filesystems]]
 
 ==Command usage==
 <code>Aaru extract-files -d [true/false] -e [encoding] -i <dump> -o <output> -v [true/false] -x [true/false]</code> 

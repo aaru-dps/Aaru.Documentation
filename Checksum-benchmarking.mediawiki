@@ -1,5 +1,5 @@
 ==Command description==
-This operation will create random data in RAM and calculate how fast are we calculating all known [[checksums and hashes|Supported-checksums]]
+This operation will create random data in RAM and calculate how fast are we calculating all known [[Supported-checksums|checksums and hashes]]
 
 ==Command usage==
 <code>Aaru benchmark -b [block size] -d [true/false] -s [buffer size] -v [true/false]</code>

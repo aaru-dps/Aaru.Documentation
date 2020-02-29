@@ -3,42 +3,42 @@ Welcome to the Aaru wiki.
 Aaru is a tool designed to handle different media dump formats (also called disc or disk images) and do common operations with them.
 
 '''What do you want to do?'''
-* [[Analyze a media dump|Analyzing-a-media-dump]]
-* [[Check how fast will Aaru create hashes on my computer|Checksum-benchmarking]]
-* [[Get checksums or hashes from a dump|Getting-hashes-and-checksums-from-a-media-dump]]
-* [[Compare two media dumps|Comparing-two-media-dumps]]
-* [[Set which information will Aaru send to you|Configure-Aaru-statistics]]
-* [[Convert a media dump from one format to another|Convert-image]]
-* [[Create XML sidecar with metadata of a dump|Creating-metadata-sidecar-XML]]
-* [[Decode media tags and print them|Decoding-and-printing-media-tags]]
-* [[Get information from a physical device|Getting-information-from-a-physical-device]]
-* [[Test physical device capabilities and create an XML report of them|Reporting-physical-device-capabilities]]
-* [[Create a media dump from a physical device|Creating-a-dump-from-physical-media]]
-* [[Calculate entropy of a media dump|Calculate-dump-contents-entropy]]
-* [[Extract all files contained in a media dump|Extracting-files-from-a-media-dump]]
-* [[Get a list of all formats supported|List-supported-formats]]
-* [[Get a list of all supported physical devices|List-supported-devices]]
-* [[Get a list of all supported character set encodings|List-supported-encodings]]
-* [[List all files contained in a media dump|List-files]]
-* [[Lists all options supported by read-only filesystems and writable media images|List-options]]
-* [[Show information about media inserted in a physical device|Getting-information-from-media-inserted-in-a-physical-device]]
-* [[Check readability of the media inserted in a physical device|Check-readability-of-the-media-inserted-in-a-physical-device]]
-* [[Get a hexadecimal print of a media dump sector or block|Get-a-hexadecimal-print-of-a-media-dump-sector-or-block]]
-* [[See my own usage statistics|Show-statistics]]
-* [[Verify integrity of a media dump or its contents|Verifying-media-dump-integrity]]
+* [[Analyzing-a-media-dump|Analyze a media dump|]]
+* [[Checksum-benchmarking|Check how fast will Aaru create hashes on my computer]]
+* [[Getting-hashes-and-checksums-from-a-media-dump|Get checksums or hashes from a dump]]
+* [[Comparing-two-media-dumps|Compare two media dumps]]
+* [[Configure-Aaru-statistics|Set which information will Aaru send to you]]
+* [[Convert-image|Convert a media dump from one format to another]]
+* [[Creating-metadata-sidecar-XML|Create XML sidecar with metadata of a dump]]
+* [[Decoding-and-printing-media-tags|Decode media tags and print them]]
+* [[Getting-information-from-a-physical-device|Get information from a physical device]]
+* [[Reporting-physical-device-capabilities|Test physical device capabilities and create an XML report of them]]
+* [[Creating a dump from physical media|Create a media dump from a physical device]]
+* [[Creating-a-dump-from-physical-media|Calculate entropy of a media dump]]
+* [[Extracting-files-from-a-media-dump|Extract all files contained in a media dump]]
+* [[List-supported-formats|Get a list of all formats supported]]
+* [[List-supported-devices|Get a list of all supported physical devices]]
+* [[List-supported-encodings|Get a list of all supported character set encodings]]
+* [[List-files|List all files contained in a media dump]]
+* [[List-options|Lists all options supported by read-only filesystems and writable media images]]
+* [[Getting-information-from-media-inserted-in-a-physical-device|Show information about media inserted in a physical device]]
+* [[Check-readability-of-the-media-inserted-in-a-physical-device|Check readability of the media inserted in a physical device]]
+* [[Get-a-hexadecimal-print-of-a-media-dump-sector-or-block|Get a hexadecimal print of a media dump sector or block]]
+* [[Show-statistics|See my own usage statistics]]
+* [[Verifying-media-dump-integrity|Verify integrity of a media dump or its contents]]
 
 '''What is supported by Aaru?'''
-* [[Filters|Supported-filters]]
-* [[Media dump formats|Media-dump-formats-supported-by-Aaru]]
-* [[Partitioning schemes|Partitioning-schemes-recognized-by-Aaru]]
-* [[Filesystems|Filesystems-recognized-by-Aaru]]
-* [[Physical devices|Supported-devices]]
-* [[Checksum and hashes|Supported-checksums]]
-* [[Known media tags|Media-tags]]
-* [[Known sector/block tags|Sector-Tags]]
+* [[Supported filters|Filters]]
+* [[Media dump formats supported by Aaru|Media dump formats]]
+* [[Partitioning schemes recognized by Aaru|Partitioning schemes]]
+* [[Filesystems-recognized-by-Aaru|Filesystems]]
+* [[Supported devices|Physical devices]]
+* [[Supported-checksums|Checksum and hashes]]
+* [[Media-tags|Known media tags|]]
+* [[Sector-Tags|Known sector/block tags]]
 
-'''[[Comparing Aaru to similar software|Comparison]]'''
+'''[[Comparison|Comparing Aaru to similar software]]'''
 
-'''[[Frequently Asked Questions|Frequently-Asked-Questions]]'''
+'''[[Frequently Asked Questions]]'''
 
-'''[[Bugs in other dumping software|Bugs-in-other-dumping-software]]'''
+'''[[Bugs in other dumping software]]'''
