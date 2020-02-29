@@ -1,10 +1,5 @@
 In this page you can find a comparison between Aaru and other dump image managers or creators.
 
-You can see a [[Comparison#comparison of optical discs image managers|comparison of optical discs image managers]],
-a [[Comparison#comparison of floppy disk image managers|comparison of floppy disk image managers]], a 
-[[Comparison#comparison of hard disk image managers|comparison of hard disk image managers]] and a
-[[Comparison#comparison of digital tape image managers|comparison of digital tape image managers]].
-
 ==Comparison of optical discs image managers==
 {|
 !

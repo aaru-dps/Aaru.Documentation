@@ -1,5 +1,5 @@
 ==Command description==
-This operation will analyze and find all filesystems in a media dump and list all the files that are contained in [[Filesystems-recognized-by-Aaru|supported filesystems]]
+This operation will analyze and find all filesystems in a media dump and list all the files that are contained in [[supported filesystems|Filesystems-recognized-by-Aaru]]
 
 ==Command usage==
 <code>Aaru ls -d [true/false] -e [encoding] -i <dump> -l [true/false] -v [true/false]</code> 

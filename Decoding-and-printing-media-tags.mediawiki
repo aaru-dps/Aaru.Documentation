@@ -1,5 +1,5 @@
 ==Command description==
-This operation will decode all [[Sector-tags|sector tags]] and [[Media-tags|media tags]] on a media dump image.
+This operation will decode all [[sector tags|Sector-tags]] and [[media tags|Media-tags]] on a media dump image.
 
 ==Command usage==
 <code>Aaru decode -d [true/false] -i <dump> -k [true/false] -l [sectors] -t [true/false] -s [start sector] -v [true/false]</code>
