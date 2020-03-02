@@ -2,7 +2,14 @@
 This operation will list all filters, dump media formats, partinioning schemes and filesystems supported by your version of Aaru.
 
 ==Command usage==
-<code>Aaru formats</code> 
+<code>Aaru -d [true/false] -v [true/false] formats -h [true/false]</code> 
+
+<code>-d, --debug [true/false]</code> shows debug output ''(default false)''<br />
+<code>-v, --verbose [true/false]</code> shows verbose output ''(default false)''<br />
+<code>-h, --help [true/false]</code> shows help screen for the command instead of running it, ignores all other switches ''(default false)''<br />
+
+==Example==
+<code>Aaru formats</code>
 
 ==Operating system support==
 {|

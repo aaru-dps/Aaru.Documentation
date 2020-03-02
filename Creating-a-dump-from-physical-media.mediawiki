@@ -1,31 +1,33 @@
 ==Command description==
-This operation will create a media dump from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar and an Alcohol 120% media descriptor for optical media. The dumping operation can be interrupted and continued later, even with a different device.
+This operation will create a media dump from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar. The dumping operation can be interrupted and continued later, even with a different device.
 
 ==Command usage==
-<code>Aaru dump-media -d [true/false] -e <encoding> -f [true/false] -i <device path> -k <sectors> --lead-in [true/false] -m [true/false] --no-metadata [true/false] --no-trim [true/false] -O <options> -o <filename> --persistent [true/false] -p <passes> -s [true/false] -t <plugin> -v [true/false] -x <xml sidecar></code>
+<code>Aaru -d [true/false] -v [true/false] media dump -h [true/false] -e <encoding> -f [true/false] -k <sectors> --first-pregap [true/false] --fix-offset [true/false] -m [true/false] --metadata [true/false] --trim [true/false] -O <options> --persistent [true/false] -p <passes> -s [true/false] -t <plugin> -x <xml sidecar> --subchannel <subchannel> --speed <speed> <device-path> <output-path></code>
 
-<code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
-<code>-e, --encoding=<encoding></code> character encoding to use when creating dump sidecar<br />
-<code>-f, --force=[true/false]</code> continuing dumping whatever happens ''(default false)''<br />
-<code>-i, --input=<device path></code> path to the physical device<br />
-<code>-k, --skip=<sectors></code> skip this many sectors when an unreadable sector is found ''(default 512)''<br />
-<code>--lead-in=[true/false]</code> try to dump Lead-in. Only applicable to CD, DDCD or GD media ''(default false)''<br />
-<code>-m, --resume=[true/false]</code> create and/or use resume mapfile ''(default true)''<br />
-<code>--no-metadata=[true/false]</code> disables creating CICM XML sidecar ''(default false)''<br />
-<code>--no-trim=[true/false]</code> disables trimming errores from skipped sectors ''(default false)''<br />
-<code>-O, --options=<options></code> comma separated name=value pairs of options to pass to output image plugin<br />
-<code>-o, --output=<filename></code> output image filename<br />
-<code>--persistent=[true/false]</code> try to recover partial or incorrect data ''(default false)''<br />
-<code>-p, --retry-passes=<passes></code> how many times to retry reading a sector ''(default 5)''<br />
-<code>-s, --stop-on-error=[true/false]</code> stops dumping on first error ''(default false)''<br />
-<code>-t, --format=<plugin></code> format for the output image, as plugin name or plugin id. If not present, will try to detect it from output image extension<br/>
-<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
-<code>-x, --cicm-xml=<xml sidecar></code> take metadata from existing CICM XML sidecar<br />
+<code>-d, --debug [true/false]</code> shows debug output ''(default false)''<br />
+<code>-v, --verbose [true/false]</code> shows verbose output ''(default false)''<br />
+<code>-h, --help [true/false]</code> shows help screen for the command instead of running it, ignores all other switches ''(default false)''<br />
+<code>-e, --encoding <encoding></code> specifies character encoding to use when creating dump sidecar<br />
+<code>-f, --force [true/false]</code> continues dumping whatever happens ''(default false)''<br />
+<code>-k, --skip <sectors></code> skips this many sectors when an unreadable sector is found ''(default 512)''<br />
+<code>--first-pregap [true/false]</code> tries to dump first track pregap. Only applicable to CD, DDCD or GD media ''(default false)''<br />
+<code>--fix-offset [true/false]</code> fixes audio tracks offset. Only applicable to CD or GD media. ''(default false)''<br />
+<code>-m, --resume [true/false]</code> creates and/or use resume mapfile ''(default true)''<br />
+<code>--metadata [true/false]</code> enables creating CICM XML sidecar ''(default true)''<br />
+<code>--trim [true/false]</code> enables trimming errores from skipped sectors ''(default true)''<br />
+<code>-O, --options <options></code> specifies comma separated name=value pairs of options to pass to output image plugin<br />
+<code>--persistent [true/false]</code> tries to recover partial or incorrect data ''(default false)''<br />
+<code>-p, --retry-passes <passes></code> specifies how many times to retry reading a sector ''(default 5)''<br />
+<code>-s, --stop-on-error [true/false]</code> stops dumping on first error ''(default false)''<br />
+<code>-t, --format <plugin></code> specifies format for the output image, as plugin name or plugin id. If not present, will try to detect it from output image extension<br/>
+<code>-x, --cicm-xml <xml sidecar></code> takes metadata from existing CICM XML sidecar<br />
+<code>--subchannel <subchannel></code> specifies which subchannel to dump. Only applicable to CD/GD. Values: any, rw, rw-or-pq, pq, none ''(default any)''<br />
+<code>--speed <speed></code> specifies at what speed to dump. Only applicable to optical drives, 0 for maximum ''(default 0)''<br />
 
 ==Example==
-FreeBSD: <code>Aaru dump-media -i /dev/cd0 -f --persistent=true --separate-subchannel -w mydisc</code><br />
-Linux: <code>Aaru dump-media -i /dev/sdb -r -f -p 15 -w myusbfloppy</code><br />
-Windows: <code>Aaru dump-media -i \\.\PhysicalDrive3 -f -p 0 --resume=false mydisk</code><br />
+FreeBSD: <code>Aaru media dump -f --persistent true --separate-subchannel /dev/cd0 mydisc.cue</code><br />
+Linux: <code>Aaru media dump -r -f -p 15 /dev/sdb myusbfloppy.img</code><br />
+Windows: <code>Aaru media dump -f -p 0 --resume false \\.\PhysicalDrive3 mydisk.dicf</code><br />
 
 ==Operating system support==
 {|

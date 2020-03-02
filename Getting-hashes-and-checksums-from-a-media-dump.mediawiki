@@ -2,29 +2,29 @@
 This operation will calculate the checksums for the media represented by a media dump image.
 
 ==Command usage==
-<code>Aaru verify -a [true/false] -c [true/false] --crc16 [true/false] --crc64 [true/false] -d [true/false] -f [true/false] --fletcher16 [true/false] --fletcher32 [true/false] -i <dump> -m [true/false] --ripemd160 [true/false] -s [true/false] --sha256 [true/false] --sha384 [true/false] --sha512 [true/false] -t [true/false] -v [true/false] -w [true/false]</code>
+<code>Aaru -d [true/false] -v [true/false] image checksum -h [true/false] -a [true/false] --crc16 [true/false] -c [true/false] --crc64 [true/false] -f [true/false] --fletcher16 [true/false] --fletcher32 [true/false] -m [true/false] --ripemd160 [true/false] -s [true/false] --sha256 [true/false] --sha384 [true/false] --sha512 [true/false] -t [true/false] -w [true/false] <image-path></code>
 
-<code>-a, --adler32=[true/false]</code> calculates the Adler-32 checksum ''(default true)''<br />
-<code>-c, --crc32=[true/false]</code> calculates the CRC32 checksum ''(default true)''<br />
-<code>--crc16=[true/false]</code> calculates the CRC16 checksum ''(default true)''<br />
-<code>--crc64=[true/false]</code> calculates the ECMA CRC64 checksum ''(default false)''<br />
-<code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
-<code>-f, --spamsum=[true/false]</code> calculates the SpamSum fuzzy hash ''(default true)''
-<code>--fletcher16=[true/false]</code> calculates the Fletcher-16 checksum ''(default false)''<br />
-<code>--fletcher32=[true/false]</code> calculates the Fletcher-32 checksum ''(default false)''<br />
-<code>-i, --input=<dump></code> path to the media dump image<br />
-<code>-m, --md5=[true/false]</code> calculates the MD5 hash ''(default true)''<br />
-<code>--ripemd160=[true/false]</code> calculates the RIPEMD160 hash ''(default false)''<br />
-<code>-s, --sha1=[true/false]</code> calculates the SHA1 hash ''(default true)''<br />
-<code>--sha256=[true/false]</code> calculates the SHA2 hash with 256-bit ''(default false)''<br />
-<code>--sha384=[†rue/false]</code> calculates the SHA2 hash with 384-bit ''(default false)''<br />
-<code>--sha512=[true/false]</code> calculates the SHA2 hash with 512-bit ''(default false)''<br />
-<code>-t, --separated-tracks=[true/false]</code> calculates each track checksum separately ''(default true)''<br />
-<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
-<code>-w, --whole-discs=[true/false]</code> calculates the whole media checksum ''(default true)''<br />
+<code>-d, --debug [true/false]</code> shows debug output ''(default false)''<br />
+<code>-v, --verbose [true/false]</code> shows verbose output ''(default false)''<br />
+<code>-h, --help [true/false]</code> shows help screen for the command instead of running it, ignores all other switches ''(default false)''<br />
+<code>-a, --adler32 [true/false]</code> calculates the Adler-32 checksum ''(default true)''<br />
+<code>--crc16 [true/false]</code> calculates the CRC16 checksum ''(default true)''<br />
+<code>-c, --crc32 [true/false]</code> calculates the CRC32 checksum ''(default true)''<br />
+<code>--crc64 [true/false]</code> calculates the ECMA CRC64 checksum ''(default false)''<br />
+<code>-f, --spamsum [true/false]</code> calculates the SpamSum fuzzy hash ''(default true)''
+<code>--fletcher16 [true/false]</code> calculates the Fletcher-16 checksum ''(default false)''<br />
+<code>--fletcher32 [true/false]</code> calculates the Fletcher-32 checksum ''(default false)''<br />
+<code>-m, --md5 [true/false]</code> calculates the MD5 hash ''(default true)''<br />
+<code>--ripemd160 [true/false]</code> calculates the RIPEMD160 hash ''(default false)''<br />
+<code>-s, --sha1 [true/false]</code> calculates the SHA1 hash ''(default true)''<br />
+<code>--sha256 [true/false]</code> calculates the SHA2 hash with 256-bit ''(default false)''<br />
+<code>--sha384 [†rue/false]</code> calculates the SHA2 hash with 384-bit ''(default false)''<br />
+<code>--sha512 [true/false]</code> calculates the SHA2 hash with 512-bit ''(default false)''<br />
+<code>-t, --separated-tracks [true/false]</code> calculates each track checksum separately ''(default true)''<br />
+<code>-w, --whole-discs [true/false]</code> calculates the whole media checksum ''(default true)''<br />
 
 ==Example==
-<code>Aaru checksum -i mydisc.cue -a false --sha512=true</code>
+<code>Aaru image checksum -a false --sha512 true mydisc.cue</code>
 
 ==Operating system support==
 {|

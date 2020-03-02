@@ -1,15 +1,15 @@
 ==Command description==
-This operation will list all your character set encodings supported in your environment. This list depends on libraries installed on your system, so if an encoding is available in one environment there are no guarantees it will be available in another one.
+ Lists all options supported by writable media images.
 
 ==Command usage==
-<code>Aaru -d [true/false] -v [true/false] list-encodings -h [true/false]</code> 
+<code>Aaru -d [true/false] -v [true/false] image options -h [true/false]</code> 
 
 <code>-d, --debug [true/false]</code> shows debug output ''(default false)''<br />
 <code>-v, --verbose [true/false]</code> shows verbose output ''(default false)''<br />
 <code>-h, --help [true/false]</code> shows help screen for the command instead of running it, ignores all other switches ''(default false)''<br />
 
 ==Example==
-<code>Aaru list-encodings</code>
+<code>Aaru image options</code>
 
 ==Operating system support==
 {|

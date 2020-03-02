@@ -2,16 +2,16 @@
 This operation will test a physical device for its read capabilities. If the media is removable, it will ask you to insert different media on it, as read capabilities vary with different media. The report will be saved in the executing directory, and sent to us. Shared reports can be seen in www.aaru.app.
 
 ==Command usage==
-<code>Aaru device-report -d [true/false] -i <device> -v [true/false]</code>
+<code>Aaru -d [true/false] -v [true/false] device-report -h [true/false] <device-path></code>
 
-<code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
-<code>-i, --input=<dump></code> path to the physical device<br />
-<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
+<code>-d, --debug [true/false]</code> shows debug output ''(default false)''<br />
+<code>-v, --verbose [true/false]</code> shows verbose output ''(default false)''<br />
+<code>-h, --help [true/false]</code> shows help screen for the command instead of running it, ignores all other switches ''(default false)''<br />
 
 ==Example==
-FreeBSD: <code>Aaru device-report -i /dev/cd0</code><br />
-Linux: <code>Aaru device-report -i /dev/sdb</code><br />
-Windows: <code>Aaru device-report -i \\.\PhysicalDrive3</code><br />
+FreeBSD: <code>Aaru device-report /dev/cd0</code><br />
+Linux: <code>Aaru device-report /dev/sdb</code><br />
+Windows: <code>Aaru device-report \\.\PhysicalDrive3</code><br />
 
 ==Operating system support==
 {|
