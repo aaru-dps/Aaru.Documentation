@@ -2,7 +2,7 @@
 Aaru is the Ancient Egyptian concept of paradise where your soul would be rebirthed after the preservation of your physical body. That's why we chose this name, because of the paradise where data will reside after it's has been preserved from its original physical media.
 
 # Which operating systems does Aaru work under?
-Any operating system with a .NET core runtime should work. Has been tested under Windows, Linux, Mac OS X and FreeBSD.
+Any operating system with a .NET core 2.0 runtime should work. Has been tested under Windows, Linux, Mac OS X and FreeBSD.
 
 # Will you support media dump image format XXXX?
 If you can send me documentation, test images and/or the application that creates them, I will do my best to.

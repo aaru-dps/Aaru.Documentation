@@ -1,5 +1,5 @@
 ==Command description==
-This operation will test a physical device for its read capabilities. If the media is removable, it will ask you to insert different media on it, as read capabilities vary with different media. The report will be saved in the executing directory, and sent to us. Shared reports can be seen in www.aaru.app.
+This operation will test a physical device for its read capabilities. If the media is removable, it will ask you to insert different media on it, as read capabilities vary with different media. The report will be saved in the executing directory, and sent to us. Shared reports can be seen in https://www.aaru.app.
 
 ==Command usage==
 <code>Aaru -d [true/false] -v [true/false] device-report -h [true/false] <device-path/aaru-remote-host></code>
