@@ -1,33 +1,32 @@
 ==Command description==
-This operating will convert a dump from one image format to another.
+This operation will convert a dump from one image format to another.
 
 ==Command usage==
-<code>DiscImageChef convert-image -c <count> --comments=<comments> --creator=<creator> -d [true/false] --drive-manufacturer=<manufacturer> --drive-model=<model> --drive-revision=<revision> --drive-serial=<serial> -f [true/false] -i <source> --media-barcode=<barcode> --media-lastsequence=<number> --media-manufacturer=<manufacturer> --media-model=<model> --media-partnumber=<partnumber> --media-sequence=<sequence> --media-serial=<serial> --media-title=<title> -O <options> -o <target> -p <format> -r <resume file> -v [true/false] -x <xml sidecar></code>
+<code>Aaru -d [true/false] -v [true/false] image convert -h [true/false] -c <count> --comments <comments> --creator <creator> --drive-manufacturer manufacturer> --drive-model <model> --drive-revision <revision> --drive-serial <serial> -f [true/false] --media-barcode <barcode> --media-lastsequence <number> --media-manufacturer <manufacturer> --media-model <model> --media-partnumber <partnumber> --media-sequence <sequence> --media-serial <serial> --media-title <title> -O <options> -p <format> -r <resume file> -x <xml sidecar> <input-path> <output-path></code>
 
-<code>-c, --count=<count></code> how many sectors to convert at once ''(default 64)''<br />
-<code>--comments=<comments></code> image comments<br />
-<code>--creator=<creator></code> who (person) created the image?<br />
-<code>-d, --debug=[true/false]</code> shows debug output from plugins ''(default false)''<br />
-<code>--drive-manufacturer=<manufacturer></code> manufacturer of the drive used to read the media represented by the image<br />
-<code>--drive-model=<model></code> model of the drive used to read the media represented by the image<br />
-<code>--drive-revision=<revision></code> firmware revision of the drive used to read the media represented by the image<br />
-<code>--drive-serial=<serial></code> serial number of the drive used to read the media represented by the image<br />
-<code>-f, --force=[true/false]</code> continue conversion even if sector or media tags will be lost in the process ''(default false)''<br />
-<code>-i, --input=<source></code> input image<br />
-<code>--media-barcode=<barcode></code> barcode of the media represented by the image<br />
-<code>--media-lastsequence=<number></code> last media of the sequence the media represented by the image corresponds to ''(default 0)''<br />
-<code>--media-manufacturer=<manufacturer></code> manufacturer of the media represented by the image<br />
-<code>--media-model=<model></code> model of the media represented by the image<br />
-<code>--media-partnumber=<partnumber></code> part number of the media represented by the image<br />
-<code>--media-sequence=<sequence></code> number in sequence for the media represented by the image ''(default 0)''<br />
-<code>--media-serial=<serial></code> serial number of the media represented by the image<br />
-<code>--media-title=<title></code> title of the media represented by the image<br />
-<code>-O, --options=<options></code> comma separated name=value pairs of options to pass to output image plugin<br />
-<code>-o, --output=<target></code> output image<br />
-<code>-p, --format=<format></code> format of the output image, as plugin name or plugin id. If not present, will try to detect it from output image extension<br />
-<code>-r, --resume-file=<resume file></code> take list of dump hardware from existing resume file<br />
-<code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
-<code>-x, --cicm-xml=<xml sidecar></code> take metadata from existing CICM XML sidecar<br />
+<code>-d, --debug [true/false]</code> shows debug output from plugins ''(default false)''<br />
+<code>-v, --verbose [true/false]</code> shows verbose output ''(default false)''<br />
+<code>-h, --help [true/false]</code> shows help screen for the command instead of running it, ignores all other switches ''(default false)''<br />
+<code>-c, --count <count></code> specifies how many sectors to convert at once ''(default 64)''<br />
+<code>--comments <comments></code> specifies image comments<br />
+<code>--creator <creator></code> specifies who (person) created the image?<br />
+<code>--drive-manufacturer manufacturer></code> specifies manufacturer of the drive used to read the media represented by the image<br />
+<code>--drive-model <model></code> specifies model of the drive used to read the media represented by the image<br />
+<code>--drive-revision <revision></code> specifies firmware revision of the drive used to read the media represented by the image<br />
+<code>--drive-serial serial></code> specifies serial number of the drive used to read the media represented by the image<br />
+<code>-f, --force true/false]</code> continues conversion even if sector or media tags will be lost in the process ''(default false)''<br />
+<code>--media-barcode <barcode></code> specifies barcode of the media represented by the image<br />
+<code>--media-lastsequence <number></code> specifies last media of the sequence the media represented by the image corresponds to ''(default 0)''<br />
+<code>--media-manufacturer manufacturer></code> specifies manufacturer of the media represented by the image<br />
+<code>--media-model <model></code> specifies model of the media represented by the image<br />
+<code>--media-partnumber <partnumber></code> specifies part number of the media represented by the image<br />
+<code>--media-sequence <sequence></code> specifies number in sequence for the media represented by the image ''(default 0)''<br />
+<code>--media-serial <serial></code> specifies serial number of the media represented by the image<br />
+<code>--media-title <title></code> specifies title of the media represented by the image<br />
+<code>-O, --options <options></code> specifies comma separated name=value pairs of options to pass to output image plugin<br />
+<code>-p, --format <format></code> specifies format of the output image, as plugin name or plugin id. If not present, will try to detect it from output image extension<br />
+<code>-r, --resume-file <resume file></code> takes list of dump hardware from existing resume file<br />
+<code>-x, --cicm-xml <xml sidecar></code> takes metadata from existing CICM XML sidecar<br />
 
 ==Example==
-<code>DiscImageChef convert-image -c 32 --comments="My converted image" --creator="Jane Doe" --drive-manufacturer="LG" --drive-model="CD-RW 1234" --drive-revision="1.0" --drive-serial="AABBCCDDEEFF01" -i dd_dump.iso --media-lastsequence=2 --media-sequence=1 --media-title="Important software" -O "deduplicate=true,nocompress=false" -o dump.dicf -r dd_dump.resume.xml -x dd_dump.cicm.xml</code>
+<code>Aaru image convert -c 32 --comments "My converted image" --creator "Jane Doe" --drive-manufacturer "LG" --drive-model "CD-RW 1234" --drive-revision "1.0" --drive-serial "AABBCCDDEEFF01" --media-lastsequence 2 --media-sequence 1 --media-title "Important software" -O "deduplicate=true,nocompress=false" -r dd_dump.resume.xml -x dd_dump.cicm.xml dd_dump.iso dump.dicf</code>

@@ -38,7 +38,7 @@
 * CisCopy Disk Image (DC-File)
 * CloneCD
 * Digital Research DiskCopy
-* DiscImageChef format
+* Aaru format
 * IBM SaveDskF
 * MAXI Disk image
 * Parallels disk image
