@@ -2,14 +2,15 @@
 This operation tests the connection between Aaru and the specified Aaru Remote Server.
 
 ==Command usage==
-<code>Aaru -d [true/false] -v [true/false] remote -h [true/false] <host></code> 
+<code>Aaru -d [true/false] -v [true/false] remote -h [true/false] <aaru-remote-host></code> 
 
 <code>-d, --debug [true/false]</code> shows debug output ''(default false)''<br />
 <code>-v, --verbose [true/false]</code> shows verbose output ''(default false)''<br />
 <code>-h, --help [true/false]</code> shows help screen for the command instead of running it, ignores all other switches ''(default false)''<br />
+<code><aaru-remote-host></code> connects to an Aaru Remote Host with aaru://<IP ADDRESS>/<DEVICE PATH><br /> 
 
 ==Example==
-<code>Aaru remote "IP address of host running Aaru Remote"</code>
+<code>Aaru remote aaru://<IP ADDRESS>/<DEVICE PATH></code>
 
 ==Operating system support==
 {|

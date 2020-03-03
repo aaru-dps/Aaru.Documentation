@@ -2,12 +2,13 @@
 This operation will request and show all information about a physical device. For information about supported physical devices check [[Supported-devices.mediawiki|the list of supported physical devices]].
 
 ==Command usage==
-<code>Aaru -d [true/false] -v [true/false] device info -h [true/false] -w [prefix] <device-path></code>
+<code>Aaru -d [true/false] -v [true/false] device info -h [true/false] -w [prefix] <device-path/aaru-remote-host></code>
 
 <code>-d, --debug [true/false]</code> shows debug output ''(default false)''<br />
 <code>-v, --verbose [true/false]</code> shows verbose output ''(default false)''<br />
 <code>-h, --help [true/false]</code> shows help screen for the command instead of running it, ignores all other switches ''(default false)''<br />
 <code>-w, --output-prefix [prefix]</code> writes binary responses from device to that prefix<br />  
+<code><aaru-remote-host></code> connects to an Aaru Remote Host with aaru://<IP ADDRESS>/<DEVICE PATH><br />  
 
 ==Example==
 FreeBSD: <code>Aaru device info /dev/cd0</code><br />

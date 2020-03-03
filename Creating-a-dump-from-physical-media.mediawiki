@@ -2,7 +2,7 @@
 This operation will create a media dump from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar. The dumping operation can be interrupted and continued later, even with a different device.
 
 ==Command usage==
-<code>Aaru -d [true/false] -v [true/false] media dump -h [true/false] -e <encoding> -f [true/false] -k <sectors> --first-pregap [true/false] --fix-offset [true/false] -m [true/false] --metadata [true/false] --trim [true/false] -O <options> --persistent [true/false] -p <passes> -s [true/false] -t <plugin> -x <xml sidecar> --subchannel <subchannel> --speed <speed> <device-path> <output-path></code>
+<code>Aaru -d [true/false] -v [true/false] media dump -h [true/false] -e <encoding> -f [true/false] -k <sectors> --first-pregap [true/false] --fix-offset [true/false] -m [true/false] --metadata [true/false] --trim [true/false] -O <options> --persistent [true/false] -p <passes> -s [true/false] -t <plugin> -x <xml sidecar> --subchannel <subchannel> --speed <speed> <device-path/aaru-remote-host> <output-path></code>
 
 <code>-d, --debug [true/false]</code> shows debug output ''(default false)''<br />
 <code>-v, --verbose [true/false]</code> shows verbose output ''(default false)''<br />
@@ -23,6 +23,7 @@ This operation will create a media dump from real media using a physical device.
 <code>-x, --cicm-xml <xml sidecar></code> takes metadata from existing CICM XML sidecar<br />
 <code>--subchannel <subchannel></code> specifies which subchannel to dump. Only applicable to CD/GD. Values: any, rw, rw-or-pq, pq, none ''(default any)''<br />
 <code>--speed <speed></code> specifies at what speed to dump. Only applicable to optical drives, 0 for maximum ''(default 0)''<br />
+<code><aaru-remote-host></code> connects to an Aaru Remote Host with aaru://<IP ADDRESS>/<DEVICE PATH><br /> 
 
 ==Example==
 FreeBSD: <code>Aaru media dump -f --persistent true --separate-subchannel /dev/cd0 mydisc.cue</code><br />
