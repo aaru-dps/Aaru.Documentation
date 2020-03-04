@@ -1,4 +1,4 @@
-
+# Table of Contents
 
 - [Command Description](#command-description)
 - [Command usage](#command-usage)
@@ -19,8 +19,8 @@ Aaru -d [true/false] -v [true/false] image entropy -h [true/false] -p [true/fals
 `-d, --debug [true/false]` shows debug output *(default false)*  
 `-v, --verbose [true/false]` shows verbose output *(default false)*  
 `-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*  
-`-p, --duplicated-sectors [true/false]` besides entropy also calculates how many sectors have the exact same data in their user area *(default true)*
-`-t, --separated-tracks true/false]` separately calculates the entropy for each track dividing the media. Only applicable to certain kind of media (optical discs and digital tapes mostly) *(default true)*
+`-p, --duplicated-sectors [true/false]` besides entropy also calculates how many sectors have the exact same data in their user area *(default true)*  
+`-t, --separated-tracks true/false]` separately calculates the entropy for each track dividing the media. Only applicable to certain kind of media (optical discs and digital tapes mostly) *(default true)*  
 `-w, --whole-disc [true/false]` calculates the entropy for the whole media *(default true)*
 
 ## Example
