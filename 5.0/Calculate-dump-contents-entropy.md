@@ -12,7 +12,7 @@ This operation will calculate uniqueness and entropy of the media represented by
 
 ## Command usage
 
-```
+```bash
 Aaru -d [true/false] -v [true/false] image entropy -h [true/false] -p [true/false] -t [true/false] -w [true/false] <image-path>
 ```
 
