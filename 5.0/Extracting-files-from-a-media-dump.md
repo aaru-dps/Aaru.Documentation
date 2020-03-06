@@ -26,7 +26,7 @@ Aaru -d [true/false] -v [true/false] filesystem extract -h [true/false] -e [enco
 ## Example
 
 ```bash
-Aaru extract-files -x -e iso8859-15 mydisc.cue contents
+Aaru filesystem extract -x -e iso8859-15 mydisc.cue contents
 ```
 
 ## Operating system support
