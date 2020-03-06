@@ -8,7 +8,7 @@
 
 ## Command Description
 
-This operation will request and show all information about a physical device. For information about supported physical devices check [the list of supported physical devices.](https://github.com/Senn1/Aaru.Documentation/blob/master/5.0/Supported-devices.md)
+This operation will request and show all information about a physical device. For information about supported physical devices check [the list of supported physical devices.](https://github.com/aaru-dps/Aaru.Documentation/blob/master/5.0/Supported-devices.md)
 
 ## Command usage
 
