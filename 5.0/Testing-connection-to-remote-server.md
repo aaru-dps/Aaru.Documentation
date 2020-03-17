@@ -2,7 +2,7 @@
 This operation tests the connection between Aaru and the specified Aaru Remote Server.
 
 ## Command usage
-```Aaru -d [true/false] -v [true/false] remote -h [true/false] <aaru-remote-host>``` 
+```aaru -d [true/false] -v [true/false] remote -h [true/false] <aaru-remote-host>``` 
 
 ```-d, --debug [true/false]``` shows debug output *(default false)*
 
@@ -14,7 +14,7 @@ This operation tests the connection between Aaru and the specified Aaru Remote S
 
 
 ## Example
-```Aaru remote aaru://<IP ADDRESS>/<DEVICE PATH>```
+```aaru remote aaru://<IP ADDRESS>/<DEVICE PATH>```
 
 ## Operating system support
 

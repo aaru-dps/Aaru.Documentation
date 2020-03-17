@@ -3,7 +3,7 @@ Lists all options supported by read-only filesystems.
 
 
 ## Command usage
-```Aaru -d [true/false] -v [true/false] filesystem options -h [true/false]```
+```aaru -d [true/false] -v [true/false] filesystem options -h [true/false]```
 
 ```-d, --debug [true/false]``` shows debug output *(default false)*
 
@@ -13,7 +13,7 @@ Lists all options supported by read-only filesystems.
 
 
 ## Example
-```Aaru filesystem options```
+```aaru filesystem options```
 
 ## Operating system support
 |FreeBSD|macOS|Linux|Windows|

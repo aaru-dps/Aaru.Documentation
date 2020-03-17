@@ -2,7 +2,7 @@
 This operation will list all filters, dump media formats, partitioning schemes and filesystems supported by your version of Aaru.
 
 ## Command usage
-```Aaru -d [true/false] -v [true/false] formats -h [true/false]``` 
+```aaru -d [true/false] -v [true/false] formats -h [true/false]``` 
 
 ```-d, --debug [true/false]``` shows debug output *(default false)*
 
@@ -12,7 +12,7 @@ This operation will list all filters, dump media formats, partitioning schemes a
 
 
 ## Example
-```Aaru formats```
+```aaru formats```
 
 ## Operating system support
 |FreeBSD|macOS|Linux|Windows|

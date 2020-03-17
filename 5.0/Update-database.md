@@ -2,7 +2,7 @@
 This operation will update the master database, and can optionalyl clear the master and local database.
 
 ## Command usage
-```Aaru -d [true/false] -v [true/false] database update -h [true/false]``` 
+```aaru -d [true/false] -v [true/false] database update -h [true/false]``` 
 
 ```-d, --debug [true/false]``` shows debug output *(default false)*
 
@@ -15,7 +15,7 @@ This operation will update the master database, and can optionalyl clear the mas
 ```--clear-all [true/false]``` clears existing master and local database before updating *(default false)*
 
 ## Example
-```Aaru database update --clear-all```
+```aaru database update --clear-all```
 
 ## Operating system support
 

@@ -2,7 +2,7 @@
 This operation will show the statistics that have been stored locally on your environment.
 
 ## Command usage
-```Aaru -d [true/false] -v [true/false] database stats -h [true/false]``` 
+```aaru -d [true/false] -v [true/false] database stats -h [true/false]``` 
 
 ```-d, --debug [true/false]``` shows debug output *(default false)*
 
@@ -12,7 +12,7 @@ This operation will show the statistics that have been stored locally on your en
 
 
 ## Example
-```Aaru database stats```
+```aaru database stats```
 
 ## Operating system support
 | FreeBSD | macOS | Linux | Windows |

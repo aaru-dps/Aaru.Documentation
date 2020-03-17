@@ -2,7 +2,7 @@
 This operation will list all the supported namespaces of the [[Filesystems-recognized-by-DiscImageChef|supported filesystems]].
 
 ## Command usage
-```Aaru -d [true/false] -v [true/false] list-namespaces -h [true/false]``` 
+```aaru -d [true/false] -v [true/false] list-namespaces -h [true/false]``` 
 
 ```-d, --debug [true/false]``` shows debug output *(default false)*
 
@@ -12,7 +12,7 @@ This operation will list all the supported namespaces of the [[Filesystems-recog
 
 
 ## Example
-```Aaru list-namespaces```
+```aaru list-namespaces```
 
 ## Operating system support
 |FreeBSD|macOS|Linux|Windows|

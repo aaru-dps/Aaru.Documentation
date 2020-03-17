@@ -2,7 +2,7 @@
  Lists all options supported by writable media images.
 
 ## Command usage
-```Aaru -d [true/false] -v [true/false] image options -h [true/false]``` 
+```aaru -d [true/false] -v [true/false] image options -h [true/false]``` 
 
 ```-d, --debug [true/false]``` shows debug output *(default false)*
 
@@ -12,7 +12,7 @@
 
 
 ## Example
-```Aaru image options```
+```aaru image options```
 
 ## Operating system support
 |FreeBSD|macOS|Linux|Windows|

@@ -2,7 +2,7 @@
 This operation will analyze and find all filesystems in a media dump and list all the files that are contained in [[Filesystems-recognized-by-Aaru.md|supported filesystems]].
 
 ## Command usage
-```Aaru -d [true/false] -v [true/false] filesystem list -h [true/false] -e [encoding] -l [true/false]``` 
+```aaru -d [true/false] -v [true/false] filesystem list -h [true/false] -e [encoding] -l [true/false]``` 
 
 ```-d, --debug [true/false]```shows debug output *(default false)*
 
@@ -15,7 +15,7 @@ This operation will analyze and find all filesystems in a media dump and list al
 ```-l, --long [true/false]``` uses a long listing format, showing sizes and extended attributes *(default false)*
 
 ## Example
-```Aaru filesystem list -l -e x-mac-icelandic mydisc.cue```
+```aaru filesystem list -l -e x-mac-icelandic mydisc.cue```
 
 ## Operating system support
 |FreeBSD|macOS|Linux|Windows|
