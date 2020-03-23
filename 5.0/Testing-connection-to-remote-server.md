@@ -10,11 +10,11 @@ This operation tests the connection between Aaru and the specified Aaru Remote S
 
 ```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(default false)*
 
-```<aaru-remote-host>``` connects to an Aaru Remote Host with ```aaru://<IP ADDRESS>/<DEVICE PATH>```
+```<aaru-remote-host>``` connects to an Aaru Remote Host with ```aaru://<IP ADDRESS>```
 
 
 ## Example
-```aaru remote aaru://<IP ADDRESS>/<DEVICE PATH>```
+```aaru remote aaru://192.168.1.25```
 
 ## Operating system support
 
