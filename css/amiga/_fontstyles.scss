@@ -33,19 +33,17 @@
 @import "_colors";
 
 /* Sets the style for emphasis/italics */
-em, i
-{
-    color: $orange;
-    font-style: normal;
+em, i {
+  color: $orange;
+  font-style: normal;
 }
 
 /* Headings and bold text are bright white */
 h1, h2, h3, h4,
-b, strong
-{
-    color: $orange;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: normal;
-    margin: 0;
+b, strong {
+  color: $orange;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
 }

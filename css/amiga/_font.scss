@@ -30,21 +30,20 @@
 // Copyright © 2011-2021 Natalia Portillo
 // ****************************************************************************/
 
-@font-face
-{
-    font-family: 'Topaz a500a1000a2000';
-    src: url(../../fonts/Topaz_a500_v1.0.eot);
-    src: url(../../fonts/Topaz_a500_v1.0.eot?#iefix) format('embedded-opentype'),
-    url(../../fonts/Topaz_a500_v1.0.woff2) format('woff2'),
-    url(../../fonts/Topaz_a500_v1.0.woff) format('woff'),
-    url(../../fonts/Topaz_a500_v1.0.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'Topaz a500a1000a2000';
+  src: url(../../fonts/Topaz_a500_v1.0.eot);
+  src: url(../../fonts/Topaz_a500_v1.0.eot?#iefix) format('embedded-opentype'),
+  url(../../fonts/Topaz_a500_v1.0.woff2) format('woff2'),
+  url(../../fonts/Topaz_a500_v1.0.woff) format('woff'),
+  url(../../fonts/Topaz_a500_v1.0.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-$font-family-sans-serif:      'Topaz a500a1000a2000';
-$font-family-monospace:       'Topaz a500a1000a2000';
-$font-family-base:            'Topaz a500a1000a2000';
-$font-size-base:              1.25rem;
+$font-family-sans-serif: 'Topaz a500a1000a2000';
+$font-family-monospace: 'Topaz a500a1000a2000';
+$font-family-base: 'Topaz a500a1000a2000';
+$font-size-base: 1.25rem;
 
-$line-height-base:            1;
+$line-height-base: 1;

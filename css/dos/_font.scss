@@ -31,21 +31,20 @@
 // ****************************************************************************/
 
 /* Sets font to VGA square */
-@font-face
-{
-    font-family: 'VGAsquarePx';
-    src: url(../../fonts/vga_squarepx.eot);
-    src: url(../../fonts/vga_squarepx.eot?#iefix) format('embedded-opentype'),
-    url(../../fonts/vga_squarepx.woff2) format('woff2'),
-    url(../../fonts/vga_squarepx.woff) format('woff'),
-    url(../../fonts/vga_squarepx.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'VGAsquarePx';
+  src: url(../../fonts/vga_squarepx.eot);
+  src: url(../../fonts/vga_squarepx.eot?#iefix) format('embedded-opentype'),
+  url(../../fonts/vga_squarepx.woff2) format('woff2'),
+  url(../../fonts/vga_squarepx.woff) format('woff'),
+  url(../../fonts/vga_squarepx.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-$font-family-sans-serif:      'VGAsquarePx';
-$font-family-monospace:       'VGAsquarePx';
-$font-family-base:            'VGAsquarePx';
-$font-size-base:              1.75rem;
+$font-family-sans-serif: 'VGAsquarePx';
+$font-family-monospace: 'VGAsquarePx';
+$font-family-base: 'VGAsquarePx';
+$font-size-base: 1.75rem;
 
-$line-height-base:            1;
+$line-height-base: 1;

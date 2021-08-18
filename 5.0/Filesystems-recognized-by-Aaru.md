@@ -1,5 +1,6 @@
 Supported file systems for read-only operations
 ===============================================
+
 * Apple DOS file system
 * Apple Lisa file system
 * Apple Macintosh File System (MFS)
@@ -8,6 +9,7 @@ Supported file systems for read-only operations
 
 Supported file systems for identification and information only
 ==============================================================
+
 * 3DO Opera file system
 * Acorn Advanced Disc Filing System
 * Alexander Osipov DOS (AO-DOS for Electronika BK-0011) file system

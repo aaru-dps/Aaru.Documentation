@@ -31,21 +31,20 @@
 // ****************************************************************************/
 
 /* Sets font to Macintosh Chicago clone font */
-@font-face
-{
-    font-family: 'ChicagoFLF';
-    src: url(../../fonts/ChicagoFLF.eot);
-    src: url(../../fonts/ChicagoFLF.eot?#iefix) format('embedded-opentype'),
-    url(../../fonts/ChicagoFLF.woff2) format('woff2'),
-    url(../../fonts/ChicagoFLF.woff) format('woff'),
-    url(../../fonts/ChicagoFLF.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'ChicagoFLF';
+  src: url(../../fonts/ChicagoFLF.eot);
+  src: url(../../fonts/ChicagoFLF.eot?#iefix) format('embedded-opentype'),
+  url(../../fonts/ChicagoFLF.woff2) format('woff2'),
+  url(../../fonts/ChicagoFLF.woff) format('woff'),
+  url(../../fonts/ChicagoFLF.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-$font-family-sans-serif:      'ChicagoFLF';
-$font-family-monospace:       'ChicagoFLF';
-$font-family-base:            'ChicagoFLF';
-$font-size-base:              1rem;
+$font-family-sans-serif: 'ChicagoFLF';
+$font-family-monospace: 'ChicagoFLF';
+$font-family-base: 'ChicagoFLF';
+$font-size-base: 1rem;
 
-$line-height-base:            1;
+$line-height-base: 1;

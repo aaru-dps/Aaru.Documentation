@@ -1,8 +1,10 @@
 # Welcome to the Aaru wiki.
 
-Aaru is a tool designed to handle different media dump formats (also called disc or disk images) and do common operations with them.
+Aaru is a tool designed to handle different media dump formats (also called disc or disk images) and do common
+operations with them.
 
 ## What do you want to do?
+
 * [[Analyzing-a-media-dump.mediawiki|Analyze a media dump|]]
 * [[Getting-hashes-and-checksums-from-a-media-dump.mediawiki|Get checksums or hashes from a dump]]
 * [[Comparing-two-media-dumps.mediawiki|Compare two media dumps]]
@@ -31,6 +33,7 @@ Aaru is a tool designed to handle different media dump formats (also called disc
 * [[Testing-connection-to-remote-server.mediawiki| Test the connection to an Aaru Remote Server]]
 
 ## What is supported by Aaru?
+
 * [[Supported-filters.md|Filters]]
 * [[Media-dump-formats-supported-by-Aaru.mediawiki|Media dump formats]]
 * [[Partitioning-schemes-recognized-by-Aaru.md|Partitioning schemes]]

@@ -5,7 +5,7 @@ In this page you can find a comparison between Aaru and other dump image manager
 |                                                 | Aaru                     | DiscImageCreator | CDRWin   | CloneCD  | Alcohol 120% | IsoBuster | WinImage  |
 |-------------------------------------------------|--------------------------|------------------|----------|----------|--------------|-----------|-----------|
 | Opensource                                      | Yes                      | [Yes](https://github.com/saramibreak/DiscImageCreator)              | No       | No       | No           | No        | No        |
-| Supported  platforms                            | Windows,  Linux,  macOS¹ |  Windows         |  Windows |  Windows |  Windows     |  Windows  |  Windows  |
+| Supported  platforms                            | Windows, Linux, macOS¹ |  Windows         |  Windows |  Windows |  Windows     |  Windows  |  Windows  |
 | Supported  formats                              | [12](https://github.com/aaru-dps/Aaru/blob/master/README.md#supported-disk-image-formats-read-and-write)                       | 3²               | 1³       | 1⁴       | 1⁵           | 17⁶       | 1⁷        |
 | Can dump  Audio CD                              | Yes⁸                     | Yes              | Yes      | Yes      | Yes          | Yes       | No        |
 | Can dump  Mode 0 tracks                         | Yes                      | No               | No       | No       | No           | No        | No        |
@@ -27,8 +27,7 @@ In this page you can find a comparison between Aaru and other dump image manager
 | Supports  dumping Blu- ray¹⁶ ²⁰                 | Yes                      | Yes              | No       | No       | Yes          | Yes       | Yes       |
 | Supports  dumping Xbox  Game discs              |  Yes²¹ ²²                |  Yes²²           |  No      |  No      |  No          |  No       |  No       |
 
-1. macOS does not yet support dumping media, only managing existing 
-images
+1. macOS does not yet support dumping media, only managing existing images
 
 2. CDRWin, CloneCD and raw
 
@@ -38,7 +37,8 @@ images
 
 5. Alcohol 120%
 
-6. Alcohol 120%, BlindWrite 5, BlindWrite 6, CD-i OptImage, CDRWin, CloneCD, DiscJuggler, Easy CD Creator, IsoBuster, Nero, NTI, PlexTools, Prassi PrimoCD, Prassi PrimoDVD, raw, Virtual CD and WinOnCD
+6. Alcohol 120%, BlindWrite 5, BlindWrite 6, CD-i OptImage, CDRWin, CloneCD, DiscJuggler, Easy CD Creator, IsoBuster,
+   Nero, NTI, PlexTools, Prassi PrimoCD, Prassi PrimoDVD, raw, Virtual CD and WinOnCD
 
 7. Raw
 

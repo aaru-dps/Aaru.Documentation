@@ -36,53 +36,47 @@
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-footer
-{
-    background-color: $gray-100;
-    color: $black;
+footer {
+  background-color: $gray-100;
+  color: $black;
 }
 
-header
-{
-    background-color: $gray-100;
-    color: $black;
-    text-align: center;
+header {
+  background-color: $gray-100;
+  color: $black;
+  text-align: center;
 }
 
-header a
-{
-    color: $purple;
+header a {
+  color: $purple;
 }
 
-header a:hover
-{
-    color: $cyan;
-    text-decoration: none;
+header a:hover {
+  color: $cyan;
+  text-decoration: none;
 }
 
-footer a:hover
-{
-    text-decoration: none;
+footer a:hover {
+  text-decoration: none;
 }
 
-.table-centered
-{
-    margin-left:auto;
-    margin-right:auto;
+.table-centered {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.card-button{color:$black}
-
-.table-dark-em
-{
-    color: $darkgray;
-    font-style: normal;
-    font-weight: bold;
+.card-button {
+  color: $black
 }
 
-.table-dark-header
-{
-    color: $black;
-    font-style: normal;
-    text-align: center;
+.table-dark-em {
+  color: $darkgray;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.table-dark-header {
+  color: $black;
+  font-style: normal;
+  text-align: center;
 }

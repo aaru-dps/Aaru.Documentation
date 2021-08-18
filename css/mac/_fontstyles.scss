@@ -33,17 +33,15 @@
 @import "_colors";
 
 /* Sets the style for emphasis/italics */
-em, i
-{
-    font-style: italic;
+em, i {
+  font-style: italic;
 }
 
 /* Headings and bold text are bright white */
 h1, h2, h3, h4,
-b, strong
-{
-    font-size: 1em;
-    font-style: normal;
-    font-weight: bold;
-    margin: 0;
+b, strong {
+  font-size: 1em;
+  font-style: normal;
+  font-weight: bold;
+  margin: 0;
 }

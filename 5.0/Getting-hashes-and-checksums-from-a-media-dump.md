@@ -5,7 +5,6 @@
 - [Example](#example)
 - [Operating system support](#operating-system-support)
 
-
 ## Command Description
 
 This operation will calculate the checksums for the media represented by a media dump image.
@@ -18,7 +17,8 @@ Aaru -d [true/false] -v [true/false] image checksum -h [true/false] -a [true/fal
 
 `-d, --debug [true/false]` shows debug output *(default false)*                            
 `-v, --verbose [true/false]` shows verbose output *(default false)*                           
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*                                      
+`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default
+false)*                                      
 `-a, --adler32 [true/false]` calculates the Adler-32 checksum *(default true)*       
 `--crc16 [true/false]` calculates the CRC16 checksum *(default true)*      
 `-c, --crc32 [true/false]` calculates the CRC32 checksum *(default true)*        
@@ -33,7 +33,7 @@ Aaru -d [true/false] -v [true/false] image checksum -h [true/false] -a [true/fal
 `--sha384 [†rue/false]` calculates the SHA2 hash with 384-bit *(default false)*         
 `--sha512 [true/false]` calculates the SHA2 hash with 512-bit *(default false)*         
 `-t, --separated-tracks [true/false]` calculates each track checksum separately *(default true)*          
-`-w, --whole-discs [true/false]` calculates the whole media checksum *(default true)*        
+`-w, --whole-discs [true/false]` calculates the whole media checksum *(default true)*
 
 ## Example
 
