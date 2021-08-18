@@ -16,23 +16,18 @@ Aaru -d [true/false] -v [true/false] image convert -h [true/false] -c <count> --
 
 `-d, --debug [true/false]` shows debug output *(default false)*  
 `-v, --verbose [true/false]` shows verbose output *(default false)*  
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default
-false)*  
+`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*  
 `-c, --count <count>` specifies how many sectors to convert at once *(default 64)*    
 `--comments <comments>` specifies image comments    
 `--creator <creator>` specifies who (person) created the image?    
-`--drive-manufacturer manufacturer>` specifies manufacturer of the drive used to read the media represented by the
-image    
+`--drive-manufacturer <manufacturer>` specifies manufacturer of the drive used to read the media represented by the image    
 `--drive-model <model>` specifies model of the drive used to read the media represented by the image    
-`--drive-revision <revision>` specifies firmware revision of the drive used to read the media represented by the
-image   
-`--drive-serial serial>` specifies serial number of the drive used to read the media represented by the image    
-`-f, --force true/false]` continues conversion even if sector or media tags will be lost in the process *(default
-false)*    
+`--drive-revision <revision>` specifies firmware revision of the drive used to read the media represented by the image   
+`--drive-serial <serial>` specifies serial number of the drive used to read the media represented by the image    
+`-f, --force [true/false]` continues conversion even if sector or media tags will be lost in the process *(default false)*    
 `--media-barcode <barcode>` specifies barcode of the media represented by the image     
-`--media-lastsequence <number>` specifies last media of the sequence the media represented by the image corresponds
-to *(default 0)*    
-`--media-manufacturer manufacturer>` specifies manufacturer of the media represented by the image    
+`--media-lastsequence <number>` specifies last media of the sequence the media represented by the image corresponds to *(default 0)*    
+`--media-manufacturer <manufacturer>` specifies manufacturer of the media represented by the image    
 `--media-model <model>` specifies model of the media represented by the image     
 `--media-partnumber <partnumber>` specifies part number of the media represented by the image    
 `--media-sequence <sequence>` specifies number in sequence for the media represented by the image *(default 0)*     
@@ -42,11 +37,27 @@ to *(default 0)*
 `-p, --format <format>`  specifies format of the output image, as plugin name or plugin id. If not present, will try to
 detect it from output image extension     
 `-r, --resume-file <resume file>` takes list of dump hardware from existing resume file      
+
+`-g, --geometry <geometry>` force geometry, only supported in not tape block media. Specify as C/H/S
+
+`--fix-subchannel-position` store subchannel according to the sector they describe
+
+`--fix-subchannel` try to fix subchannel. Implies fixing subchannel position
+
+`--fix-subchannel-crc`  If subchannel looks OK but CRC fails, rewrite it. Implies fixing subchannel
+
+`--generate-subchannels` generates missing subchannels
+
 `-x, --cicm-xml <xml sidecar>` takes metadata from existing CICM XML sidecar
 
 ## Example
 
 ```bash
-Aaru image convert -c 32 --comments "My converted image" --creator "Jane Doe" --drive-manufacturer "LG" --drive-model "CD-RW 1234" --drive-revision "1.0" --drive-serial "AABBCCDDEEFF01" --media-lastsequence 2 --media-sequence 1 --media-title "Important software" -O "deduplicate=true,nocompress=false" -r dd_dump.resume.xml -x dd_dump.cicm.xml dd_dump.iso dump.dicf
+Aaru image convert -c 32 --comments "My converted image" --creator "Jane Doe" --drive-manufacturer "LG" --drive-model "CD-RW 1234" --drive-revision "1.0" --drive-serial "AABBCCDDEEFF01" --media-lastsequence 2 --media-sequence 1 --media-title "Important software" -O "deduplicate=true,nocompress=false" -r dd_dump.resume.xml -x dd_dump.cicm.xml dd_dump.iso dump.aaruf
 ```
 
+## Operating system support
+
+| FreeBSD | macOS | Linux | Windows |
+| ------- | ----- | ----- | ------- |
+| Yes     | Yes   | Yes   | Yes     |
