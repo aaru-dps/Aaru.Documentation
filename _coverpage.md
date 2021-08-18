@@ -1,4 +1,4 @@
-![logo](assets/img/aaru.png)
+![logo](assets/img/aaru.png ':size=300')
 
 # Aaru Data Preservation Suite
 
