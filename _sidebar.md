@@ -9,18 +9,21 @@
 
 
 - Devices
+
     - [Get info about a physical device](device/info.md)
     - [List supported connected devices](device/list.md)
     - [Devices supported by Aaru](faq/supported-devices.md)
 
 
 - Media
+
     - [Check readability of the media](media/scan.md)
     - [Create a media dump](media/dump.md)
     - [Get info about an inserted media](media/info.md)
 
 
 - Media images
+
     - [Convert a media dump](image/convert.md)
     - [Create metadata sidecar](image/create-sidecar.md)
     - [Decode and print media tags](image/decode.md)
