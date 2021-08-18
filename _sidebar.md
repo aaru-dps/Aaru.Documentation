@@ -46,3 +46,11 @@
   - [Comparing Aaru with other solutions](Comparison.md)
   - [Bugs in other dumping software](Bugs-in-other-dumping-software.md)
   - [More FAQ](FAQ.md)
+
+- Miscellaneous
+
+  - [Changelog](Changelog.md)
+  - [Code of conduct](CODE_OF_CONDUCT.md)
+  - [Contributing](CONTRIBUTING.md)
+  - [Donating](NEEDED.md)
+  - [Information needed](NEEDINFO.md)
