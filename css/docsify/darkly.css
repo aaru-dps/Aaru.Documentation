@@ -504,9 +504,9 @@ section.cover {
   height: 100vh;
   display: none;
   background: linear-gradient(
-    to left bottom,
-    #ffffff 0%,
-    #6a6a6a 100%
+    to bottom,
+    #e18fdc 0%,
+    #222 100%
   ) !important;
 }
 section.cover.show {
