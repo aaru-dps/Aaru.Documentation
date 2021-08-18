@@ -7,9 +7,7 @@
 
 ## Command Description
 
-This operation will create a media dump from real media using a physical device. It will retry errors and when finished
-create an XML metadata sidecar. The dumping operation can be interrupted and continued later, even with a different
-device.
+This operation will create a media dump from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar. The dumping operation can be interrupted and continued later, even with a different device.
 
 ## Command usage
 
@@ -19,35 +17,56 @@ Aaru -d [true/false] -v [true/false] media dump -h [true/false] -e <encoding> -f
 
 `-d, --debug [true/false]` shows debug output *(default false)*  
 `-v, --verbose [true/false]` shows verbose output *(default false)*  
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default
-false)*  
+`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*  
 `-e, --encoding <encoding>` specifies character encoding to use when creating dump sidecar    
 `-f, --force [true/false]` continues dumping whatever happens *(default false)*     
 `-k, --skip <sectors>` skips this many sectors when an unreadable sector is found *(default 512)*      
 `--first-pregap [true/false]` tries to dump first track pregap. Only applicable to CD, DDCD or GD media *(default
-false)*          
+ false)*          
 `--fix-offset [true/false]` fixes audio tracks offset. Only applicable to CD or GD media. *(default false)*        
-`-m, --resume [true/false]` creates and/or use resume mapfile *(default true)*         
+`-r, --resume [true/false]` creates and/or use resume mapfile *(default true)*         
 `--metadata [true/false]` enables creating CICM XML sidecar *(default true)*       
 `--trim [true/false]` enables trimming errores from skipped sectors *(default true)*     
 `-O, --options <options>` specifies comma separated name=value pairs of options to pass to output image plugin       
 `--persistent [true/false]` tries to recover partial or incorrect data *(default false)*       
 `-p, --retry-passes <passes>` specifies how many times to retry reading a sector *(default 5)*         
 `-s, --stop-on-error [true/false]` stops dumping on first error *(default false)*    
-`-t, --format <plugin>` specifies format for the output image, as plugin name or plugin id. If not present, will try to
-detect it from output image extension       
+`-t, --format <plugin>` specifies format for the output image, as plugin name or plugin id. If not present, will try to detect it from output image extension       
 `-x, --cicm-xml <xml sidecar>` takes metadata from existing CICM XML sidecar          
-`--subchannel <subchannel>` specifies which subchannel to dump. Only applicable to CD/GD. Values: any, rw, rw-or-pq, pq,
-none *(default any)*     
-`--speed <speed>` specifies at what speed to dump. Only applicable to optical drives, 0 for maximum *(default
-0)*        
-`<aaru-remote-host>` connects to an Aaru Remote Host with aaru:///
+`--subchannel <subchannel>` specifies which subchannel to dump. Only applicable to CD/GD. Values: any, rw, rw-or-pq, pq, none *(default any)*     
+`--speed <speed>` specifies at what speed to dump. Only applicable to optical drives, 0 for maximum *(default 0)*        
+
+```--private [true/false]``` do not store paths and serial numbers in log or metadata *(default false)*
+
+```--fix-subchannel-position [true/false]``` store subchannel according to the sector they describe *(default true*)
+
+```--retry-subchannel [true/false]```  retry subchannel. Implies fixing subchannel position *(default true)*
+
+```--fix-subchannel [true/false]```  try to fix subchannel. Implies fixing subchannel position *(default false)*
+
+```--fix-subchannel-crc [true/false]``` if subchannel looks OK but CRC fails, rewrite it. Implies fixing subchannel *(default false)*
+
+```--generate-subchannels [true/false]``` generates missing subchannels (they don't count as dumped in resume file). *(default false)*
+
+```--skip-cdiready-hole [true/false]``` skip the hole between data and audio in a CD-i Ready disc *(default ???)*
+
+```--eject [true/false]``` eject media after dump finishes *(default false)*
+
+```--max-blocks <max-blocks>``` maximum number of blocks to read at once *(default ???)*
+
+```--use-buffered-reads [true/false]``` for MMC/SD, use OS buffered reads if CMD23 is not supported *(default ???)*
+
+```--store-encrypted [true/false]``` store encrypted data as is *(default ???)*
+
+```--title-keys [true/false]``` try to read the title keys from CSS encrypted DVDs (very slow) *(default ???)*
+
+`<aaru-remote-host>` connects to an Aaru Remote Host with ```aaru://<IP ADDRESS>```
 
 ## Example
 
 FreeBSD: `Aaru media dump -f --persistent true --separate-subchannel /dev/cd0 mydisc.cue`     
 Linux: `Aaru media dump -r -f -p 15 /dev/sdb myusbfloppy.img`     
-Windows: `Aaru media dump -f -p 0 --resume false \\.\PhysicalDrive3 mydisk.dicf`
+Windows: `Aaru media dump -f -p 0 --resume false \\.\PhysicalDrive3 mydisk.aaruf`
 
 ## Operating system support
 

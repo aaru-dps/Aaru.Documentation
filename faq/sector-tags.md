@@ -1,6 +1,4 @@
-A sector tag is data that accompany the sector, but it's not part of the data written by the user, or normally
-accessible. Sector tags can be used to contain metadata about that sector, such as error detection and correction,
-filesystem recovery information, copy protection, etc...
+A sector tag is data that accompany the sector, but it's not part of the data written by the user, or normally accessible. Sector tags can be used to contain metadata about that sector, such as error detection and correction, filesystem recovery information, copy protection, etc...
 
 # Floppy disk sector tags
 

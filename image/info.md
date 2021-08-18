@@ -17,8 +17,7 @@ Aaru -d [true/false] -v [true/false] image info -h [true/false] <image-path>
 
 `-d, --debug [true/false]` shows debug output *(default false)*                            
 `-v, --verbose [true/false]` shows verbose output *(default false)*                           
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default
-false)*
+`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*
 
 ## Example
 
@@ -28,9 +27,7 @@ Aaru image info mydisc.cue
 
 ## Operating system support
 
-| OS | Supported |
-|----|-----------|
-| FreeBSD | Yes  |
-| macOS   | Yes  |
-| Linux   | Yes  |
-| Windows | Yes  |
+| FreeBSD | macOS | Linux | Windows |
+| ------- | ----- | ----- | ------- |
+| Yes     | Yes   | Yes   | Yes     |
+
