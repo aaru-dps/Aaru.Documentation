@@ -4,7 +4,7 @@ If the media dump format includes a hash or checksum, it will calculate and comp
 If the media sectors/blocks format include a hash, checksum or error recovery system, it will calculate and compare them.
 
 ==Command usage==
-<code>DiscImageChef verify -d [true/false] -i <dump> -s [true/false] -v [true/false] -w [true/false]</code>
+<code>Aaru verify -d [true/false] -i <dump> -s [true/false] -v [true/false] -w [true/false]</code>
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-i, --input=<dump></code> path to the media dump image<br />
@@ -13,7 +13,7 @@ If the media sectors/blocks format include a hash, checksum or error recovery sy
 <code>-w, --verify-disc=[true/false]</code> calculates and verifies a media dump format checksum/hash ''(default true)''<br />
 
 ==Example==
-<code>DiscImageChef verify -i mydisc.cue</code>
+<code>Aaru verify -i mydisc.cue</code>
 
 ==Operating system support==
 {|

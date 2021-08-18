@@ -2,7 +2,7 @@
 This operation will read the media inserted in the physical device, and measure how fast it can be read sequentially. It's not intended as a benchmark, but as a detector of damaged sectors, sectors that are losing readability, etc. When finished it will check how fast can the device seek, and report speed statistics.
 
 ==Command usage==
-<code>DiscImageChef media-scan -b [ibglog] -d [true/false] -i <device> -m [mhddlog] -v [true/false]</code>
+<code>Aaru media-scan -b [ibglog] -d [true/false] -i <device> -m [mhddlog] -v [true/false]</code>
 
 <code>-b, --ibg-log=[ibglog]</code> writes a log in the format used by ImgBurn<br />
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
@@ -11,9 +11,9 @@ This operation will read the media inserted in the physical device, and measure 
 <code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
 
 ==Example==
-FreeBSD: <code>DiscImageChef media-scan -i /dev/cd0</code><br />
-Linux: <code>DiscImageChef media-scan -i /dev/sdb</code><br />
-Windows: <code>DiscImageChef media-scan -i \\.\PhysicalDrive3</code><br />
+FreeBSD: <code>Aaru media-scan -i /dev/cd0</code><br />
+Linux: <code>Aaru media-scan -i /dev/sdb</code><br />
+Windows: <code>Aaru media-scan -i \\.\PhysicalDrive3</code><br />
 
 ==Operating system support==
 {|

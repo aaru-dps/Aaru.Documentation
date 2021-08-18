@@ -838,7 +838,7 @@
 # [5.0.0.2879] - 2020-03-15
 
 - First and most importantly, we got a rename. We're now Aaru, part of the Aaru Data Preservation Suite, that
-  encompasses Aaru (previously DiscImageChef), Aaru.Server (previously DiscImageChef.Server), aaruformat (previously
+  encompasses Aaru (previously Aaru), Aaru.Server (previously Aaru.Server), aaruformat (previously
   dicformat) and aaruremote.
 - This release is dedicated to the loving memory of Facunda "Tata" Suárez Domínguez, R.I.P. 2019/07/24.
 

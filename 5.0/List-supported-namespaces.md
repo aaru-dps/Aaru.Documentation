@@ -1,7 +1,7 @@
 ## Command description
 
 This operation will list all the supported namespaces of
-the [[Filesystems-recognized-by-DiscImageChef|supported filesystems]].
+the [[Filesystems-recognized-by-Aaru|supported filesystems]].
 
 ## Command usage
 

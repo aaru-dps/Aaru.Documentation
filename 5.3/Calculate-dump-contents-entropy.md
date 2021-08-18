@@ -2,7 +2,7 @@
 This operation will calculate uniqueness and entropy of the media represented by a media dump image. It's not affected my the image format compression if applicable.
 
 ==Command usage==
-<code>DiscImageChef entropy -d [true/false] -i <dump> -p [true/false] -t [true/false] -v [true/false] -w [true/false]</code> 
+<code>Aaru entropy -d [true/false] -i <dump> -p [true/false] -t [true/false] -v [true/false] -w [true/false]</code> 
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-i, --input=<dump></code> path to the media dump image<br />
@@ -12,7 +12,7 @@ This operation will calculate uniqueness and entropy of the media represented by
 <code>-w, --whole-disc=[true/false]</code> calculates the entropy for the whole media ''(default true)''
 
 ==Example==
-<code>DiscImageChef entropy -i mydisc.cue</code>
+<code>Aaru entropy -i mydisc.cue</code>
 
 ==Operating system support==
 {|

@@ -2,7 +2,7 @@
 This operation will decode all [[Sector-tags|sector tags]] and [[Media-tags|media tags]] on a media dump image.
 
 ==Command usage==
-<code>DiscImageChef decode -d [true/false] -i <dump> -k [true/false] -l [sectors] -t [true/false] -s [start sector] -v [true/false]</code>
+<code>Aaru decode -d [true/false] -i <dump> -k [true/false] -l [sectors] -t [true/false] -s [start sector] -v [true/false]</code>
 
 <code>-d, --debug=[true/false]</code> shows debug output ''(default false)''<br />
 <code>-i, --input=<dump></code> path to the media dump image<br />
@@ -13,7 +13,7 @@ This operation will decode all [[Sector-tags|sector tags]] and [[Media-tags|medi
 <code>-v, --verbose=[true/false]</code> shows verbose output ''(default false)''<br />
 
 ==Example==
-<code>DiscImageChef decode -i mydisc.cue -s 1000 -l 15 -t false</code>
+<code>Aaru decode -i mydisc.cue -s 1000 -l 15 -t false</code>
 
 ==Operating system support==
 {|
