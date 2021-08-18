@@ -1,6 +1,8 @@
 == Disk images that can be read only ==
+
 * Apple Disk Archival/Retrieval Tool<ref name="nocompress">Compressed images are not supported yet</ref>
-* Apple New Disk Image Format<ref>Requires resource fork to be presented by any filter</ref><ref>Only supports images compressed with ADC algorithm</ref>
+* Apple New Disk Image Format<ref>Requires resource fork to be presented by any filter</ref><ref>Only supports images
+  compressed with ADC algorithm</ref>
 * Apple NIB
 * BlindWrite 4
 * BlindWrite 5
@@ -25,6 +27,7 @@
 * Sydex TeleDisk
 
 == Disk images that can be read and written ==
+
 * ACT Apricot Disk Image
 * Alcohol 120% Media Descriptor Structure
 * Anex86 Disk Image

@@ -1,8 +1,7 @@
-==Command description==
-Updates the main Aaru database.
+==Command description== Updates the main Aaru database.
 
 ==Command usage==
-<code>Aaru database update [options]</code> 
+<code>Aaru database update [options]</code>
 
 ==Options==
 <code>--clear</code>  clear existing main database ''(default false)''<br />
@@ -12,17 +11,4 @@ Updates the main Aaru database.
 <code>--pause=[true/false]</code> pauses before exiting. ''(default false)''<br />
 <code>-?, -h, --help=[true/false]</code> show help and usage information ''(default false)''<br />
 
-==Operating system support==
-{|
-| FreeBSD
-| Yes
-|-
-| macOS
-| Yes
-|-
-| Linux
-| Yes
-|-
-| Windows
-| Yes
-|}
+==Operating system support== {| | FreeBSD | Yes |- | macOS | Yes |- | Linux | Yes |- | Windows | Yes |}

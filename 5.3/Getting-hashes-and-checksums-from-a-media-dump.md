@@ -1,5 +1,4 @@
-==Command description==
-This operation will calculate the checksums for the media represented by a media dump image.
+==Command description== This operation will calculate the checksums for the media represented by a media dump image.
 
 ==Command usage==
 <code>Aaru image checksum [options] <image-path></code>
@@ -31,17 +30,4 @@ This operation will calculate the checksums for the media represented by a media
 ==Example==
 <code>Aaru image checksum -a false --sha512=true mydisc.cue</code>
 
-==Operating system support==
-{|
-| FreeBSD
-| Yes
-|-
-| macOS
-| Yes
-|-
-| Linux
-| Yes
-|-
-| Windows
-| Yes
-|}
+==Operating system support== {| | FreeBSD | Yes |- | macOS | Yes |- | Linux | Yes |- | Windows | Yes |}

@@ -1,5 +1,5 @@
-==Command description==
-This operation will compare two media dumps and print all differences between them. Dumps can be in different formats.
+==Command description== This operation will compare two media dumps and print all differences between them. Dumps can be
+in different formats.
 
 ==Command usage==
 <code>Aaru image compare [options] <image-path1> <image-path2></code>
@@ -17,17 +17,4 @@ This operation will compare two media dumps and print all differences between th
 ==Example==
 <code>Aaru image compare mydisc.cue anotherdisc.mds</code>
 
-==Operating system support==
-{|
-| FreeBSD
-| Yes
-|-
-| macOS
-| Yes
-|-
-| Linux
-| Yes
-|-
-| Windows
-| Yes
-|}
+==Operating system support== {| | FreeBSD | Yes |- | macOS | Yes |- | Linux | Yes |- | Windows | Yes |}
