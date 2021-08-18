@@ -11,7 +11,7 @@ not) and to extract the files from those images.
 - **Aaru Remote**
     - A slim application that allows Aaru to dump media or run other commands on an unsupported system via a network
       connection.
-- **Libaaruformat**
+- **libaaruformat**
     - C implementation of the Aaru Image Format.
 - And more!
 
@@ -41,4 +41,4 @@ For a practical UI for Aaru, we recommend using the [Media Preservation Frontend
 
 ## Quickstart
 
-See the [Quickstart](5.3/Quickstart.md) section of the docs!
+See the [Quickstart](quickstart.md) section of the docs!

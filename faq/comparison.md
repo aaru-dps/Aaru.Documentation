@@ -6,7 +6,7 @@ In this page you can find a comparison between Aaru and other dump image manager
 |-------------------------------------------------|--------------------------|------------------|----------|----------|--------------|-----------|-----------|
 | Opensource                                      | Yes                      | [Yes](https://github.com/saramibreak/DiscImageCreator)              | No       | No       | No           | No        | No        |
 | Supported  platforms                            | Windows, Linux, macOS¹ |  Windows         |  Windows |  Windows |  Windows     |  Windows  |  Windows  |
-| Supported  formats                              | [12](https://github.com/aaru-dps/Aaru/blob/master/README.md#supported-disk-image-formats-read-and-write)                       | 3²               | 1³       | 1⁴       | 1⁵           | 17⁶       | 1⁷        |
+| Supported  formats                              | [12](formats.md)                       | 3²               | 1³       | 1⁴       | 1⁵           | 17⁶       | 1⁷        |
 | Can dump  Audio CD                              | Yes⁸                     | Yes              | Yes      | Yes      | Yes          | Yes       | No        |
 | Can dump  Mode 0 tracks                         | Yes                      | No               | No       | No       | No           | No        | No        |
 | Can dump  Mode 1 tracks                         | Yes                      | Yes              | Yes      | Yes      | Yes          | Yes       | Yes       |

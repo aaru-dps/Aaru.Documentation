@@ -1,56 +1,59 @@
 - Getting started
-    - [Quickstart](5.3/Quickstart.md)
-    - [Creating a media dump](Creating-a-dump-from-physical-media.md)
-    - [Analyzing a media dump](Analyzing-a-media-dump.md)
-    - [Comparing two media dumps](Comparing-two-media-dumps.md)
-    - [Extracting files from a media dump](Extracting-files-from-a-media-dump.md)
-    - [Calculate hashes and checksums](Getting-hashes-and-checksums-from-a-media-dump.md)
+    - [Quickstart](quickstart.md)
+    - [Creating a media dump](media/dump.md)
+    - [Analyzing a media dump](filesystem/info.md)
+    - [Comparing two media dumps](image/compare.md)
+    - [Extracting files from a media dump](filesystem/extract.md)
+    - [Calculate hashes and checksums](image/checksum.md)
 
 - Configuration
 
-    - [Configure statistics](Configure-Aaru-statistics.md)
+    - [Configure statistics](configure.md)
 
 - Detection
 
-    - [Check readability of the media](Check-readability-of-the-media-inserted-in-a-physical-device.md)
+    - [Check readability of the media](media/scan.md)
 
 - Analysis
 
-    - [Creating metadata sidecar](Creating-metadata-sidecar-XML.md)
-    - [Decoding and printing media tags](Decoding-and-printing-media-tags.md)
-        - [Supported media tags](Media-tags.md)
-    - [Hexadecimal print of a media dump](Get-a-hexadecimal-print-of-a-media-dump-sector-or-block.md)
-    - [Calculate dump contents entropy](Calculate-dump-contents-entropy.md)
-    - [Get info about a media dump](Getting-information-from-a-media-dump.md)
-    - [Get info about a physical device](Getting-information-from-a-physical-device.md)
-    - [Get info about a inserted media](Getting-information-from-media-inserted-in-a-physical-device.md)
+    - [Creating metadata sidecar](image/create-sidecar.md)
+    - [Decoding and printing media tags](image/decode.md)
+        - [Supported media tags](faq/media-tags.md)
+    - [Hexadecimal print of a media dump](image/print.md)
+    - [Calculate dump contents entropy](image/entropy.md)
+    - [Get info about a media dump](image/info.md)
+    - [Get info about a physical device](device/info.md)
+    - [Get info about an inserted media](media/info.md)
 
 - Conversion
 
-    - [Convert a media dump](Convert-image.md)
+    - [Convert a media dump](image/convert.md)
 
 - Listing
 
-    - [List files](List-files.md)
-    - [List filesystem options](List-filesystem-options.md)
-    - [List image options](List-image-options.md)
-    - [List supported devices](List-supported-devices.md)
-    - [List supported encodings](List-supported-encodings.md)
-    - [List supported formats](List-supported-formats.md)
-    - [List supported namespaces](List-supported-namespaces.md)
+    - [List files](filesystem/ls.md)
+    - [List filesystem options](filesystem/options.md)
+    - [List image options](image/options.md)
+    - [List supported devices](device/list.md)
+    - [List supported encodings](list-encodings.md)
+    - [List supported formats](formats.md)
+    - [List supported namespaces](list-namespaces.md)
 
 - FAQ
 
-    - [Filesystems recognized by Aaru](Filesystems-recognized-by-Aaru.md)
-    - [Media dump formats supported by Aaru](Media-dump-formats-supported-by-Aaru.md)
-    - [Comparing Aaru with other solutions](Comparison.md)
-    - [Bugs in other dumping software](Bugs-in-other-dumping-software.md)
-    - [More FAQ](FAQ.md)
+    - [Filesystems recognized by Aaru](faq/filesystems.md)
+    - [Media dump formats supported by Aaru](faq/formats.md)
+    - [Comparing Aaru with other solutions](faq/comparison.md)
+    - [Bugs in other dumping software](faq/3rdparty.md)
+    - [More FAQ](faq/more.md)
 
 - Miscellaneous
 
-    - [Changelog](Changelog.md)
-    - [Code of conduct](CODE_OF_CONDUCT.md)
-    - [Contributing](CONTRIBUTING.md)
-    - [Donating](NEEDED.md)
-    - [Information needed](NEEDINFO.md)
+    - [Read me](docs/README.md)
+    - [Changelog](docs/Changelog.md)
+    - [Code of conduct](docs/MAINTAINERS.md)
+    - [Code of conduct](docs/CODE_OF_CONDUCT.md)
+    - [Project governance](docs/GOVERNANCE.md)
+    - [Contributing](docs/CONTRIBUTING.md)
+    - [Donating](docs/NEEDED.md)
+    - [Information needed](docs/NEEDINFO.md)

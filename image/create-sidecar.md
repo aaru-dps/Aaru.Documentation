@@ -9,7 +9,7 @@
 
 This operation will analyze a media dump, and if the format is recognized, create a CICM XML metadata sidecar with all
 information that can be automatically gotten about it, as well as
-all [supported checksum algorithms.](https://github.com/aaru-dps/Aaru.Documentation/blob/master/5.0/Supported-checksums.md)
+all [supported checksum algorithms.](../faq/supported-checksums.md)
 
 ## Command usage
 

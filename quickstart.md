@@ -4,7 +4,7 @@
 
 It’s very easy to dump any supported media quickly with Aaru! You just have to
 run `aaru media dump <drive> <output image>` for the most basic options. If you dump to something that’s not Aaru Image
-Format (images with the extensions .aaruformat, .aaruf, and .aif), you will also have to add the “-f” option at the end
+Format (images with the extensions `.aaruformat`, `.aaruf`, and `.aif`), you will also have to add the “-f” option at the end
 of the command.
 
 ### Examples (Windows):

@@ -8,7 +8,7 @@
 ## Command Description
 
 This operation will analyze and find all filesystems in a media dump and extract the files that are contained
-in [supported filesystems.](https://github.com/aaru-dps/Aaru.Documentation/blob/master/5.0/Filesystems-recognized-by-Aaru.md)
+in [supported filesystems.](../faq/filesystems.md)
 
 ## Command usage
 

@@ -8,8 +8,8 @@
 ## Command Description
 
 This operation will decode
-all [sector tags](https://github.com/aaru-dps/Aaru.Documentation/blob/master/5.0/Sector-tags.md)
-and [media tags](https://github.com/aaru-dps/Aaru.Documentation/blob/master/5.0/Media-tags.md) on a media dump image.
+all [sector tags](../faq/sector-tags.md)
+and [media tags](../faq/media-tags.md) on a media dump image.
 
 ## Command usage
 

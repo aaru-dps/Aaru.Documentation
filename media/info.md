@@ -9,7 +9,7 @@
 
 This operation will request and show all information about the inserted media in a physical device. For information
 about supported physical devices
-check [the list of supported physical devices.](https://github.com/Senn1/Aaru.Documentation/blob/master/5.0/Supported-devices.md)
+check [the list of supported physical devices.](../faq/supported-devices.md)
 
 ## Command usage
 
