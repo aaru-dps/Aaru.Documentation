@@ -1,6 +1,6 @@
 ## Command description
 
-This operation will list all the supported namespaces of the [[Filesystems-recognized-by-Aaru|supported filesystems]].
+This operation will list all the supported namespaces of the [Filesystems recognized by Aaru](faq/filesystems.md).
 
 ## Command usage
 
@@ -19,6 +19,6 @@ default false)*
 
 ## Operating system support
 
-|FreeBSD|macOS|Linux|Windows|
-|---|---|---|---|
-|Yes|Yes|Yes|Yes|
+| FreeBSD | macOS | Linux | Windows |
+| ------- | ----- | ----- | ------- |
+| Yes     | Yes   | Yes   | Yes     |

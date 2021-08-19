@@ -7,7 +7,7 @@
 
 ## Command Description
 
-This operation will decode all [sector tags](../faq/sector-tags.md) and [media tags](../faq/media-tags.md) on a media dump image.
+This operation will decode all [sector tags](../faq/sector-tags.md) and [media tags](../faq/media-tags.md) in a media dump image.
 
 ## Command usage
 

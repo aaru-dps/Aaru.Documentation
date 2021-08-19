@@ -27,6 +27,6 @@ This operation will show all known attached devices on your system and if they a
 
 ## Operating system support
 
-|FreeBSD|macOS|Linux|Windows|
-|---|---|---|---|
-|Yes|Yes|Yes|Yes|
+| FreeBSD | macOS | Linux | Windows |
+| ------- | ----- | ----- | ------- |
+| Yes     | Yes   | Yes   | Yes     |

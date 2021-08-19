@@ -22,4 +22,4 @@ The following physical devices are supported:
 6. FireWire descriptors are not retrieved
 7. PCMCIA CIS is not retrieved
 8. Support will come with FreeBSD 12-RELEASE
-9. Should work, untested due to not available hardware
+9. Should work, untested due to no available hardware

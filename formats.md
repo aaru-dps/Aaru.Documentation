@@ -1,6 +1,6 @@
 ## Command description
 
-This operation will list all filters, dump media formats, partitioning schemes and filesystems supported by your version
+This operation will list all filters, dumpable media formats, partitioning schemes, and filesystems supported by your version
 of Aaru.
 
 ## Command usage
@@ -20,6 +20,6 @@ default false)*
 
 ## Operating system support
 
-|FreeBSD|macOS|Linux|Windows|
-|---|---|---|---|
-|Yes|Yes|Yes|Yes|
+| FreeBSD | macOS | Linux | Windows |
+| ------- | ----- | ----- | ------- |
+| Yes     | Yes   | Yes   | Yes     |

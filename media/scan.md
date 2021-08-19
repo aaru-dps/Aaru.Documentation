@@ -7,9 +7,9 @@
 
 ## Command Description
 
-This operation will read the media inserted in the physical device, and measure how fast it can be read sequentially.
+This operation will read the media inserted in the physical device and measure how fast it can be read sequentially.
 It's not intended as a benchmark, but as a detector of damaged sectors, sectors that are losing readability, etc. When
-finished it will check how fast can the device seek, and report speed statistics.
+finished it will check how fast can the device seek and report speed statistics.
 
 ## Command usage
 
@@ -53,4 +53,4 @@ Windows: `Aaru media scan \\.\PhysicalDrive3`
 6. FireWire descriptors are not retrieved
 7. PCMCIA CIS is not retrieved
 8. Support will come with FreeBSD 12-RELEASE
-9. Should work, untested due to not available hardware
+9. Should work, untested due to no available hardware

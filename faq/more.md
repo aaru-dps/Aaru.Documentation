@@ -4,7 +4,7 @@ Aaru is the Ancient Egyptian concept of paradise where your soul would be rebirt
 
 # Which operating systems does Aaru work under?
 
-Any operating system with a .NET Core 2.0 runtime should work. Has been tested under Windows, Linux, Mac OS X and FreeBSD.
+Any operating system with a .NET Core 3.1 runtime should work. Has been tested under Windows, Linux, Mac OS X, and FreeBSD.
 
 # Will you support media dump image format XXXX?
 

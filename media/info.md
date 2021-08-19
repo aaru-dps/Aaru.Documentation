@@ -7,7 +7,7 @@
 
 ## Command Description
 
-This operation will request and show all information about the inserted media in a physical device. For information about supported physical devices check [the list of supported physical devices.](../faq/supported-devices.md)
+This operation will request and show all information about the inserted media from a physical device. For information about supported physical devices check [the list of supported physical devices.](../faq/supported-devices.md)
 
 ## Command usage
 

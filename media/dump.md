@@ -7,7 +7,7 @@
 
 ## Command Description
 
-This operation will create a media dump from real media using a physical device. It will retry errors and when finished create an XML metadata sidecar. The dumping operation can be interrupted and continued later, even with a different device.
+This operation will create a media dump from real media using a physical device. It will retry errors and when finished, create an XML metadata sidecar. The dumping operation can be interrupted and continued later with supported formats, even from a different device.
 
 ## Command usage
 
@@ -90,4 +90,4 @@ Windows: `Aaru media dump -f -p 0 --resume false \\.\PhysicalDrive3 mydisk.aaruf
 6. FireWire descriptors are not retrieved
 7. PCMCIA CIS is not retrieved
 8. Support will come with FreeBSD 12-RELEASE
-9. Should work, untested due to not available hardware
+9. Should work, untested due to no available hardware

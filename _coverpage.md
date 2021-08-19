@@ -2,7 +2,7 @@
 
 # Aaru Data Preservation Suite
 
-> A fully featured media dump management solution
+> A fully-featured media dump management solution
 
 [GitHub](https://github.com/aaru-dps/aaru/)
 [Statistics](https://aaru.app/Stats)
