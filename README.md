@@ -8,7 +8,7 @@ not) and to extract the files from those images.
 
 - **Aaru**
     - The main software that does all the heavy lifting, including dumping and extraction.
-- **Aaru Remote**
+- **[Aaru Remote](remote/readme.md)**
     - A slim application that allows Aaru to dump media or run other commands on an unsupported system via a network
       connection.
 - **libaaruformat**
