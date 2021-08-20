@@ -567,10 +567,10 @@ section.cover ul {
   padding: 0;
 }
 section.cover .cover-main > p:last-child a {
-  border: 1px solid var(--theme-color, #c32727);
+  border: 1px solid var(--theme-color, #847a84);
   border-radius: 2rem;
   box-sizing: border-box;
-  color: var(--theme-color, #c32727);
+  color: var(--theme-color, #ffffff);
   display: inline-block;
   font-size: 1.05rem;
   letter-spacing: 0.1rem;
@@ -581,7 +581,7 @@ section.cover .cover-main > p:last-child a {
   font-weight: bold;
 }
 section.cover .cover-main > p:last-child a:last-child {
-  background-color: var(--theme-color, #c32727);
+  background-color: var(--theme-color, #847a84);
   color: #e5e5e5;
 }
 section.cover .cover-main > p:last-child a:last-child:hover {
