@@ -7,7 +7,7 @@
 
 ## Command Description
 
-This operation will calculate uniqueness and entropy of the media represented by a media dump image. It's not affected by the image format compression if applicable.
+This operation will calculate uniqueness and entropy of the media represented by a media dump image. It's not affected by the image format compression, if applicable.
 
 ## Command usage
 

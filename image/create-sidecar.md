@@ -7,7 +7,7 @@
 
 ## Command Description
 
-This operation will analyze a media dump, and if the format is recognized, create a CICM XML metadata sidecar with all information that can be automatically gotten about it, as well as all [supported checksum algorithms.](../faq/supported-checksums.md)
+This operation will analyze a media dump and, if the format is recognized, create a CICM XML metadata sidecar with all information that can be automatically retrieved from it, as well as all [supported checksum algorithms.](../faq/supported-checksums.md)
 
 ## Command usage
 

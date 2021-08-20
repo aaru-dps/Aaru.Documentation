@@ -17,7 +17,7 @@ not) and to extract the files from those images.
 
 ## Key features of Aaru:
 
-- Aaru Image Format, the format that stores the most amount of data for any given format, and supports media of almost
+- Aaru Image Format, the format that stores the most amount of data for any given format and supports media of almost
   any type.
 - Dumps almost any kind of storage media, with more types of media being added whenever possible.
 - Able to read information and extract files from many different formats, as well as easily convert from any format to

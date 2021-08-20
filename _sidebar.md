@@ -19,13 +19,13 @@
 
     - [Check readability of the media](media/scan.md)
     - [Create a media dump](media/dump.md)
-    - [Get info about an inserted media](media/info.md)
+    - [Get info about inserted media](media/info.md)
 
 
 - Media images
 
     - [Convert a media dump](image/convert.md)
-    - [Create metadata sidecar](image/create-sidecar.md)
+    - [Create a metadata sidecar](image/create-sidecar.md)
     - [Decode and print media tags](image/decode.md)
       - [Supported media tags](faq/media-tags.md)
       - [Supported sector tags](faq/sector-tags.md)

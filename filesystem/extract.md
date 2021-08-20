@@ -7,7 +7,7 @@
 
 ## Command description
 
-This operation will analyze and find all filesystems in a media dump and extract the files that are contained in [supported filesystems.](../faq/filesystems.md)
+This operation will analyze and find all filesystems in a media dump, then extract the files that are contained in [supported filesystems.](../faq/filesystems.md)
 
 ## Command usage
 

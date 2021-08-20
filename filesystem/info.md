@@ -1,6 +1,6 @@
 # Analyzing a media dump
 
-This operation will analyze a media dump, and if the format is recognized and you choose so, it will search
+This operation will analyze a media dump and if the format is recognized (and you choose so), it will search
 for [supported partitioning schemes](../faq/partitions.md)
 and [supported filesystems](../faq/filesystems.md) on the dump, showing information about them.
 

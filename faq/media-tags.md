@@ -1,6 +1,6 @@
-A media tag is data that accompanies the media or the device, and is stored on the medium besides the user data, or normally accessible. Media tags are usually used to store metadata about the medium, copy protection information, or information about the device used to read the media.
+A media tag is data that accompanies the media or the device and is stored on the medium besides the user data, or normally accessible. Media tags are usually used to store metadata about the medium, copy protection information, or information about the device used to read the media.
 
-# Compact Disc media tags
+## Compact Disc media tags
 
 * Table of contents (cooked by drive)
 * Full table of contents (cooked by drive)
@@ -10,7 +10,7 @@ A media tag is data that accompanies the media or the device, and is stored on t
 * CD-Text
 * Media Catalogue Number
 
-# DVD and HD DVD media tags
+## DVD and HD DVD media tags
 
 * Physical Format Information
 * Lead-in Copyright Management Information
@@ -31,7 +31,7 @@ A media tag is data that accompanies the media or the device, and is stored on t
 * Start LBA of the manual layer jump
 * Pseudo-overwrite information
 
-# Blu-ray media tags
+## Blu-ray media tags
 
 * Disc Information
 * Burst Cutting Area
@@ -39,7 +39,7 @@ A media tag is data that accompanies the media or the device, and is stored on t
 * Cartridge Status
 * Spare Area Status
 
-# AACS media tags for HD DVD and Blu-ray
+## AACS media tags for HD DVD and Blu-ray
 
 * Volume identifier
 * Pre-recorded media serial number
@@ -49,18 +49,18 @@ A media tag is data that accompanies the media or the device, and is stored on t
 * Encrypted LBA extents
 * CPRM Media Key Block
 
-# Media tags defined by MMC specifications
+## Media tags defined by MMC specifications
 
 * Recognized hybrid layers
 * Write protection status
 * Disc standard information
 * Disc track resources information
 
-# Device tags defined by SCSI specifications
+## Device tags defined by SCSI specifications
 
 * Inquiry response
 
-# Device tags defined by ATA/ATAPI specifications
+## Device tags defined by ATA/ATAPI specifications
 
 * Ata Identify response
 * Atapi Identify response

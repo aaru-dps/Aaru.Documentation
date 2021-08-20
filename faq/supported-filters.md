@@ -1,3 +1,5 @@
+## Supported Filters
+
 * Apple PCExchange (FINDER.DAT & RESOURCE.FRK)
 * AppleDouble
 * AppleSingle

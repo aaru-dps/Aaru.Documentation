@@ -1,6 +1,6 @@
 ## Command description
 
-This operation will list all your character set encodings supported in your environment. This list depends on libraries
+This operation will list all character set encodings supported in your environment. This list depends on the libraries
 installed on your system, so if an encoding is available in one environment there are no guarantees it will be available
 in another one.
 
@@ -21,6 +21,6 @@ default false)*
 
 ## Operating system support
 
-|FreeBSD|macOS|Linux|Windows|
-|---|---|---|---|
-|Yes|Yes|Yes|Yes|
+| FreeBSD | macOS | Linux | Windows |
+| ------- | ----- | ----- | ------- |
+| Yes     | Yes   | Yes   | Yes     |

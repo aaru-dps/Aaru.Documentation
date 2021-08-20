@@ -7,7 +7,7 @@
 
 ## Command Description
 
-This operation will print a hexadecimal dump in the console of the chosen sector/block of the indicated media dump image.
+This operation will print a hexadecimal dump of the chosen sector/block from the indicated media dump image to the console.
 
 ## Command usage
 

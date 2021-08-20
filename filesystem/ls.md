@@ -1,6 +1,6 @@
 ## Command description
 
-This operation will analyze and find all filesystems in a media dump and list all the files that are contained in [supported filesystems](../faq/filesystems.md).
+This operation will analyze and find all filesystems in a media dump, then list all the files that are contained in [supported filesystems](../faq/filesystems.md).
 
 ## Command usage
 
@@ -26,7 +26,6 @@ This operation will analyze and find all filesystems in a media dump and list al
 
 ## Operating system support
 
-|FreeBSD|macOS|Linux|Windows|
-|---|---|---|---|
-|Yes|Yes|Yes|Yes|
-
+| FreeBSD | macOS | Linux | Windows |
+| ------- | ----- | ----- | ------- |
+| Yes     | Yes   | Yes   | Yes     |

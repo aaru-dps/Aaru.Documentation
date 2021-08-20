@@ -1,3 +1,5 @@
+## Partitions
+
 * Acorn Linux and RISCiX partitions
 * ACT Apricot partitions
 * Amiga Rigid Disk Block (RDB)

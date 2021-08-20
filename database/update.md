@@ -7,7 +7,7 @@
 
 ## Command description
 
-This operation will update the master database, and can optionally clear the master and local database.
+This operation will update the master database and optionally clear the master and local databases.
 
 ## Command usage
 
@@ -32,5 +32,5 @@ Aaru -d [true/false] -v [true/false] database update -h [true/false]
 ## Operating system support
 
 | FreeBSD | macOS | Linux | Windows |
-|---|---|---|---|
-| Yes | Yes | Yes | Yes |
+| ------- | ----- | ----- | ------- |
+| Yes     | Yes   | Yes   | Yes     |

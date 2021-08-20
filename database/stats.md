@@ -7,7 +7,7 @@
 
 ## Command description
 
-This operation will show the statistics that have been stored locally on your environment.
+This operation will show the statistics that have been stored locally in your environment.
 
 ## Command usage
 
@@ -28,6 +28,6 @@ Aaru -d [true/false] -v [true/false] database stats -h [true/false]
 ## Operating system support
 
 | FreeBSD | macOS | Linux | Windows |
-|---|---|---|---|
-| Yes | Yes | Yes | Yes |
+| ------- | ----- | ----- | ------- |
+| Yes     | Yes   | Yes   | Yes     |
 
