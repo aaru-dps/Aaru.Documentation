@@ -30,21 +30,13 @@
 // Copyright © 2011-2021 Natalia Portillo
 // ****************************************************************************/
 
-/* Sets font to Macintosh Chicago clone font */
-@font-face {
-  font-family: 'ChicagoFLF';
-  src: url(../../fonts/ChicagoFLF.eot);
-  src: url(../../fonts/ChicagoFLF.eot?#iefix) format('embedded-opentype'),
-  url(../../fonts/ChicagoFLF.woff2) format('woff2'),
-  url(../../fonts/ChicagoFLF.woff) format('woff'),
-  url(../../fonts/ChicagoFLF.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,600');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  box-sizing: border-box;
 }
-
-$font-family-sans-serif: 'ChicagoFLF';
-$font-family-monospace: 'ChicagoFLF';
-$font-family-base: 'ChicagoFLF';
-$font-size-base: 1rem;
-
-$line-height-base: 1;

@@ -34,30 +34,29 @@
 @import "_font";
 @import "_fontstyles";
 
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
-footer {
-  background-color: $brown;
-  color: $black;
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $white;
+  font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: $darkergray;
 }
 
-header {
-  background-color: $teal;
-  color: $black;
+header, footer {
+  background-color: $darkgray;
   text-align: center;
-}
-
-header a {
+  font-weight: 600;
   color: $pink;
 }
 
-header a:hover {
-  color: $orange;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: none;
+header a {
+  color: $magenta;
 }
 
 .table-centered {
@@ -65,17 +64,49 @@ footer a:hover {
   margin-right: auto;
 }
 
-.card-button {
-  color: $yellow
-}
-
-.table-dark-em {
-  color: $brown;
-  font-style: normal;
-}
-
 .table-dark-header {
-  color: $brown;
+  color: $pink;
   font-style: normal;
   text-align: center;
+}
+
+.btn {
+  border: 1px solid $darkred;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  background-color: $red;
+  color: $white;
+  display: inline-block;
+  font-size: 1.05rem;
+  letter-spacing: 0.1rem;
+  margin: 0.5rem 1rem;
+  padding: 0.75em 2rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  color: $cyan;
+  background-color: $red;
+  text-decoration: underline;
+}
+
+button.btn.btn-link.card-button.collapsed {
+  color: $lightgray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+button.btn.btn-link.card-button.collapsed:hover {
+  color: $white;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.carousel-indicators li {
+  background-color: $pink;
 }

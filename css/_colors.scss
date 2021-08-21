@@ -2,14 +2,14 @@
 // Aaru Data Preservation Suite
 // ----------------------------------------------------------------------------
 //
-// Filename       : _fontstyles.scss
+// Filename       : _colors.scss
 // Author(s)      : Natalia Portillo <claunia@claunia.com>
 //
 // Component      : Aaru Server.
 //
 // --[ Description ] ----------------------------------------------------------
 //
-//     Sets font styles for server styling.
+//     Sets colors for server styling.
 //
 // --[ License ] --------------------------------------------------------------
 //
@@ -30,20 +30,12 @@
 // Copyright © 2011-2021 Natalia Portillo
 // ****************************************************************************/
 
-@import "_colors";
-
-/* Sets the style for emphasis/italics */
-em, i {
-  color: $orange;
-  font-style: normal;
-}
-
-/* Headings and bold text are bright white */
-h1, h2, h3, h4,
-b, strong {
-  color: $orange;
-  font-size: 1em;
-  font-style: normal;
-  font-weight: normal;
-  margin: 0;
-}
+$white: #ffffff;
+$darkgray: #444444;
+$pink: #e18fdc;
+$magenta: #ff00ff;
+$darkred: darkred;
+$red: red;
+$lightgray: lightgray;
+$cyan: cyan;
+$darkergray: #222222;
