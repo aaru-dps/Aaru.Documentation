@@ -1168,3 +1168,8 @@ pre:after
   text-align: right;
   top: 0;
 }
+
+td::before
+{
+  display: none;
+}
