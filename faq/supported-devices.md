@@ -9,9 +9,9 @@ The following physical devices are supported:
 | SCSI Streaming device  | Yes  | No¹  | Yes  | Yes  |
 | Parallel ATA  | No³ | No¹  | Yes  | Yes  |
 | Serial ATA  | Yes  | No¹  | Yes  | Yes  |
-| USB  | Partial⁴ | Partial⁵ | Yes  | Yes  |
-| FireWire  | Partial⁶ | Partial⁵ | Yes  | Partial⁶ |
-| PCMCIA  | Partial⁷ | Partial⁵ | Yes  | Partial⁷ |
+| USB  | Partial⁴ |  Not yet⁵ | Yes  | Yes  |
+| FireWire  | Partial⁶ |  Not yet⁵ | Yes  | Partial⁶ |
+| PCMCIA  | Partial⁷ |  Not yet⁵ | Yes  | Partial⁷ |
 | SecureDigital / MultiMediaCard  | Not yet⁸ | No¹  | Yes  | Untested⁹ |
 
 1. macOS only allows talking with MultiMedia devices.
