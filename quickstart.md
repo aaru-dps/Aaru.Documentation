@@ -74,3 +74,9 @@ As of 5.3, dumping a large HDD as an Aaru Format Image has very significant spee
 ## Extracting files from NTFS/HFS/HFS+/etc. filesystems
 
 Unfortunately, Aaru does not support extracting from several well known filesystems at the moment, some notable ones include NTFS, HFS, and HFS+. In cases like these, if you have an Aaru Format Image, you have to convert it to a more well known image format and use other software to mount and/or navigate it. 
+
+
+
+## Dumping a CSS protected DVD-Video
+
+Due to the complexity of this topic, it's in a separate article [here](faq/dump-css.md).
