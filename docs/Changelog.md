@@ -1,4 +1,4 @@
-# [5.2.99.xxxx] - 2021-xx-yy
+# [5.3.0] - 2021-10-01
 
 ## Added
 
@@ -73,7 +73,7 @@
 - Do not cross into each session's first track pregap as this makes some drives fail.
 - Dumping of CSS disc key and title keys.
 - Enable storing decrypted CSS sectors.
-- Enable to continue dumping non-removable drives if serial number if different using the force option.
+- Enable to continue dumping non-removable drives if serial number is different using the force option.
 - Implement reading SD/MMC using buffered OS calls.
 - Workaround some firmware bug in some audio CDs with hidden audio.
 - Write media tags to image even when aborted.
@@ -105,6 +105,8 @@
 
 ### - Media detection
 
+- Detect ISO 15041 magneto-opticals
+- Detect SyJet disks using number of sectors.
 - Detect when DVD book type is different from drive's firmware profile.
 - PlayStation 5 Ultra HD Blu-ray game discs.
 - Ultra HD Blu-ray.
@@ -117,6 +119,7 @@
 ### - Media information
 
 - Decode Pre-Recorded Information.
+- Decode smaller disc information from older DVD drives.
 - More media manufacturers.
 - Print Disc Key and Sector CMI information.
 - Print recordable Physical Format Information (PFI).
@@ -139,6 +142,7 @@
 ### - RAW (sector by sector) disk image
 
 - Support setting sector size in raw image when the extension describes it.
+- Recognize Toast disc images by extension.
 
 ### - SCSI response decoders
 
@@ -259,6 +263,7 @@
 ### - Dumping
 
 - Creating sidecar from MMC trying to hash non-existing SD registers.
+- Non-CD optical media when drive does not return track list.
 - Pregap calculation on first tracks of each session when dumping CDs.
 - Re-setting track end when correctly reading a new subchannel that changes the next track start.
 - Speed calculations for very fast devices.
@@ -403,6 +408,7 @@
 - Move IRC to Libera.
 - Reduce seek times to 100 when scanning MMC/SD cards.
 - Rename *filesystem analyze* command to *filesystem info*.
+- Use ATA Pass Through Direct API in Windows.
 - Use same codepath for calculating optical media tag sidecar fields dumping or from image.
 - Use SCSI reader detection of maximum supporter blocks to read at once when scanning non-CD media.
 
@@ -838,8 +844,8 @@
 # [5.0.0.2879] - 2020-03-15
 
 - First and most importantly, we got a rename. We're now Aaru, part of the Aaru Data Preservation Suite, that
-  encompasses Aaru (previously Aaru), Aaru.Server (previously Aaru.Server), aaruformat (previously dicformat) and
-  aaruremote.
+  encompasses Aaru (previously DiscImageChef), Aaru.Server (previously DiscImageChef.Server), aaruformat (previously
+  dicformat) and aaruremote.
 - This release is dedicated to the loving memory of Facunda "Tata" Suárez Domínguez, R.I.P. 2019/07/24.
 
 ## Added
@@ -2202,6 +2208,8 @@
 - Apple Partition Map (aka APM).
 - Master Boot Record (aka MBR).
 - NeXT disklabels.
+
+[5.3.0]: https://github.com/aaru-dps/Aaru/releases/tag/v5.3.0
 
 [5.2.0.3330]: https://github.com/aaru-dps/Aaru/releases/tag/v5.2.0.3330
 
