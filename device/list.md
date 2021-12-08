@@ -7,7 +7,8 @@
 
 ## Command description
 
-This operation will show all known attached devices on your system and if they are supported for device dependent operations.
+This operation will show all known attached devices on your system and if they are supported for device dependent
+operations.
 
 ## Command usage
 
@@ -17,7 +18,8 @@ This operation will show all known attached devices on your system and if they a
 
 ```-v, --verbose [true/false]``` shows verbose output *(default false)*
 
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(default false)*
+```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(
+default false)*
 
 ```<aaru-remote-host>``` connects to an Aaru Remote Host with ```aaru://<IP ADDRESS>```
 

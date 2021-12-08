@@ -19,7 +19,8 @@ Aaru -d [true/false] -v [true/false] database stats -h [true/false]
 
 ```-v, --verbose [true/false]``` shows verbose output *(default false)*
 
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(default false)*
+```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(
+default false)*
 
 ## Example
 

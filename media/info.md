@@ -7,7 +7,8 @@
 
 ## Command Description
 
-This operation will request and show all information about the inserted media from a physical device. For information about supported physical devices check [the list of supported physical devices.](../faq/supported-devices.md)
+This operation will request and show all information about the inserted media from a physical device. For information
+about supported physical devices check [the list of supported physical devices.](../faq/supported-devices.md)
 
 ## Command usage
 
@@ -17,7 +18,8 @@ Aaru -d [true/false] -v [true/false] media info -h [true/false] -w [prefix] <dev
 
 `-d, --debug [true/false]` shows debug output *(default false)*                            
 `-v, --verbose [true/false]` shows verbose output *(default false)*                           
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*           
+`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default
+false)*           
 `-w, --output-prefix [prefix]` writes binary responses from device to that prefix       
 `<aaru-remote-host>` connects to an Aaru Remote Host with ```aaru://<IP ADDRESS>```
 

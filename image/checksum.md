@@ -17,7 +17,8 @@ Aaru -d [true/false] -v [true/false] image checksum -h [true/false] -a [true/fal
 
 `-d, --debug [true/false]` shows debug output *(default false)*                            
 `-v, --verbose [true/false]` shows verbose output *(default false)*                           
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*                                      
+`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default
+false)*                                      
 `-a, --adler32 [true/false]` calculates the Adler-32 checksum *(default true)*       
 `--crc16 [true/false]` calculates the CRC16 checksum *(default true)*      
 `-c, --crc32 [true/false]` calculates the CRC32 checksum *(default true)*        

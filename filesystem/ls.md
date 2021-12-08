@@ -1,6 +1,7 @@
 ## Command description
 
-This operation will analyze and find all filesystems in a media dump, then list all the files that are contained in [supported filesystems](../faq/filesystems.md).
+This operation will analyze and find all filesystems in a media dump, then list all the files that are contained
+in [supported filesystems](../faq/filesystems.md).
 
 ## Command usage
 
@@ -10,9 +11,11 @@ This operation will analyze and find all filesystems in a media dump, then list 
 
 ```-v, --verbose [true/false]``` shows verbose output *(default false)*
 
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(default false)*
+```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(
+default false)*
 
-```-e, --encoding [encoding]``` sets which encoding is used by the contents of the media dump *(default varies by filesystem)*
+```-e, --encoding [encoding]``` sets which encoding is used by the contents of the media dump *(default varies by
+filesystem)*
 
 ```-l, --long [true/false]``` uses a long listing format, showing sizes and extended attributes *(default false)*
 

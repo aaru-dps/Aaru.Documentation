@@ -17,7 +17,8 @@ Lists all options supported by writable media images.
 
 ```-v, --verbose [true/false]``` shows verbose output *(default false)*
 
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(default false)*
+```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(
+default false)*
 
 ## Example
 

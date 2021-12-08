@@ -1,7 +1,7 @@
 ## Command description
 
-This operation will list all filters, dumpable media formats, partitioning schemes, and filesystems supported by your version
-of Aaru.
+This operation will list all filters, dumpable media formats, partitioning schemes, and filesystems supported by your
+version of Aaru.
 
 ## Command usage
 
