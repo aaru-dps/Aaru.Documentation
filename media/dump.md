@@ -7,7 +7,9 @@
 
 ## Command Description
 
-This operation will create a media dump from real media using a physical device. It will retry errors and when finished, create an XML metadata sidecar. The dumping operation can be interrupted and continued later with supported formats, even from a different device.
+This operation will create a media dump from real media using a physical device. It will retry errors and when finished,
+create an XML metadata sidecar. The dumping operation can be interrupted and continued later with supported formats,
+even from a different device.
 
 ## Command usage
 
@@ -17,12 +19,13 @@ Aaru -d [true/false] -v [true/false] media dump -h [true/false] -e <encoding> -f
 
 `-d, --debug [true/false]` shows debug output *(default false)*  
 `-v, --verbose [true/false]` shows verbose output *(default false)*  
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*  
+`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default
+false)*  
 `-e, --encoding <encoding>` specifies character encoding to use when creating dump sidecar    
 `-f, --force [true/false]` continues dumping whatever happens *(default false)*     
 `-k, --skip <sectors>` skips this many sectors when an unreadable sector is found *(default 512)*      
 `--first-pregap [true/false]` tries to dump first track pregap. Only applicable to CD, DDCD or GD media *(default
- false)*          
+false)*          
 `--fix-offset [true/false]` fixes audio tracks offset. Only applicable to CD or GD media. *(default false)*        
 `-r, --resume [true/false]` creates and/or use resume mapfile *(default true)*         
 `--metadata [true/false]` enables creating CICM XML sidecar *(default true)*       
@@ -31,10 +34,12 @@ Aaru -d [true/false] -v [true/false] media dump -h [true/false] -e <encoding> -f
 `--persistent [true/false]` tries to recover partial or incorrect data *(default false)*       
 `-p, --retry-passes <passes>` specifies how many times to retry reading a sector *(default 5)*         
 `-s, --stop-on-error [true/false]` stops dumping on first error *(default false)*    
-`-t, --format <plugin>` specifies format for the output image, as plugin name or plugin id. If not present, will try to detect it from output image extension       
+`-t, --format <plugin>` specifies format for the output image, as plugin name or plugin id. If not present, will try to
+detect it from output image extension       
 `-x, --cicm-xml <xml sidecar>` takes metadata from existing CICM XML sidecar          
-`--subchannel <subchannel>` specifies which subchannel to dump. Only applicable to CD/GD. Values: any, rw, rw-or-pq, pq, none *(default any)*     
-`--speed <speed>` specifies at what speed to dump. Only applicable to optical drives, 0 for maximum *(default 0)*        
+`--subchannel <subchannel>` specifies which subchannel to dump. Only applicable to CD/GD. Values: any, rw, rw-or-pq, pq,
+none *(default any)*     
+`--speed <speed>` specifies at what speed to dump. Only applicable to optical drives, 0 for maximum *(default 0)*
 
 ```--private [true/false]``` do not store paths and serial numbers in log or metadata *(default false)*
 
@@ -44,9 +49,11 @@ Aaru -d [true/false] -v [true/false] media dump -h [true/false] -e <encoding> -f
 
 ```--fix-subchannel [true/false]```  try to fix subchannel. Implies fixing subchannel position *(default false)*
 
-```--fix-subchannel-crc [true/false]``` if subchannel looks OK but CRC fails, rewrite it. Implies fixing subchannel *(default false)*
+```--fix-subchannel-crc [true/false]``` if subchannel looks OK but CRC fails, rewrite it. Implies fixing subchannel *(
+default false)*
 
-```--generate-subchannels [true/false]``` generates missing subchannels (they don't count as dumped in resume file). *(default false)*
+```--generate-subchannels [true/false]``` generates missing subchannels (they don't count as dumped in resume file). *(
+default false)*
 
 ```--skip-cdiready-hole [true/false]``` skip the hole between data and audio in a CD-i Ready disc *(default ???)*
 

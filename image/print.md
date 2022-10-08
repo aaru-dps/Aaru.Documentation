@@ -7,7 +7,8 @@
 
 ## Command Description
 
-This operation will print a hexadecimal dump of the chosen sector/block from the indicated media dump image to the console.
+This operation will print a hexadecimal dump of the chosen sector/block from the indicated media dump image to the
+console.
 
 ## Command usage
 
@@ -17,11 +18,14 @@ Aaru -d [true/false] -v [true/false] image print -h [true/false] -l [sectors] -r
 
 `-d, --debug [true/false]` shows debug output *(default false)*                      
 `-v, --verbose [true/false]` shows verbose output *(default false)*                      
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*                               
+`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default
+false)*                               
 `-l, --length [sectors]` specifies how many sectors to print *(default 1)*            
-`-r, --long-sectors [true/false]` specifies if hex print should include all sector tags stored in the media dump *(default false)*         
+`-r, --long-sectors [true/false]` specifies if hex print should include all sector tags stored in the media dump *(
+default false)*         
 `-s, --start <starting sector>` starts the hexadecimal printing from this sector            
-`-w, --width <width>` specifies how long the width, in characters, should the print be before creating a new line *(default 32)*
+`-w, --width <width>` specifies how long the width, in characters, should the print be before creating a new line *(
+default 32)*
 
 ## Example
 

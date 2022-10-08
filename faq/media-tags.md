@@ -1,4 +1,6 @@
-A media tag is data that accompanies the media or the device and is stored on the medium besides the user data, or normally accessible. Media tags are usually used to store metadata about the medium, copy protection information, or information about the device used to read the media.
+A media tag is data that accompanies the media or the device and is stored on the medium besides the user data, or
+normally accessible. Media tags are usually used to store metadata about the medium, copy protection information, or
+information about the device used to read the media.
 
 ## Compact Disc media tags
 

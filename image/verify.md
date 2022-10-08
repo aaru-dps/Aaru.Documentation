@@ -1,6 +1,8 @@
 ## Command description
 
-This operation will verify a media dump. If the media dump format includes a hash or checksum, it will calculate and compare it. If the media sector/block format include a hash, checksum, or error recovery system, it will calculate and compare them.
+This operation will verify a media dump. If the media dump format includes a hash or checksum, it will calculate and
+compare it. If the media sector/block format include a hash, checksum, or error recovery system, it will calculate and
+compare them.
 
 ## Command usage
 

@@ -135,7 +135,7 @@ dumping of such characteristics. Usually those are copy protections.
     - I Am Alive
     - ObsCure II
     - Shift 2 Unleashed
-    - Warfare 
+    - Warfare
 
 Information and test data
 =========================

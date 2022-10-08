@@ -1,6 +1,7 @@
 # Aaru Maintainers and Stakeholders
 
-[GOVERNANCE.md](https://github.com/aaru-dps/aaru/blob/main/GOVERNANCE.md) describes governance guidelines and maintainer responsibilities.
+[GOVERNANCE.md](https://github.com/aaru-dps/aaru/blob/main/GOVERNANCE.md) describes governance guidelines and maintainer
+responsibilities.
 
 ## Maintainers
 

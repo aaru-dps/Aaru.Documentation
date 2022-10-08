@@ -10,7 +10,8 @@ Lists all options supported by read-only filesystems.
 
 ```-v, --verbose [true/false]``` shows verbose output *(default false)*
 
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(default false)*
+```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(
+default false)*
 
 ## Example
 
