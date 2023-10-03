@@ -5,25 +5,25 @@ responsibilities.
 
 ## Maintainers
 
-| Maintainer | GitHub ID | Affiliation |
-| --------------- | --------- | ----------- |
-| Natalia Portillo | [claunia](https://github.com/claunia) | [Aaru](https://aaru.app) |
-| Michael Drüing | [darkstar](https://github.com/darkstar) | [Aaru](https://aaru.app) |
-| Rebecca Wallander | [FakeShemp](https://github.com/FakeShemp) | [Aaru](https://aaru.app) |
-| Matt Nadareski | [mnadareski](https://github.com/mnadareski) | [Aaru](https://aaru.app) |
+| Maintainer        | GitHub ID                                   | Affiliation              |
+|-------------------|---------------------------------------------|--------------------------|
+| Natalia Portillo  | [claunia](https://github.com/claunia)       | [Aaru](https://aaru.app) |
+| Michael Drüing    | [darkstar](https://github.com/darkstar)     | [Aaru](https://aaru.app) |
+| Rebecca Wallander | [FakeShemp](https://github.com/FakeShemp)   | [Aaru](https://aaru.app) |
+| Matt Nadareski    | [mnadareski](https://github.com/mnadareski) | [Aaru](https://aaru.app) |
 
 ## Technical committee
 
-| TC Member | GitHub ID | Affiliation |
-| --------------- | --------- | ----------- |
-| Robin François| [robin-francois](https://github.com/robin-francois) | Cinémathèque suisse |
-| Joseph Redon | X | Game Preservation Society |
-| Jonas Rosland | [jonasrosland](https://github.com/jonasrosland) | Hit Save! |
+| TC Member      | GitHub ID                                           | Affiliation               |
+|----------------|-----------------------------------------------------|---------------------------|
+| Robin François | [robin-francois](https://github.com/robin-francois) | Cinémathèque suisse       |
+| Joseph Redon   | X                                                   | Game Preservation Society |
+| Jonas Rosland  | [jonasrosland](https://github.com/jonasrosland)     | Hit Save!                 |
 
 ## Aaru Contributors & Stakeholders
 
-| Feature | Contributor | GitHub ID | Affiliation |
-| --------------- | --------- | ----------- | --- |
-| Development | Michael Drüing | [darkstar](https://github.com/darkstar) | [Aaru](https://aaru.app) |
-| Development | Rebecca Wallander | [FakeShemp](https://github.com/FakeShemp) | [Aaru](https://aaru.app) |
-| QA | Silas Laspada | [SilasLaspada](https://github.com/SilasLaspada) | [Aaru](https://aaru.app) |
+| Feature     | Contributor       | GitHub ID                                       | Affiliation              |
+|-------------|-------------------|-------------------------------------------------|--------------------------|
+| Development | Michael Drüing    | [darkstar](https://github.com/darkstar)         | [Aaru](https://aaru.app) |
+| Development | Rebecca Wallander | [FakeShemp](https://github.com/FakeShemp)       | [Aaru](https://aaru.app) |
+| QA          | Silas Laspada     | [SilasLaspada](https://github.com/SilasLaspada) | [Aaru](https://aaru.app) |

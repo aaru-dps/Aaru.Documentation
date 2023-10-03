@@ -31,17 +31,17 @@ Windows: `Aaru media info \\.\PhysicalDrive3`
 
 ## Operating system support
 
-| Device Type  | FreeBSD  | MacOS  | Linux  | Windows  |
-|--------------|----------|--------|--------|----------|
-| SCSI Block device  | Yes  | No¹  | Yes  | Yes  |
-| SCSI MultiMedia device  | Yes  | Not yet² | Yes  | Yes  |
-| SCSI Streaming device  | Yes  | No¹  | Yes  | Yes  |
-| Parallel ATA  | No³ | No³  | Yes³  | Yes³  |
-| Serial ATA  | Yes³  | No³  | Yes³  | Yes³  |
-| USB  | Partial | Partial | Yes  | Yes  |
-| FireWire  | Partial | Partial | Yes  | Partial |
-| PCMCIA  | Partial | Partial | Yes  | Partial |
-| SecureDigital / MultiMediaCard  | Not yet³ | No³  | Yes³  | Untested³ |
+| Device Type                    | FreeBSD  | MacOS    | Linux | Windows   |
+|--------------------------------|----------|----------|-------|-----------|
+| SCSI Block device              | Yes      | No¹      | Yes   | Yes       |
+| SCSI MultiMedia device         | Yes      | Not yet² | Yes   | Yes       |
+| SCSI Streaming device          | Yes      | No¹      | Yes   | Yes       |
+| Parallel ATA                   | No³      | No³      | Yes³  | Yes³      |
+| Serial ATA                     | Yes³     | No³      | Yes³  | Yes³      |
+| USB                            | Partial  | Partial  | Yes   | Yes       |
+| FireWire                       | Partial  | Partial  | Yes   | Partial   |
+| PCMCIA                         | Partial  | Partial  | Yes   | Partial   |
+| SecureDigital / MultiMediaCard | Not yet³ | No³      | Yes³  | Untested³ |
 
 1. macOS only allows talking with MultiMedia devices.
 2. Support for MultiMedia devices in macOS will be added if users require it

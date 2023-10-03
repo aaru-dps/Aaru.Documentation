@@ -64,5 +64,5 @@ Aaru image convert -c 32 --comments "My converted image" --creator "Jane Doe" --
 ## Operating system support
 
 | FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
+|---------|-------|-------|---------|
 | Yes     | Yes   | Yes   | Yes     |

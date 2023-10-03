@@ -36,6 +36,6 @@ Aaru filesystem extract -x -e iso8859-15 mydisc.cue contents
 ## Operating system support
 
 | FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
+|---------|-------|-------|---------|
 | Yes     | Yes   | Yes   | Yes     |
 

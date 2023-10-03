@@ -34,5 +34,5 @@ Aaru image decode -s 1000 -l 15 -p false mydisc.cue
 ## Operating system support
 
 | FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
+|---------|-------|-------|---------|
 | Yes     | Yes   | Yes   | Yes     |

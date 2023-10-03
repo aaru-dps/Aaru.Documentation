@@ -44,5 +44,5 @@ Aaru image checksum -f false --sha512 true mydisc.cue
 ## Operating system support
 
 | FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
+|---------|-------|-------|---------|
 | Yes     | Yes   | Yes   | Yes     |

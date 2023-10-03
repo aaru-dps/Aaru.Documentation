@@ -77,17 +77,17 @@ Windows: `Aaru media dump -f -p 0 --resume false \\.\PhysicalDrive3 mydisk.aaruf
 
 ## Operating system support
 
-| Device Type  | FreeBSD  | MacOS  | Linux  | Windows  |
-|--------------|----------|--------|--------|----------|
-| SCSI Block device  | Yes  | No¹  | Yes  | Yes  |
-| SCSI MultiMedia device  | Yes  | Not yet² | Yes  | Yes  |
-| SCSI Streaming device  | Yes  | No¹  | Yes  | Yes  |
-| Parallel ATA  | No³ | No¹  | Yes  | Yes  |
-| Serial ATA  | Yes  | No¹  | Yes  | Yes  |
-| USB  | Partial⁴ | Partial⁵ | Yes  | Yes  |
-| FireWire  | Partial⁶ | Partial⁵ | Yes  | Partial⁶ |
-| PCMCIA  | Partial⁷ | Partial⁵ | Yes  | Partial⁷ |
-| SecureDigital / MultiMediaCard  | Not yet⁸ | No¹  | Yes  | Untested⁹ |
+| Device Type                    | FreeBSD  | MacOS    | Linux | Windows   |
+|--------------------------------|----------|----------|-------|-----------|
+| SCSI Block device              | Yes      | No¹      | Yes   | Yes       |
+| SCSI MultiMedia device         | Yes      | Not yet² | Yes   | Yes       |
+| SCSI Streaming device          | Yes      | No¹      | Yes   | Yes       |
+| Parallel ATA                   | No³      | No¹      | Yes   | Yes       |
+| Serial ATA                     | Yes      | No¹      | Yes   | Yes       |
+| USB                            | Partial⁴ | Partial⁵ | Yes   | Yes       |
+| FireWire                       | Partial⁶ | Partial⁵ | Yes   | Partial⁶  |
+| PCMCIA                         | Partial⁷ | Partial⁵ | Yes   | Partial⁷  |
+| SecureDigital / MultiMediaCard | Not yet⁸ | No¹      | Yes   | Untested⁹ |
 
 1. macOS only allows talking with MultiMedia devices.
 2. Support for MultiMedia devices in macOS will be added if users require it

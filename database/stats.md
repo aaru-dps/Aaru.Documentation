@@ -29,6 +29,6 @@ default false)*
 ## Operating system support
 
 | FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
+|---------|-------|-------|---------|
 | Yes     | Yes   | Yes   | Yes     |
 

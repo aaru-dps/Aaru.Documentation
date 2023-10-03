@@ -39,6 +39,6 @@ Aaru image create-sidecar -e shift_jis "My japanese software.img"
 ## Operating system support
 
 | FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
+|---------|-------|-------|---------|
 | Yes     | Yes   | Yes   | Yes     |
 

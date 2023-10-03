@@ -2,30 +2,30 @@ In this page you can find a comparison between Aaru and other dump image manager
 
 ## Comparison of optical discs image managers
 
-|                                                 | Aaru                     | DiscImageCreator | CDRWin   | CloneCD  | Alcohol 120% | IsoBuster | WinImage  |
-|-------------------------------------------------|--------------------------|------------------|----------|----------|--------------|-----------|-----------|
-| Opensource                                      | Yes                      | [Yes](https://github.com/saramibreak/DiscImageCreator)              | No       | No       | No           | No        | No        |
-| Supported  platforms                            | Windows, Linux, macOS¹   |  Windows         |  Windows |  Windows |  Windows     |  Windows  |  Windows  |
-| Supported  formats                              | [12](formats.md)         | 3²               | 1³       | 1⁴       | 1⁵           | 17⁶       | 1⁷        |
-| Can dump  Audio CD                              | Yes⁸                     | Yes              | Yes      | Yes      | Yes          | Yes       | No        |
-| Can dump  Mode 0 tracks                         | Yes                      | No               | No       | No       | No           | No        | No        |
-| Can dump  Mode 1 tracks                         | Yes                      | Yes              | Yes      | Yes      | Yes          | Yes       | Yes       |
-| Can dump  Mode 2 tracks                         | Yes⁸                     | Yes              | Yes      | Yes      | Yes          | Yes       | Yes       |
-| Can dump  multisession  discs                   | Yes                      | Yes              | No       | Yes      | Yes          | Yes       | No        |
-| Can dump  discs with  errors                    | Yes⁹                     | Yes¹⁰            | No¹¹     | Yes¹⁰    | Yes¹⁰        | Unknown   | Unknown   |
-| Reads  subchannel                               | Yes                      | Yes              | No¹²     | Yes      | Yes          | Unknown   | No        |
-| Reads lead-in  postgap                          | Yes                      | Yes              | No       | No       | No           | No        | No        |
-| Supports  illegal TOCs                          | Yes                      | Yes              | No       | Yes      | Yes          | Yes       | No        |
-| Supports error-based copy  protections          | Yes                      | Yes              | No       | Yes      | Yes          | Yes       | No        |
-| Supports twin  sectors based  copy  protections | Not yet¹³                | No               | No       | No       | No           | No        | No        |
-| Supports  position based copy  protections      | Not yet¹³                | No               | No       | No       | Yes          | No        | No        |
-| Supports  dumping DDCD                          | Yes                      | No¹⁴             | No¹⁴     | No¹⁴     | No¹⁴         | No¹⁴      | No¹⁴      |
-| Supports  dumping GD                            | Not yet¹⁵                | Yes              | No       | No       | No           | No        | No        |
-| Supports  dumping  GameCube/Wii                 | Not yet¹⁵                | Yes              | No       | No       | No           | No        | No        |
-| Supports  dumping  DVD¹⁶ ¹⁷                     | Yes                      | Partial¹⁸        | No       | No       | Partial¹⁸    | Partial¹⁸ | Partial¹⁸ |
-| Supports  dumping HD  DVD¹⁶                     | Yes                      | Partial¹⁹        | No       | No       | Partial¹⁹    | Partial¹⁹ | Partial¹⁹ |
-| Supports  dumping Blu- ray¹⁶ ²⁰                 | Yes                      | Yes              | No       | No       | Yes          | Yes       | Yes       |
-| Supports  dumping Xbox  Game discs              | Yes²¹ ²²                 | Yes²²            | No       | No       | No           | No        | No        |
+|                                                 | Aaru                   | DiscImageCreator                                       | CDRWin  | CloneCD | Alcohol 120% | IsoBuster | WinImage  |
+|-------------------------------------------------|------------------------|--------------------------------------------------------|---------|---------|--------------|-----------|-----------|
+| Opensource                                      | Yes                    | [Yes](https://github.com/saramibreak/DiscImageCreator) | No      | No      | No           | No        | No        |
+| Supported  platforms                            | Windows, Linux, macOS¹ | Windows                                                | Windows | Windows | Windows      | Windows   | Windows   |
+| Supported  formats                              | [12](formats.md)       | 3²                                                     | 1³      | 1⁴      | 1⁵           | 17⁶       | 1⁷        |
+| Can dump  Audio CD                              | Yes⁸                   | Yes                                                    | Yes     | Yes     | Yes          | Yes       | No        |
+| Can dump  Mode 0 tracks                         | Yes                    | No                                                     | No      | No      | No           | No        | No        |
+| Can dump  Mode 1 tracks                         | Yes                    | Yes                                                    | Yes     | Yes     | Yes          | Yes       | Yes       |
+| Can dump  Mode 2 tracks                         | Yes⁸                   | Yes                                                    | Yes     | Yes     | Yes          | Yes       | Yes       |
+| Can dump  multisession  discs                   | Yes                    | Yes                                                    | No      | Yes     | Yes          | Yes       | No        |
+| Can dump  discs with  errors                    | Yes⁹                   | Yes¹⁰                                                  | No¹¹    | Yes¹⁰   | Yes¹⁰        | Unknown   | Unknown   |
+| Reads  subchannel                               | Yes                    | Yes                                                    | No¹²    | Yes     | Yes          | Unknown   | No        |
+| Reads lead-in  postgap                          | Yes                    | Yes                                                    | No      | No      | No           | No        | No        |
+| Supports  illegal TOCs                          | Yes                    | Yes                                                    | No      | Yes     | Yes          | Yes       | No        |
+| Supports error-based copy  protections          | Yes                    | Yes                                                    | No      | Yes     | Yes          | Yes       | No        |
+| Supports twin  sectors based  copy  protections | Not yet¹³              | No                                                     | No      | No      | No           | No        | No        |
+| Supports  position based copy  protections      | Not yet¹³              | No                                                     | No      | No      | Yes          | No        | No        |
+| Supports  dumping DDCD                          | Yes                    | No¹⁴                                                   | No¹⁴    | No¹⁴    | No¹⁴         | No¹⁴      | No¹⁴      |
+| Supports  dumping GD                            | Not yet¹⁵              | Yes                                                    | No      | No      | No           | No        | No        |
+| Supports  dumping  GameCube/Wii                 | Not yet¹⁵              | Yes                                                    | No      | No      | No           | No        | No        |
+| Supports  dumping  DVD¹⁶ ¹⁷                     | Yes                    | Partial¹⁸                                              | No      | No      | Partial¹⁸    | Partial¹⁸ | Partial¹⁸ |
+| Supports  dumping HD  DVD¹⁶                     | Yes                    | Partial¹⁹                                              | No      | No      | Partial¹⁹    | Partial¹⁹ | Partial¹⁹ |
+| Supports  dumping Blu- ray¹⁶ ²⁰                 | Yes                    | Yes                                                    | No      | No      | Yes          | Yes       | Yes       |
+| Supports  dumping Xbox  Game discs              | Yes²¹ ²²               | Yes²²                                                  | No      | No      | No           | No        | No        |
 
 1. macOS does not yet support dumping media, only managing existing images
 2. CDRWin, CloneCD and raw

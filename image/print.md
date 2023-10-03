@@ -36,5 +36,5 @@ Aaru image print -s 15 -l 30 -r -w 64 mydisc.cue
 ## Operating system support
 
 | FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
+|---------|-------|-------|---------|
 | Yes     | Yes   | Yes   | Yes     |
