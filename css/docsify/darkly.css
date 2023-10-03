@@ -1000,7 +1000,6 @@ pre:after {
   top: 0;
 }
 
-td::before
-{
+td::before {
   display: none;
 }
