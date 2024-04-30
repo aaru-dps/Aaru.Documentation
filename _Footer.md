@@ -1,1 +1,1 @@
-Aaru © 2011-2021 Natalia Portillo
+Aaru © 2011-2024 Natalia Portillo
