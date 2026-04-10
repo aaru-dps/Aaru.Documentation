@@ -7,22 +7,27 @@
 
 ## Command description
 
-This operation will list all options supported by the read-only filesystem plugins recognized by Aaru.
+This operation will list the contents of the selected archive file.
 
 ## Command usage
 
 ```text
 USAGE:
-    aaru filesystem options [OPTIONS]
+    aaru archive list <path> [OPTIONS]
+
+ARGUMENTS:
+    <path>    Archive file path
 
 OPTIONS:
-    -h, --help    Prints help information
+    -h, --help           Prints help information          
+    -e, --encoding       Name of character encoding to use
+    -l, --long-format    Use long format
 ```
 
 ## Example
 
 ```bash
-aaru filesystem options example.iso
+aaru archive list example.zip
 ```
 
 ## Operating system support

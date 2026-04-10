@@ -1,6 +1,6 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
@@ -11,26 +11,24 @@ This operation will update the master database and optionally clear the master a
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] database update -h [true/false]
+```text
+USAGE:
+    aaru database update [OPTIONS]
+
+OPTIONS:
+    -h, --help         Prints help information               
+        --clear        Clear existing main database          
+        --clear-all    Clear existing main and local database
 ```
-
-```-d, --debug [true/false]``` shows debug output *(default false)*
-
-```-v, --verbose [true/false]``` shows verbose output *(default false)*
-
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches*(default false)*
-
-```--clear [true/false]``` clears existing master database before updating *(default false)*
-
-```--clear-all [true/false]``` clears existing master and local database before updating *(default false)*
 
 ## Example
 
-```Aaru database update --clear-all```
+```bash
+aaru database update --clear-all
+```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

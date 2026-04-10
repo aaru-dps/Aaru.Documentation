@@ -1,38 +1,48 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
 
-## Command Description
+## Command description
 
 This operation will analyze a media dump and, if the format is recognized, create a CICM XML metadata sidecar with all information that can be automatically retrieved from it, as well as all [supported checksum algorithms.](../faq/supported-checksums.md)
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] image create-sidecar -h [true/false] -b [block size] -e [encoding] -t tape [true/false] <image-path>
-```
+```text
+USAGE:
+    aaru image create-sidecar <image-path> [OPTIONS]
 
-`-d, --debug [true/false]` shows debug output *(default false)*  
-`-v, --verbose [true/false]` shows verbose output *(default false)*  
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*    
-`-b, --block-size [block size]` used only for tapes, indicates fixed block size in bytes. File in dump folder not multiple of this value will be ignored *(default 512)*           
-`-e, --encoding [encoding]` sets which encoding is used by the contents of the media dump *(default varies by filesystem)*            
-`-t, --tape [true/false]` indicates that dump points to a folder containing alphabetically sorted files extracted from a linear block-based tape with fixed block size (e.g. a SCSI streaming device) *(default false)*
+ARGUMENTS:
+    <image-path>    Media image path
+
+OPTIONS:
+                            DEFAULT                                             
+    -h, --help                         Prints help information                  
+    -b, --block-size        512        Only used for tapes, indicates block     
+                                       size. Files in the folder whose size is  
+                                       not a multiple of this value will simply 
+                                       be ignored                               
+    -e, --encoding                     Name of character encoding to use        
+    -t, --tape                         When used indicates that input is a      
+                                       folder containing alphabetically sorted  
+                                       files extracted from a linear block-based
+                                       tape with fixed block size (e.g. a SCSI  
+                                       tape device)                             
+        --enable-spamsum               Enables calculation of Spamsum fuzzy     
+                                       hashes
+```
 
 ## Example
 
 ```bash
-Aaru image create-sidecar mydisc.cue
-Aaru image create-sidecar -t -b 1024 mytapedir
-Aaru image create-sidecar -e shift_jis "My japanese software.img"
+aaru image create-sidecar example.iso
 ```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
-
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

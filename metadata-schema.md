@@ -7,14 +7,16 @@
 
 ## Command description
 
-This operation will list all filters, dumpable media formats, partitioning schemes, and filesystems supported by your version
-of Aaru.
+This operation will generate the JSON schema used by Aaru metadata files and write it to the selected output path.
 
 ## Command usage
 
 ```text
 USAGE:
-    aaru formats [OPTIONS]
+    aaru metadata-schema <output> [OPTIONS]
+
+ARGUMENTS:
+    <output>    Output file for the JSON schema
 
 OPTIONS:
     -h, --help              Prints help information        
@@ -27,7 +29,7 @@ OPTIONS:
 ## Example
 
 ```bash
-aaru formats
+aaru metadata-schema metadata-schema.json
 ```
 
 ## Operating system support

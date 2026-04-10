@@ -1,93 +1,150 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
 
-## Command Description
+## Command description
 
 This operation will create a media dump from real media using a physical device. It will retry errors and when finished, create an XML metadata sidecar. The dumping operation can be interrupted and continued later with supported formats, even from a different device.
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] media dump -h [true/false] -e <encoding> -f [true/false] -k <sectors> --first-pregap [true/false] --fix-offset [true/false] -m [true/false] --metadata [true/false] --trim [true/false] -O <options> --persistent [true/false] -p <passes> -s [true/false] -t <plugin> -x <xml sidecar> --subchannel <subchannel> --speed <speed> <device-path/aaru-remote-host> <output-path>
+```text
+USAGE:
+    aaru media dump <device-path> <output-path> [OPTIONS]
+
+ARGUMENTS:
+    <device-path>    Device path                                                
+    <output-path>    Output image path. If filename starts with # and exists, it
+                     will be read as a list of output images, its extension will
+                     be used to detect the image output format, each media will 
+                     be ejected and confirmation for the next one will be asked 
+
+OPTIONS:
+                                     DEFAULT                                    
+    -h, --help                                  Prints help information         
+    -x, --cicm-xml                              Take metadata from existing CICM
+                                                XML sidecar                     
+    -e, --encoding                              Name of character encoding to   
+                                                use                             
+        --first-pregap                          Try to read first track pregap. 
+                                                Only applicable to CD/DDCD/GD   
+        --fix-offset                 True       Fix audio tracks offset. Only   
+                                                applicable to CD/GD             
+    -f, --force                                 Continue dumping whatever       
+                                                happens                         
+    -t, --format                                Format of the output image, as  
+                                                plugin name or plugin id. If not
+                                                present, will try to detect it  
+                                                from output image extension     
+        --metadata                   True       Enables creating Aaru Metadata  
+                                                sidecar                         
+        --trim                       True       Enables trimming errored from   
+                                                skipped sectors                 
+    -O, --options                               Comma separated name=value pairs
+                                                of options to pass to output    
+                                                image plugin                    
+        --persistent                            Try to recover partial or       
+                                                incorrect data                  
+    -r, --resume                     True       Create/use resume mapfile       
+    -p, --retry-passes               5          How many retry passes to do     
+    -k, --skip                       512        When an unreadable sector is    
+                                                found skip this many sectors    
+    -s, --stop-on-error                         Stop media dump on first error  
+        --subchannel                 any        Subchannel to dump. Only        
+                                                applicable to CD/GD. Values:    
+                                                any, rw, rw-or-pq, pq, none     
+        --speed                      0          Speed to dump. Only applicable  
+                                                to optical drives, 0 for maximum
+        --private                               Do not store paths and serial   
+                                                numbers in log or metadata      
+        --fix-subchannel-position    True       Store subchannel according to   
+                                                the sector they describe        
+        --retry-subchannel           True       Retry subchannel. Implies fixing
+                                                subchannel position             
+        --fix-subchannel                        Try to fix subchannel. Implies  
+                                                fixing subchannel position      
+        --fix-subchannel-crc                    If subchannel looks OK but CRC  
+                                                fails, rewrite it. Implies      
+                                                fixing subchannel               
+        --generate-subchannels                  Generates missing subchannels   
+                                                (they don't count as dumped in  
+                                                resume file)                    
+        --skip-cdiready-hole         True       Skip the hole between data and  
+                                                audio in a CD-i Ready disc      
+        --eject                                 Eject media after dump finishes 
+        --max-blocks                 64         Maximum number of blocks to read
+                                                at once                         
+        --use-buffered-reads         True       For MMC/SD, use OS buffered     
+                                                reads if CMD23 is not supported 
+        --store-encrypted            True       Store encrypted data as is      
+        --bypass-wii-decryption                 Skip Wii disc encryption        
+                                                processing during conversion or 
+                                                dump                            
+        --title-keys                 True       Try to read the title keys from 
+                                                CSS encrypted DVDs (very slow)  
+        --ignore-cdr-runouts         10         How many CD-R(W) run-out sectors
+                                                to ignore and regenerate (0 for 
+                                                none)                           
+    -g, --create-graph               True       Create graph of dumped media.   
+                                                Currently only supported for    
+                                                CD/DVD/BD/GD/UMD                
+        --dimensions                 1080       Dimensions in pixels of the     
+                                                square that will contain the    
+                                                graph of dumped media           
+        --aaru-metadata                         Take metadata from existing Aaru
+                                                Metadata sidecar                
+        --paranoia                              Do not trust the drive, check   
+                                                the sectors integrity before    
+                                                writing them to the image. Valid
+                                                only for CD/GD                  
+        --cure-paranoia                         Try to fix sectors that do not  
+                                                pass the integrity checks       
+        --raw                                   EXPERIMENTAL: Enable raw dumping
+                                                mode. This feature is           
+                                                experimental and may not work   
+                                                correctly with all devices or   
+                                                media types. Use at your own    
+                                                risk.
 ```
-
-`-d, --debug [true/false]` shows debug output *(default false)*  
-`-v, --verbose [true/false]` shows verbose output *(default false)*  
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*  
-`-e, --encoding <encoding>` specifies character encoding to use when creating dump sidecar    
-`-f, --force [true/false]` continues dumping whatever happens *(default false)*     
-`-k, --skip <sectors>` skips this many sectors when an unreadable sector is found *(default 512)*      
-`--first-pregap [true/false]` tries to dump first track pregap. Only applicable to CD, DDCD or GD media *(default
- false)*          
-`--fix-offset [true/false]` fixes audio tracks offset. Only applicable to CD or GD media. *(default false)*        
-`-r, --resume [true/false]` creates and/or use resume mapfile *(default true)*         
-`--metadata [true/false]` enables creating CICM XML sidecar *(default true)*       
-`--trim [true/false]` enables trimming errores from skipped sectors *(default true)*     
-`-O, --options <options>` specifies comma separated name=value pairs of options to pass to output image plugin       
-`--persistent [true/false]` tries to recover partial or incorrect data *(default false)*       
-`-p, --retry-passes <passes>` specifies how many times to retry reading a sector *(default 5)*         
-`-s, --stop-on-error [true/false]` stops dumping on first error *(default false)*    
-`-t, --format <plugin>` specifies format for the output image, as plugin name or plugin id. If not present, will try to detect it from output image extension       
-`-x, --cicm-xml <xml sidecar>` takes metadata from existing CICM XML sidecar          
-`--subchannel <subchannel>` specifies which subchannel to dump. Only applicable to CD/GD. Values: any, rw, rw-or-pq, pq, none *(default any)*     
-`--speed <speed>` specifies at what speed to dump. Only applicable to optical drives, 0 for maximum *(default 0)*        
-
-```--private [true/false]``` do not store paths and serial numbers in log or metadata *(default false)*
-
-```--fix-subchannel-position [true/false]``` store subchannel according to the sector they describe *(default true*)
-
-```--retry-subchannel [true/false]```  retry subchannel. Implies fixing subchannel position *(default true)*
-
-```--fix-subchannel [true/false]```  try to fix subchannel. Implies fixing subchannel position *(default false)*
-
-```--fix-subchannel-crc [true/false]``` if subchannel looks OK but CRC fails, rewrite it. Implies fixing subchannel *(default false)*
-
-```--generate-subchannels [true/false]``` generates missing subchannels (they don't count as dumped in resume file). *(default false)*
-
-```--skip-cdiready-hole [true/false]``` skip the hole between data and audio in a CD-i Ready disc *(default ???)*
-
-```--eject [true/false]``` eject media after dump finishes *(default false)*
-
-```--max-blocks <max-blocks>``` maximum number of blocks to read at once *(default ???)*
-
-```--use-buffered-reads [true/false]``` for MMC/SD, use OS buffered reads if CMD23 is not supported *(default ???)*
-
-```--store-encrypted [true/false]``` store encrypted data as is *(default ???)*
-
-```--title-keys [true/false]``` try to read the title keys from CSS encrypted DVDs (very slow) *(default ???)*
-
-`<aaru-remote-host>` connects to an Aaru Remote Host with ```aaru://<IP ADDRESS>```
 
 ## Example
 
-FreeBSD: `Aaru media dump -f --persistent true --separate-subchannel /dev/cd0 mydisc.cue`     
-Linux: `Aaru media dump -r -f -p 15 /dev/sdb myusbfloppy.img`     
-Windows: `Aaru media dump -f -p 0 --resume false \\.\PhysicalDrive3 mydisk.aaruf`
+macOS:
+
+```bash
+aaru media dump -f /dev/rdisk2 mydisc.aif
+```
+
+Linux:
+
+```bash
+aaru media dump -r -f -p 15 /dev/sr0 mydisc.aif
+```
+
+Windows:
+
+```bash
+aaru media dump -f -p 0 \\.\PhysicalDrive3 mydisk.aif
+```
 
 ## Operating system support
 
-| Device Type  | FreeBSD  | MacOS  | Linux  | Windows  |
-|--------------|----------|--------|--------|----------|
-| SCSI Block device  | Yes  | No¹  | Yes  | Yes  |
-| SCSI MultiMedia device  | Yes  | Not yet² | Yes  | Yes  |
-| SCSI Streaming device  | Yes  | No¹  | Yes  | Yes  |
-| Parallel ATA  | No³ | No¹  | Yes  | Yes  |
-| Serial ATA  | Yes  | No¹  | Yes  | Yes  |
-| USB  | Partial⁴ | Partial⁵ | Yes  | Yes  |
-| FireWire  | Partial⁶ | Partial⁵ | Yes  | Partial⁶ |
-| PCMCIA  | Partial⁷ | Partial⁵ | Yes  | Partial⁷ |
-| SecureDigital / MultiMediaCard  | Not yet⁸ | No¹  | Yes  | Untested⁹ |
+| Device Type | macOS | Linux | Windows |
+|-------------|-------|-------|---------|
+| SCSI Block device | No¹ | Yes | Yes |
+| SCSI MultiMedia device | No¹ | Yes | Yes |
+| SCSI Streaming device | No¹ | Yes | Yes |
+| Parallel ATA | No¹ | Yes | Yes |
+| Serial ATA | No¹ | Yes | Yes |
+| USB | No¹ | Yes | Yes |
+| FireWire | No¹ | Yes | Partial² |
+| PCMCIA | No¹ | Yes | Partial³ |
+| SecureDigital / MultiMediaCard | No¹ | Yes | Untested⁴ |
 
-1. macOS only allows talking with MultiMedia devices.
-2. Support for MultiMedia devices in macOS will be added if users require it
-3. Not supported due to upstream bug
-4. USB descriptors are not retrieved
-5. Only MultiMedia devices can be supported and descriptors will not be retrieved
-6. FireWire descriptors are not retrieved
-7. PCMCIA CIS is not retrieved
-8. Support will come with FreeBSD 12-RELEASE
-9. Should work, untested due to no available hardware
+1. Media dump and other device-access commands are not currently supported on macOS.
+2. FireWire descriptors are not retrieved.
+3. PCMCIA CIS is not retrieved.
+4. Should work, but it remains untested due to lack of hardware.

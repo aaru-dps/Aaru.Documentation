@@ -1,11 +1,11 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
 
-## Command Description
+## Command description
 
 This command will ask you which statistics to gather and if you want to share them anonymously. When sharing, no
 information about you or your computer will be sent or stored, only the number of times a command have been used and the
@@ -14,23 +14,26 @@ available at [https://www.aaru.app](https://www.aaru.app)
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] configure -h [true/false]
-```
+```text
+USAGE:
+    aaru configure [OPTIONS]
 
-`-d, --debug [true/false]` shows debug output *(default false)*  
-`-v, --verbose [true/false]` shows verbose output *(default false)*  
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default
-false)*
+OPTIONS:
+    -h, --help              Prints help information        
+    -v, --verbose           Shows verbose output           
+    -d, --debug             Shows debug output from plugins
+        --logfile <PATH>    Path to log file               
+        --pause             Pauses before exiting
+```
 
 ## Example
 
 ```bash
-Aaru configure
+aaru configure
 ```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

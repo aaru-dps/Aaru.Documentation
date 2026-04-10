@@ -1,6 +1,6 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
@@ -11,27 +11,34 @@ This operation will analyze and find all filesystems in a media dump, then extra
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] filesystem extract -h [true/false] -e [encoding] -O <options> -x [true/false] -n <namespace>
-```
+```text
+USAGE:
+    aaru filesystem extract <image-path> <output-dir> [OPTIONS]
 
-`-d, --debug [true/false]` shows debug output *(default false)*                
-`-v, --verbose [true/false]` shows verbose output *(default false)*                  
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*                       
-`-e, --encoding [encoding]` sets which encoding is used by the contents of the media dump *(default varies by filesystem)*        
-`-O, --options <options>` specifies comma separated name=value pairs of options to pass to output filesystem plugin            
-`-x, --xattrs [true/false]` extracts extended attributes if present *(default false)*          
-`-n, --namespace <namespace>` specifies namespace to use for filenames *(default varies by filesystem)*     
+ARGUMENTS:
+    <image-path>    Media image path                                            
+    <output-dir>    Directory where extracted files will be created. Will abort 
+                    if it exists                                                
+
+OPTIONS:
+    -h, --help         Prints help information                                  
+    -e, --encoding     Name of character encoding to use                        
+    -O, --options      Comma separated name=value pairs of options to pass to   
+                       filesystem plugin                                        
+    -x, --xattrs       Extract extended attributes if present                   
+        --volume       Extract only from the specified volume number            
+                       (0-indexed). If not specified, extracts from all volumes 
+    -n, --namespace    Namespace to use for filenames
+```
 
 ## Example
 
 ```bash
-Aaru filesystem extract -x -e iso8859-15 mydisc.cue contents
+aaru filesystem extract example.iso output
 ```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
-
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

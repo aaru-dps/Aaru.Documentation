@@ -1,35 +1,43 @@
+# Table of Contents
+
+- [Command description](#command-description)
+- [Command usage](#command-usage)
+- [Example](#example)
+- [Operating system support](#operating-system-support)
+
 ## Command description
 
 This operation will verify a media dump. If the media dump format includes a hash or checksum, it will calculate and compare it. If the media sector/block format include a hash, checksum, or error recovery system, it will calculate and compare them.
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] image verify -h [true/false] -s [true/false] -w [true/false] 
+```text
+USAGE:
+    aaru image verify <image-path> [OPTIONS]
+
+ARGUMENTS:
+    <image-path>    Media image path
+
+OPTIONS:
+                            DEFAULT                                             
+    -h, --help                         Prints help information                  
+    -w, --verify-disc       True       Verify media image if supported          
+    -s, --verify-sectors    True       Verify all sectors if supported          
+    -g, --create-graph      True       Create graph of verified disc (currently 
+                                       only implemented for optical discs)      
+    -d, --dimensions        1080       Dimensions, as a square, in pixels, for  
+                                       the graph of verified media              
+    -t, --data-only         True       Verify only data tracks
 ```
-
-<image-path>
-
-```-d, --debug [true/false]``` shows debug output *(default false)*
-
-```-v, --verbose [true/false]``` shows verbose output *(default false)*
-
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(
-default false)*
-
-```-s, --verify-sectors [true/false]``` calculates and verifies the hash/checksum/ecc of every sector/block in the media
-dump *(default true)*
-
-```-w, --verify-disc [true/false]``` calculates and verifies a media dump format checksum/hash *(default true)*
 
 ## Example
 
 ```bash
-Aaru image verify mydisc.cue
+aaru image verify example.iso
 ```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

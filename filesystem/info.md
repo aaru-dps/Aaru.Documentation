@@ -1,30 +1,40 @@
-# Analyzing a media dump
+# Table of Contents
 
-This operation will analyze a media dump and if the format is recognized (and you choose so), it will search
-for [supported partitioning schemes](/faq/partitions.md)
-and [supported filesystems](/faq/filesystems.md) on the dump, showing information about them.
+- [Command description](#command-description)
+- [Command usage](#command-usage)
+- [Example](#example)
+- [Operating system support](#operating-system-support)
+
+## Command description
+
+This operation will open a disc image and print information about the partitions and filesystems found inside it.
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] image analyze -h [true/false] -e [encoding] -f [true/false] -p [true/false] <image-path>
-```
+```text
+USAGE:
+    aaru filesystem info <image-path> [OPTIONS]
 
-`-d, --debug [true/false]` shows debug output *(default false)*  
-`-v, --verbose [true/false]` shows verbose output *(default false)*  
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*  
-`-e, --encoding [encoding]` sets which encoding is used by the contents of the media dump *(default varies by filesystem)*  
-`-f, --filesystems [true/false]` searches and interprets filesystems *(default true)*  
-`-p, --partitions [true/false]` searches and interprets partitions *(default true)*
+ARGUMENTS:
+    <image-path>    Media image path
+
+OPTIONS:
+                         DEFAULT                                                
+    -h, --help                      Prints help information                     
+    -e, --encoding                  Name of character encoding to use           
+    -p, --partitions     True       Searches and interprets partitions          
+    -f, --filesystems    True       Searches and prints information about       
+                                    filesystems
+```
 
 ## Example
 
 ```bash
-Aaru image analyze mydisc.cue
+aaru filesystem info example.iso
 ```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

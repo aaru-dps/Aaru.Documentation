@@ -1,43 +1,42 @@
-## Supported file systems for read-only operations
+# Filesystems recognized by Aaru
 
-* Apple DOS file system
-* Apple Lisa file system
-* Apple Macintosh File System (MFS)
-* CP/M file system
-* U.C.S.D Pascal file system
+## Fully supported file systems
 
-## Supported file systems for identification and information only
+These file systems currently support both identification and extraction:
 
 * 3DO Opera file system
+* Acer File System (AFS)
 * Acorn Advanced Disc Filing System
 * Alexander Osipov DOS (AO-DOS for Electronika BK-0011) file system
-* Amiga Fast File System v2, untested
 * Amiga Fast File System, with international characters, directory cache and multi-user patches
 * Amiga Original File System, with international characters, directory cache and multi-user patches
-* Apple File System (preliminary detection until on-disk layout is stable)
+* Apple DOS file system
+* Apple Lisa file system
 * Apple Hierarchical File System (HFS)
 * Apple Hierarchical File System+ (HFS+)
+* Apple Macintosh File System (MFS)
 * Apple ProDOS / SOS file system
 * AtheOS file system
 * B-tree file system (btrfs)
+* BeOS filesystem
+* BeOS (old) filesystem
 * BSD Fast File System (FFS) / Unix File System (UFS)
 * BSD Unix File System 2 (UFS2)
-* BeOS filesystem
 * CD-i file system
-* Coherent UNIX file system
 * Commodore 1540/1541/1571/1581 filesystems
+* CP/M file system
+* Coherent UNIX file system
 * Cram file system
+* DEC Files-11 (also known as ODS)
 * DEC RT-11 file system
-* DEC Files-11 (only checked with On Disk Structure 2, ODS-2)
-* dump(8) (Old historic BSD, AIX, UFS and UFS2 types)
 * ECMA-67: 130mm Flexible Disk Cartridge Labelling and File Structure for Information Interchange
+* Extended Acer File System (EAFS)
 * Flash-Friendly File System (F2FS)
-* Fossil file system (from Plan9)
-* HAMMER file system
 * High Sierra Format
+* High Performance Optical File System (HPOFS)
 * HP Logical Interchange Format
 * IBM Journaling File System (JFS)
-* ISO9660
+* ISO9660, including Apple, Amiga, Rock Ridge, Joliet and Romeo extensions
 * Linux extended file system
 * Linux extended file system 2
 * Linux extended file system 3
@@ -48,29 +47,42 @@
 * Microsoft 16-bit File Allocation Table (FAT16)
 * Microsoft 32-bit File Allocation Table (FAT32), including FAT+ extension
 * Microsoft Extended File Allocation Table (exFAT)
-* Microsoft New Technology File System (NTFS)
 * Microsoft/IBM High Performance File System (HPFS)
-* Minix v2 file system
-* Minix v3 file system
-* NEC PC-Engine file system
+* Microsoft New Technology File System (NTFS)
+* Minix v1/v2/v3 file systems
 * NILFS2
+* Nintendo optical filesystems (GameCube and Wii)
 * OS-9 Random Block File
 * Professional File System
-* QNX4 and QNX6 filesystems
-* Reiser file systems
+* QNX4 filesystems
+* QNX6 filesystems
+* Reiser v3 file systems
+* Reiser v4 file system
 * SGI Extent File System (EFS)
 * SGI XFS
 * SmartFileSystem
-* SolarOS file system
 * Squash file system
-* UNICOS file system
+* U.C.S.D Pascal file system
+* Universal Disk Format (UDF)
+* UNIX boot file system
 * UNIX System V file system
 * UNIX Version 7 file system
-* Universal Disk Format (UDF)
-* UnixWare boot file system
-* VMware file system (VMFS)
 * Veritas file system
 * Xbox filesystems
 * Xenix file system
 * Xia filesystem
+
+## Supported file systems for identification and information only
+
+* Amiga Fast File System v2 (untested)
+* Apple File System (preliminary detection until the on-disk layout is stable)
+* `dump(8)` (old historic BSD, AIX, UFS and UFS2 types)
+* Fossil file system (from Plan9)
+* HAMMER file system
+* Microsoft Resilient File System (ReFS)
+* NEC PC-Engine executable
+* NEC PC-FX executable
+* SolarOS file system
+* UNICOS file system
+* VMware file system (VMFS)
 * Zettabyte File System (ZFS)

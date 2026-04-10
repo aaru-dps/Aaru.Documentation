@@ -1,26 +1,39 @@
+# Table of Contents
+
+- [Command description](#command-description)
+- [Command usage](#command-usage)
+- [Example](#example)
+- [Operating system support](#operating-system-support)
+
 ## Command description
 
 This operation tests the connection between Aaru and the specified Aaru Remote Server.
 
 ## Command usage
 
-```aaru -d [true/false] -v [true/false] remote -h [true/false] <aaru-remote-host>```
+```text
+USAGE:
+    aaru remote <host> [OPTIONS]
 
-```-d, --debug [true/false]``` shows debug output *(default false)*
+ARGUMENTS:
+    <host>    aaruremote host
 
-```-v, --verbose [true/false]``` shows verbose output *(default false)*
-
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(
-default false)*
-
-```<aaru-remote-host>``` connects to an Aaru Remote Host with ```aaru://<IP ADDRESS>```
+OPTIONS:
+    -h, --help              Prints help information        
+    -v, --verbose           Shows verbose output           
+    -d, --debug             Shows debug output from plugins
+        --logfile <PATH>    Path to log file               
+        --pause             Pauses before exiting
+```
 
 ## Example
 
-```aaru remote aaru://192.168.1.25```
+```bash
+aaru remote aaru://192.168.1.25
+```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

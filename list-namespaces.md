@@ -1,24 +1,36 @@
+# Table of Contents
+
+- [Command description](#command-description)
+- [Command usage](#command-usage)
+- [Example](#example)
+- [Operating system support](#operating-system-support)
+
 ## Command description
 
 This operation will list all the supported namespaces of the [Filesystems recognized by Aaru](faq/filesystems.md).
 
 ## Command usage
 
-```aaru -d [true/false] -v [true/false] list-namespaces -h [true/false]```
+```text
+USAGE:
+    aaru list-namespaces [OPTIONS]
 
-```-d, --debug [true/false]``` shows debug output *(default false)*
-
-```-v, --verbose [true/false]``` shows verbose output *(default false)*
-
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(
-default false)*
+OPTIONS:
+    -h, --help              Prints help information        
+    -v, --verbose           Shows verbose output           
+    -d, --debug             Shows debug output from plugins
+        --logfile <PATH>    Path to log file               
+        --pause             Pauses before exiting
+```
 
 ## Example
 
-```aaru list-namespaces```
+```bash
+aaru list-namespaces
+```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

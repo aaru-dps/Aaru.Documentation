@@ -1,3 +1,10 @@
+# Table of Contents
+
+- [Command description](#command-description)
+- [Command usage](#command-usage)
+- [Example](#example)
+- [Operating system support](#operating-system-support)
+
 ## Command description
 
 This operation will list all character set encodings supported in your environment. This list depends on the libraries
@@ -6,21 +13,26 @@ in another one.
 
 ## Command usage
 
-```aaru -d [true/false] -v [true/false] list-encodings -h [true/false]```
+```text
+USAGE:
+    aaru list-encodings [OPTIONS]
 
-```-d, --debug [true/false]``` shows debug output *(default false)*
-
-```-v, --verbose [true/false]``` shows verbose output *(default false)*
-
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(
-default false)*
+OPTIONS:
+    -h, --help              Prints help information        
+    -v, --verbose           Shows verbose output           
+    -d, --debug             Shows debug output from plugins
+        --logfile <PATH>    Path to log file               
+        --pause             Pauses before exiting
+```
 
 ## Example
 
-```aaru list-encodings```
+```bash
+aaru list-encodings
+```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

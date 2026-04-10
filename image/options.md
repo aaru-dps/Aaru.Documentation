@@ -1,30 +1,32 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
 
 ## Command description
 
-Lists all options supported by writable media images.
+This operation will list all options supported by the writable media image plugins recognized by Aaru.
 
 ## Command usage
 
-```Aaru -d [true/false] -v [true/false] image options -h [true/false]```
+```text
+USAGE:
+    aaru image options [OPTIONS]
 
-```-d, --debug [true/false]``` shows debug output *(default false)*
-
-```-v, --verbose [true/false]``` shows verbose output *(default false)*
-
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(default false)*
+OPTIONS:
+    -h, --help    Prints help information
+```
 
 ## Example
 
-```Aaru image options```
+```bash
+aaru image options example.iso
+```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

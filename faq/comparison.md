@@ -21,7 +21,7 @@ In this page you can find a comparison between Aaru and other dump image manager
 | Supports  position based copy  protections      | Not yet¹³                | No               | No       | No       | Yes          | No        | No        |
 | Supports  dumping DDCD                          | Yes                      | No¹⁴             | No¹⁴     | No¹⁴     | No¹⁴         | No¹⁴      | No¹⁴      |
 | Supports  dumping GD                            | Not yet¹⁵                | Yes              | No       | No       | No           | No        | No        |
-| Supports  dumping  GameCube/Wii                 | Not yet¹⁵                | Yes              | No       | No       | No           | No        | No        |
+| Supports  dumping GameCube/Wii                  | Yes                      | Yes              | No       | No       | No           | No        | No        |
 | Supports  dumping  DVD¹⁶ ¹⁷                     | Yes                      | Partial¹⁸        | No       | No       | Partial¹⁸    | Partial¹⁸ | Partial¹⁸ |
 | Supports  dumping HD  DVD¹⁶                     | Yes                      | Partial¹⁹        | No       | No       | Partial¹⁹    | Partial¹⁹ | Partial¹⁹ |
 | Supports  dumping Blu- ray¹⁶ ²⁰                 | Yes                      | Yes              | No       | No       | Yes          | Yes       | Yes       |

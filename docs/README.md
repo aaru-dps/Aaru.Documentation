@@ -59,8 +59,7 @@ Features
 * Can create standard open XML metadata from existing images.
 * Can measure readability and speed of media (same that can be dumped, MHDD style)
 * Has an online database with drive capabilities, and can report the capabilities of any drive.
-* Works on any operating system and architecture where .NET Core is supported (drive access requires Windows, Linux or
-  FreeBSD).
+* Works on any operating system and architecture where .NET Core is supported (device access currently requires Linux or Windows).
 * Has a graphical interface (work in progress)
 
 Supported disk image formats (read-only)

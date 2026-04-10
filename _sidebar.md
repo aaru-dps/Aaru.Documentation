@@ -1,11 +1,20 @@
 - [Getting started](/quickstart.md)
 
 
+- Archives
+
+    - [Extract files from an archive](/archive/extract.md)
+    - [Get info about an archive](/archive/info.md)
+    - [List archive contents](/archive/list.md)
+
+
 - Configuration
 
     - [Database update](/database/update.md)
     - [Default configuration](/configure.md)
+    - [Generate metadata schema](/metadata-schema.md)
     - [Local statistics](/database/stats.md)
+    - [Test Aaru Remote connection](/remote.md)
 
 
 - Devices
@@ -32,6 +41,8 @@
     - [Get info about a media dump](/image/info.md)
     - [Hexadecimal print of a media dump](/image/print.md)
     - [List image options](/image/options.md)
+    - [Merge media dumps](/image/merge.md)
+    - [Write image metadata](/image/write-metadata.md)
 
 
 - Media image contents

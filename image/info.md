@@ -1,33 +1,35 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
 
-## Command Description
+## Command description
 
 This operation will request and show all information about the selected media dump.
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] image info -h [true/false] <image-path>
-```
+```text
+USAGE:
+    aaru image info <image-path> [OPTIONS]
 
-`-d, --debug [true/false]` shows debug output *(default false)*                            
-`-v, --verbose [true/false]` shows verbose output *(default false)*                           
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*
+ARGUMENTS:
+    <image-path>    Media image path
+
+OPTIONS:
+    -h, --help    Prints help information
+```
 
 ## Example
 
 ```bash
-Aaru image info mydisc.cue
+aaru image info example.iso
 ```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
-
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

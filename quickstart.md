@@ -3,19 +3,19 @@
 ## How to Dump a Disk Image
 
 It’s very easy to dump any supported media quickly with Aaru! You just have to
-run `aaru media dump <drive> <output image>` for the most basic options. If you dump to something that’s not Aaru Image
-Format (images with the extensions `.aaruformat`, `.aaruf`, and `.aif`), you will also have to add the “-f” option at the end
-of the command.
+run `aaru media dump <drive> <output image>` for the most basic options. If you dump to something that’s not the
+Aaru Image Format (which uses the `.aif` extension), you will also have to add the `-f` option at the end of the
+command.
 
 ### Examples (Windows):
 
-`aaru media dump E: Image.aaruf`
+`aaru media dump E: Image.aif`
 
 `aaru media dump F: Image.iso -f`
 
 ### Examples (Linux):
 
-`aaru media dump /dev/sr0 Image.aaruf`
+`aaru media dump /dev/sr0 Image.aif`
 
 `aaru media dump /dev/sr1 Image.iso -f`
 
@@ -27,7 +27,7 @@ be any of the supported formats from any software.
 
 ### Examples (All OS’):
 
-`aaru image compare Image1.aaruf Image2.cue`
+`aaru image compare Image1.aif Image2.cue`
 
 `aaru image compare Image1.iso Image2.ccd`
 
@@ -43,7 +43,7 @@ command to extract the more technical extended attributes from an image as well.
 
 ### Examples:
 
-`aaru filesystem extract Image.aaruf Output`
+`aaru filesystem extract Image.aif Output`
 
 `aaru filesystem extract Image.ccd Output -x`
 

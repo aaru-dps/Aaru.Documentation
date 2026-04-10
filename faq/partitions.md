@@ -1,4 +1,7 @@
-## Partitions
+# Partitions recognized by Aaru
+
+The following partitioning schemes are currently documented as supported by Aaru.
+
 
 * Acorn Linux and RISCiX partitions
 * ACT Apricot partitions

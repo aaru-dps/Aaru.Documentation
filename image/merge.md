@@ -7,23 +7,33 @@
 
 ## Command description
 
-This operation will convert a dump from one image format to another.
+This operation will merge two compatible media images into a new output image, optionally taking sectors or metadata from the secondary image when needed.
 
 ## Command usage
 
 ```text
 USAGE:
-    aaru image convert <input-image> <output-image> [OPTIONS]
+    aaru image merge <primary-image> <secondary-image> <output-image> [
+OPTIONS]
 
 ARGUMENTS:
-    <input-image>     Input image path 
-    <output-image>    Output image path
+    <primary-image>      Path to the primary image file      
+    <secondary-image>    Path to the secondary image file    
+    <output-image>       Path to the output merged image file
 
 OPTIONS:
                                      DEFAULT                                    
     -h, --help                                  Prints help information         
-    -x, --cicm-xml                              Take metadata from existing CICM
-                                                XML sidecar                     
+        --secondary-tags                        Use media tags from secondary   
+                                                image (otherwise when in both   
+                                                images, primary image tags are  
+                                                used)                           
+        --sectors-file                          File containing list of sectors 
+                                                to take from secondary image    
+                                                (one sector number per line)    
+        --ignore-media-type                     Ignore mismatched image media   
+                                                type. Merged image will still   
+                                                have primary image media type   
         --comments                              Image comments                  
     -c, --count                      64         How many sectors to convert at  
                                                 once                            
@@ -40,9 +50,6 @@ OPTIONS:
         --drive-serial                          Serial number of the drive used 
                                                 to read the media represented by
                                                 the image                       
-    -f, --force                                 Continue conversion even if     
-                                                sector or media tags will be    
-                                                lost in the process             
     -p, --format                                Format of the output image, as  
                                                 plugin name or plugin id. If not
                                                 present, will try to detect it  
@@ -67,8 +74,8 @@ OPTIONS:
     -O, --options                               Comma separated name=value pairs
                                                 of options to pass to output    
                                                 image plugin                    
-    -r, --resume-file                           Take list of dump hardware from 
-                                                existing resume file            
+        --primary-resume                        Resume file for primary image   
+        --secondary-resume                      Resume file for secondary image 
     -g, --geometry                              Force geometry, only supported  
                                                 in not tape block media. Specify
                                                 as C/H/S                        
@@ -81,15 +88,6 @@ OPTIONS:
                                                 fixing subchannel               
         --generate-subchannels                  Generates missing subchannels   
         --decrypt                               Try to decrypt encrypted sectors
-        --bypass-ps3-decryption                 Skip PS3 disc encryption        
-                                                processing during conversion    
-        --bypass-wiiu-decryption                Skip Wii U disc encryption      
-                                                processing during conversion    
-        --bypass-wii-decryption                 Skip Wii disc encryption        
-                                                processing during conversion or 
-                                                dump                            
-    -m, --aaru-metadata                         Take metadata from existing Aaru
-                                                Metadata sidecar                
         --ignore-negative-sectors               Ignore negative sectors         
         --ignore-overflow-sectors               Ignore overflow sectors
 ```
@@ -97,7 +95,7 @@ OPTIONS:
 ## Example
 
 ```bash
-aaru image convert input.iso output.aif
+aaru image merge primary.aif secondary.aif merged.aif
 ```
 
 ## Operating system support

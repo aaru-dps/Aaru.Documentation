@@ -1,36 +1,40 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
 
-## Command Description
+## Command description
 
 This operation will print a hexadecimal dump of the chosen sector/block from the indicated media dump image to the console.
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] image print -h [true/false] -l [sectors] -r [true/false] -s <starting sector> -w [width] <image-path>
-```
+```text
+USAGE:
+    aaru image print-hex <image-path> [OPTIONS]
 
-`-d, --debug [true/false]` shows debug output *(default false)*                      
-`-v, --verbose [true/false]` shows verbose output *(default false)*                      
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*                               
-`-l, --length [sectors]` specifies how many sectors to print *(default 1)*            
-`-r, --long-sectors [true/false]` specifies if hex print should include all sector tags stored in the media dump *(default false)*         
-`-s, --start <starting sector>` starts the hexadecimal printing from this sector            
-`-w, --width <width>` specifies how long the width, in characters, should the print be before creating a new line *(default 32)*
+ARGUMENTS:
+    <image-path>    Media image path
+
+OPTIONS:
+                          DEFAULT                                    
+    -h, --help                       Prints help information         
+    -l, --length          1          How many sectors to print       
+    -r, --long-sectors               Print sectors with tags included
+    -s, --start           0          Starting sector                 
+    -w, --width           32         How many bytes to print per line
+```
 
 ## Example
 
 ```bash
-Aaru image print -s 15 -l 30 -r -w 64 mydisc.cue
+aaru image print-hex example.iso
 ```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |

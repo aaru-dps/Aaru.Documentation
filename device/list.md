@@ -1,6 +1,6 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
@@ -11,22 +11,27 @@ This operation will show all known attached devices on your system and if they a
 
 ## Command usage
 
-```Aaru -d [true/false] -v [true/false] device list -h [true/false] <aaru-remote-host>```
+```text
+USAGE:
+    aaru device list [aaru-remote-host] [OPTIONS]
 
-```-d, --debug [true/false]``` shows debug output *(default false)*
+ARGUMENTS:
+    [aaru-remote-host]    aaruremote host
 
-```-v, --verbose [true/false]``` shows verbose output *(default false)*
-
-```-h, --help [true/false]``` shows help screen for the command instead of running it, ignores all other switches *(default false)*
-
-```<aaru-remote-host>``` connects to an Aaru Remote Host with ```aaru://<IP ADDRESS>```
+OPTIONS:
+    -h, --help    Prints help information
+```
 
 ## Example
 
-```aaru device list aaru://192.168.1.25```
+```bash
+aaru device list
+```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| No¹   | Yes   | Yes     |
+
+1. Device list and other device-access commands are not currently supported on macOS.

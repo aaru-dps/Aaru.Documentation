@@ -1,35 +1,42 @@
 # Table of Contents
 
-- [Command Description](#command-description)
+- [Command description](#command-description)
 - [Command usage](#command-usage)
 - [Example](#example)
 - [Operating system support](#operating-system-support)
 
-## Command Description
+## Command description
 
 This operation will calculate uniqueness and entropy of the media represented by a media dump image. It's not affected by the image format compression, if applicable.
 
 ## Command usage
 
-```bash
-Aaru -d [true/false] -v [true/false] image entropy -h [true/false] -p [true/false] -t [true/false] -w [true/false] <image-path>
-```
+```text
+USAGE:
+    aaru image entropy <image-path> [OPTIONS]
 
-`-d, --debug [true/false]` shows debug output *(default false)*  
-`-v, --verbose [true/false]` shows verbose output *(default false)*  
-`-h, --help [true/false]` shows help screen for the command instead of running it, ignores all other switches *(default false)*  
-`-p, --duplicated-sectors [true/false]` besides entropy also calculates how many sectors have the exact same data in their user area *(default true)*  
-`-t, --separated-tracks true/false]` separately calculates the entropy for each track dividing the media. Only applicable to certain kind of media (optical discs and digital tapes mostly) *(default true)*  
-`-w, --whole-disc [true/false]` calculates the entropy for the whole media *(default true)*
+ARGUMENTS:
+    <image-path>    Media image path
+
+OPTIONS:
+                                DEFAULT                                         
+    -h, --help                             Prints help information              
+    -p, --duplicated-sectors    True       Calculates how many sectors are      
+                                           duplicated (have same exact data in  
+                                           user area)                           
+    -t, --separated-tracks      True       Calculates entropy for each track    
+                                           separately                           
+    -w, --whole-disc            True       Calculates entropy for the whole disc
+```
 
 ## Example
 
 ```bash
-Aaru image entropy mydisc.cue
+aaru image entropy example.iso
 ```
 
 ## Operating system support
 
-| FreeBSD | macOS | Linux | Windows |
-| ------- | ----- | ----- | ------- |
-| Yes     | Yes   | Yes   | Yes     |
+| macOS | Linux | Windows |
+| ----- | ----- | ------- |
+| Yes   | Yes   | Yes     |
